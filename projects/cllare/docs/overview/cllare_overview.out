@@ -29,5 +29,19 @@
 \BOOKMARK [2][-]{subsection.3.3.2}{Launch costs}{section.3.3}
 \BOOKMARK [0][-]{chapter.4}{Detailed Hardware Descriptions}{}
 \BOOKMARK [1][-]{section.4.1}{The CLLARE Command Module}{chapter.4}
-\BOOKMARK [1][-]{section.4.2}{The CLLARE Propulsion Module}{chapter.4}
-\BOOKMARK [1][-]{section.4.3}{The CLLARE Lunar Lander}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.1.1}{Structure and construction}{section.4.1}
+\BOOKMARK [2][-]{subsection.4.1.2}{Reaction Control System}{section.4.1}
+\BOOKMARK [2][-]{subsection.4.1.3}{Power system}{section.4.1}
+\BOOKMARK [2][-]{subsection.4.1.4}{Environmental Control System}{section.4.1}
+\BOOKMARK [2][-]{subsection.4.1.5}{Communication System}{section.4.1}
+\BOOKMARK [2][-]{subsection.4.1.6}{Navigation System}{section.4.1}
+\BOOKMARK [2][-]{subsection.4.1.7}{Computer System}{section.4.1}
+\BOOKMARK [1][-]{section.4.2}{The CLLARE Retro Module}{chapter.4}
+\BOOKMARK [1][-]{section.4.3}{The CLLARE Mission Extension Module}{chapter.4}
+\BOOKMARK [1][-]{section.4.4}{The CLLARE Propulsion Module}{chapter.4}
+\BOOKMARK [1][-]{section.4.5}{The CLLARE Lunar Mission Module}{chapter.4}
+\BOOKMARK [1][-]{section.4.6}{The CLLARE Lunar Lander}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.6.1}{Reaction Control System}{section.4.6}
+\BOOKMARK [2][-]{subsection.4.6.2}{Power system}{section.4.6}
+\BOOKMARK [2][-]{subsection.4.6.3}{Communication System}{section.4.6}
+\BOOKMARK [2][-]{subsection.4.6.4}{Navigation System}{section.4.6}

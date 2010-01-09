@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Arch Linux) (format=pdflatex 2009.10.14)  9 JAN 2010 09:39
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Arch Linux) (format=pdflatex 2009.10.14)  9 JAN 2010 19:42
 entering extended mode
  %&-line parsing enabled.
-**cllare_overview.tex
+**cllare_overview
 (./cllare_overview.tex
 LaTeX2e <2005/12/01>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
@@ -223,7 +223,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.32 ...CLLARE Propulsion Module}{12}{section.4.2}
+l.32 ...re and construction}{12}{subsection.4.1.1}
                                                    [1
 
 ])
@@ -243,7 +243,7 @@ Overfull \hbox (67.10616pt too wide) in paragraph at lines 27--27
 Chapter 2.
 [5
 
-] [6] <images/cllare_cm_configs.png, id=215, 1027.84pt x 770.88pt>
+] [6] <images/cllare_cm_configs.png, id=285, 1027.84pt x 770.88pt>
 File: images/cllare_cm_configs.png Graphic file (type png)
 
 <use images/cllare_cm_configs.png>
@@ -265,23 +265,29 @@ Chapter 3.
 Chapter 4.
 [12
 
-] (./cllare_overview.aux) ) 
+]
+Overfull \hbox (15.27844pt too wide) in paragraph at lines 214--215
+\OT1/cmr/m/n/10 Discuss re-quired con-sum-ables and stor-age op-tions here: oxy
+-gen, ni-tro-gen, methanol,
+ []
+
+[13] [14] (./cllare_overview.aux) ) 
 Here is how much of TeX's memory you used:
- 4198 strings out of 493848
- 60839 string characters out of 1154031
+ 4228 strings out of 493848
+ 61299 string characters out of 1154031
  131910 words of memory out of 3000000
- 7396 multiletter control sequences out of 15000+50000
+ 7410 multiletter control sequences out of 15000+50000
  9107 words of font info for 32 fonts, out of 3000000 for 5000
  714 hyphenation exceptions out of 8191
- 30i,8n,36p,933b,321s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
-/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr17.pfb>
-Output written on cllare_overview.pdf (13 pages, 163188 bytes).
+ 30i,8n,36p,929b,321s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx
+12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sh
+are/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on cllare_overview.pdf (15 pages, 175626 bytes).
 PDF statistics:
- 273 PDF objects out of 1000 (max. 8388607)
- 48 named destinations out of 1000 (max. 500000)
- 282 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 360 PDF objects out of 1000 (max. 8388607)
+ 64 named destinations out of 1000 (max. 500000)
+ 394 words of extra memory for PDF output out of 10000 (max. 10000000)
 
