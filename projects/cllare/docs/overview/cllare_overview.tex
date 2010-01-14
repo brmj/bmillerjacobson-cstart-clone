@@ -32,11 +32,15 @@ CLLARE is a project of the Collaborative Space Travel and Research Team (CSTART)
 
 \section{Mission Overview}
 
-The CLLARE mission is based around a Lunar Orbit Rendezvous (LOR) structure.  A spacecraft composed of several connected modules is launched into a low Earth ``parking orbit'', using a multiple stage rocket booster.  Following successful completion of various checks and tests, a Trans Lunar Injection (TLI) burn is performed, taking the spacecraft out of LEO and putting it on a lunar free return trajectory: a trajectory such that, with no further changes in velocity, the craft will travel close enough to the moon for the moon's gravitational field to cause reversal in its direction, putting it on a return course for Earth.
+The CLLARE mission is based around a Lunar Orbit Rendezvous (LOR) structure.  A spacecraft composed of several connected modules is launched into a low Earth ``parking orbit'', using a multiple stage rocket booster.  Following successful completion of various checks and tests, a Trans Lunar Injection (TLI) burn is performed, taking the spacecraft out of LEO and putting it on a lunar free return trajectory: a trajectory such that, with no further changes in velocity, the craft will travel close enough to the moon for the moon's gravitational field to cause reversal in its direction, putting it on a return course for Earth.  This choice of trajectory is an important safety feature for CLLARE.
 
-Once the spacecraft is sufficiently close to the moon, a lunar capture burn slows the spacecraft down to such a speed that it enters a low lunar orbit.
+Once the spacecraft is sufficiently close to the moon, a Lunar Orbit Insertion (LOI) or ``lunar capture'' burn slows the spacecraft down to such a speed that it enters a low lunar orbit.
 
-Once the lunar rendezvous has been completed, a lunar escape burn accelerates the spacecraft to a sufficiently high speed to escape the moon's gravitational field, leaving it on a course bound for Earth.
+Lander descent and ascent happens here.
+
+Once the lunar rendezvous has been completed, a Trans Earth Injection (TEI) or ``lunar escape'' burn accelerates the spacecraft to a sufficiently high speed to escape the moon's gravitational field, leaving it on a course bound for Earth.
+
+Atmospheric reentry happens here.
 
 \section{Core CLLARE Hardware}
 
@@ -89,13 +93,19 @@ The \href{http://cstart.org/wiki/CLLARE_Lunar_Lander}{CLLARE Lunar Lander} (LL) 
 
 \section{Launch Options}
 
-\subsection{Suborbital missions}
+\subsection{Suborbital and orbital missions}
+
+The proposed suborbital and orbital flight configurations (CM and CM-OSM) have estimated total masses in the vicinity of 1,000 kg and 1,250 kg, respectively (see Chapter \ref{chap:numeric} for details of these estimates).
+
+CSTART is not aware of any man--rated commercial launch vehicles designed to carry payloads of this mass, so is considering the development of its own launch capabilities for these missions.  The current plan of approach is to use variably sized clusters of small, simple and inexpensive rockets to lift payloads around 1,000 kg in mass into LEO, a concept pioneered by the \href{http://en.wikipedia.org/wiki/OTRAG}{OTRAG company} project in the 1970s.  We are keen to use hybrid rocket engines for the small rockets due to their high levels of safety and excellent trade-off between simplicity and performance.
+
+A group called \href{http://www.copenhagensuborbitals.com/}{Copenhagen Suborbitals}, based in Denmark, are currently working on a hybrid rocket engine designed to perform suborbital flights for a manned, lightweight ``micro space capsule''.  Copenhagen Suborbitals are already at the stage of performing static test firings of their rockets, with a first launch planned for mid 2010.  Like CSTART, Copenhagen Suborbitals is a volunteer operation funded by donations and sponsorships, with a strong commitment to open source principles.  The two groups are on friendly terms and CSTART hopes to gain valuable insight and experience from the Copenhagen Suborbitals team in constructing its own hybrid rocket launch systems.
 
 \subsection{Circumlunar missions}
 
 \subsection{Lunar landing missions}
 
-The proposed lunar landing configurations (CM-MEM-LMM) have estimated total masses in the vicinity of 8000 kg (see Chapter \ref{chap:numeric} for details of these estimates).  The Falcon 9 booster is capable of lifting approximately 10,000 kg of payload into LEO.
+The proposed lunar landing configurations (CM-MEM-LMM) have estimated total masses in the vicinity of 10,000 kg (see Chapter \ref{chap:numeric} for details of these estimates).  The \href{http://spacex.com}{SpaceX} company's \href{http://spacex.com/falcon9.php}{Falcon 9} is a man-rated, two-stage booster is capable of lifting approximately 10,000 kg of payload into LEO.
 
 \section{A proposed program of launches}
 
@@ -127,7 +137,22 @@ In this chapter we present estimates, principled arguments and calculations to e
 
 \section{Astrodynamics}
 
-Delta-vs and a rough timeline go here.
+\subsection{Trans Lunar Injection burn}
+
+Required delta-v: $\simeq 3100$ m/s.
+
+Time between this burn and next burn: $\simeq 3$ days.
+
+\subsection{Lunar Orbit Insertion burn}
+
+Required delta-v: $\simeq 1000$ m/s.
+
+Time between this burn and next burn: $\simeq 6$ hours.
+
+\subsection{Trans Earth Injection burn}
+
+Time between this burn and atmospheric reentry: $\simeq 3$ days.
+Required delta-v: $\simeq 700$ m/s.
 
 \section{Mass figures}
 
@@ -137,7 +162,7 @@ Delta-vs and a rough timeline go here.
 
 \subsection{Fuel masses}
 
-In this section we use the Tsiolkovsky rocket equation to estimate the required fuel masses for the mission, considering various fuel options.
+In this section we use the \href{http://en.wikipedia.org/wiki/Tsiolkovsky_rocket_equation}{Tsiolkovsky rocket equation} to estimate the required fuel masses for the mission, considering various fuel options.
 
 (Get figures for LOX/H2, LOX/CH4 LOX/RP-1)
 
@@ -165,9 +190,21 @@ Lunar Landing (CM-MEM-LMM) & 8000 \\
 
 \section{Cost figures}
 
+\subsection{Vehicle costs}
+
 \subsection{Fuel costs}
 
 \subsection{Launch costs}
+
+\subsubsection{Suborbital and orbital missions}
+
+Unknown (self-built modular hybrid booster)
+
+\subsubsection{Lunar landing missions}
+
+A single launch of the Falcon 9 commercial booster costs US\$35,000,000.
+
+\subsection{Total costs}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -187,15 +224,42 @@ The \href{http://cstart.org/wiki/CLLARE_CM_Reaction_Control_System}{CM's Reactio
 
 \subsection{Power system}
 
-The \href{http://cstart.org/wiki/CLLARE_CM_Power_System}{CM's power system} provides 12V and 24V DC power to other subsystems, generated by an array of atmosphere breathing methanol-water fuel cells with backup batteries.
+The \href{http://cstart.org/wiki/CLLARE_CM_Power_System}{CM's power system} provides 12V and 24V DC power to other subsystems, generated by an array of small and rugged atmosphere breathing methanol fuel cells, such as the \href{http://www.ultracellpower.com/assets/XX55_Data_Sheet_01-27-2009.pdf}{Ultracell XX55}.  A set of backup batteries provide continuity of power during temporary interruptions to methanol or oxygen supplies.
 
+\begin{tabular}{ | l | c | c | c | c | }
+\hline
+Application & Voltage & Unit Power & Multiplier & Total power \\
+\hline
+\hline
+USRP comms board & 6V & ?? & 1 & ?? \\
+\hline
+Crossbow NAV440 & 9-42 & $<4$ W & 1 & $<4$ W \\
+GPS/IMU unit & & & & \\
+\hline
+\hline
+Total power requirement & & & & $<4$ W \\
+\hline
+\end{tabular}
 \subsection{Environmental Control System}
 
 The \href{http://cstart.org/wiki/CLLARE_Environmental_Control_System}{CM's Enviromental Control System} is responsible for maintaining a habitable environment inside the CLLARE Command Module cabin. This involves maintaining an appropriate oxygen level, pressure level, temperature and more.
 
 \subsection{Communication System}
 
-The \href{http://cstart.org/wiki/CLLARE_CM_Communication_System}{CM's Communication System} provides a number of communication services, including a bidirectional voice link between the CM and the ground, multiple one directional video links from the CM to the ground, a one directional telemetry link between the CM and the ground, and a one directional authenticated control link from the ground to the CM.
+The \href{http://cstart.org/wiki/CLLARE_CM_Communication_System}{CM's Communication System} provides the means for communication between the CM and Earth and the Lander and Earth (the Lander's comm system uses the CM's system as a relay).
+
+There are four communication channels required between the CM and Earth:
+\begin{itemize}
+\item A bidirectional voice link (VO),
+\item A unidirectional, space-to-Earth video downlink (VI),
+\item A unidirectional, space-to-Earth telemetry downlink (TM), and
+\item A unidirectional, Earth-to-space telecommand uplink (TC).
+\end{itemize}
+We hope to realise these four channels as independent ``virtual channels'' on a single physical channel, using a multiplexing technology such as \href{http://en.wikipedia.org/wiki/Code_division_multiple_access}{Code Division Multiple Access} (CDMA).
+
+The single physical channel linking the CM to Earth will likely be an S-band radio link in the 2.0 GHz -- 2.4 GHz range, depending on which frequencies are available for use in the various parts of the world where we may operate communication systems.
+
+The use of \href{http://en.wikipedia.org/wiki/Software_defined_radio}{software-defined radio} (SDR) technology for the communications system is considered an attractive option due to its reduced equipment mass and high flexibility.  The \href{http://gnuradio.org/redmine/wiki/gnuradio}{GNU Radio project} and the \href{http://www.ettus.com/products}{Universal Software Radio Peripheral (USRP) device} provide open source software and hardware, respectively, which may help to realise the SDR approach at a very low cost.  However, no hard decision has been made and investigations are ongoing.
 
 \subsection{Navigation System}
 
@@ -203,7 +267,14 @@ The \href{http://cstart.org/wiki/CLLARE_CM_Navigation_System}{CM's Navigation Sy
 
 \subsection{Computer System}
 
-The \href{http://cstart.org/wiki/CLLARE_Main_Computer_System}{CM's Main Computer System} provides computational support for most other subsystems.
+The \href{http://cstart.org/wiki/CLLARE_Main_Computer_System}{CM's Main Computer System} provides computational services for most other subsystems, including but not limited to:
+\begin{itemize}
+\item Encoding of audio and video data for onboard storage and transmission by the communications system.
+\item Control of oxygen injection valves for the environmental control system.
+\item Kalman filtering for the navigation system.
+\item Formatting of raw sensor data into telemetry packets for the communicaton system.
+\item Authentication and execution of telecommands for the communicaton system.
+\end{itemize}
 
 \section{The CLLARE Retro Module}
 
@@ -227,5 +298,7 @@ Discuss cooling options here.
 \subsection{Power system}
 \subsection{Communication System}
 \subsection{Navigation System}
+
+The main difference between the LL's navigation system and the CM's is that the LL will require an altimeter of some kind.  An Australian--New Zealand group called \href{http://www.lunarnumbat.org}{Lunar Numbat} are working on (amongst other things) an \href{http://www.lunarnumbat.org/cgi-bin/twiki/view/LunarNumbat/LNTaskRadarAltimeter}{open source radar altimeter} for use by one of the Google Lunar X Prize teams, which may be appropriate.
 
 \end{document}

@@ -13,20 +13,25 @@
 \BOOKMARK [2][-]{subsection.2.2.5}{The CLLARE Lunar Mission Module}{section.2.2}
 \BOOKMARK [2][-]{subsection.2.2.6}{The CLLARE Lunar Lander}{section.2.2}
 \BOOKMARK [1][-]{section.2.3}{Launch Options}{chapter.2}
-\BOOKMARK [2][-]{subsection.2.3.1}{Suborbital missions}{section.2.3}
+\BOOKMARK [2][-]{subsection.2.3.1}{Suborbital and orbital missions}{section.2.3}
 \BOOKMARK [2][-]{subsection.2.3.2}{Circumlunar missions}{section.2.3}
 \BOOKMARK [2][-]{subsection.2.3.3}{Lunar landing missions}{section.2.3}
 \BOOKMARK [1][-]{section.2.4}{A proposed program of launches}{chapter.2}
 \BOOKMARK [0][-]{chapter.3}{Numerical Analysis}{}
 \BOOKMARK [1][-]{section.3.1}{Astrodynamics}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.1.1}{Trans Lunar Injection burn}{section.3.1}
+\BOOKMARK [2][-]{subsection.3.1.2}{Lunar Orbit Insertion burn}{section.3.1}
+\BOOKMARK [2][-]{subsection.3.1.3}{Trans Earth Injection burn}{section.3.1}
 \BOOKMARK [1][-]{section.3.2}{Mass figures}{chapter.3}
 \BOOKMARK [2][-]{subsection.3.2.1}{Empty structure masses}{section.3.2}
 \BOOKMARK [2][-]{subsection.3.2.2}{Consumables masses}{section.3.2}
 \BOOKMARK [2][-]{subsection.3.2.3}{Fuel masses}{section.3.2}
 \BOOKMARK [2][-]{subsection.3.2.4}{Total launch masses}{section.3.2}
 \BOOKMARK [1][-]{section.3.3}{Cost figures}{chapter.3}
-\BOOKMARK [2][-]{subsection.3.3.1}{Fuel costs}{section.3.3}
-\BOOKMARK [2][-]{subsection.3.3.2}{Launch costs}{section.3.3}
+\BOOKMARK [2][-]{subsection.3.3.1}{Vehicle costs}{section.3.3}
+\BOOKMARK [2][-]{subsection.3.3.2}{Fuel costs}{section.3.3}
+\BOOKMARK [2][-]{subsection.3.3.3}{Launch costs}{section.3.3}
+\BOOKMARK [2][-]{subsection.3.3.4}{Total costs}{section.3.3}
 \BOOKMARK [0][-]{chapter.4}{Detailed Hardware Descriptions}{}
 \BOOKMARK [1][-]{section.4.1}{The CLLARE Command Module}{chapter.4}
 \BOOKMARK [2][-]{subsection.4.1.1}{Structure and construction}{section.4.1}
