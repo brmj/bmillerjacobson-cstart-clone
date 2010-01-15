@@ -1,6 +1,8 @@
 \documentclass{report}
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage{rotating}
+
 \author{Luke Maurits, \\
 Add your name here, \\
 If you contribute material, \\
@@ -156,15 +158,83 @@ Required delta-v: $\simeq 700$ m/s.
 
 \section{Mass figures}
 
-\subsection{Empty structure masses}
+\subsection{Hardware masses}
+
+\subsubsection{Command Module}
+
+We derive an estimated mass for the empty CM vehicle by considering the masses of two similar existing spacecraft from the US manned spaceflight program, Mercury and Gemini.
+
+The Mercury spacecraft is arguably the spacecraft most similar to the CLLARE CM, in that it is the only craft shaped like a truncated cone with a cylindrical nose which has a crew capacity of one.  However, the capabilities of the CLLARE CM exceed those of Mercury somewhat, in that the CLLARE CM supports EVA.  Since the CLLARE CM will require the addition of an ingress-egress hatch and also extra room in the crew cabin to facilitate the application and removal of a spacesuit, we expect the CLLARE CM to be slightly larger than Mercury.  Thus, a mass estimate derived from the mass of Mercury can be expected to be an \emph{underestimate} of the mass of the CLLARE CM.
+
+Table \ref{tab:mercurymass} gives the masses of all the Mercury spacecraft subsystems (data taken from \href{http://www.astronautix.com/craft/mercury.htm}{Encyclopedia Aeronautica}).  Beside each Mercury mass figure is an estimate of the mass of a corresponding CLLARE CM subsystem, with a justification.  This process leads to a total mass estimate of 932 kg.
+ 
+\begin{sidewaystable}
+\centering
+\begin{tabular}{|l|c|c|l|}
+\hline
+Item	& Mercury mass & Est. CLLARE mass & Justification \\
+\hline \hline
+Structure		& 340 kg	& 340 kg & \\
+Heat shield		& 272 kg	& 272 kg & \\
+RCS			& 40 kg		& 40 kg & \\
+Recovery equipment	& 60 kg		& 60 kg & \\
+Navigation equipment	& 40 kg		& 10 kg & Crossbow make a GPS/IMU unit with mass 1.6 kg \\
+Telemetry equipment	& 50 kg		& 50 kg & \\
+Electrical equipment	& 80 kg		& 10 kg & Ultracell XX55 has mass 1.6 kg \\
+Communications system	& 20 kg		& 20 kg & \\
+Crew seats and provisions & 80 kg	& 80 kg & \\
+Environmental control system	& 50 kg		& 50 kg & \\
+\hline \hline
+\textbf{Total}	& 1032 kg & 932 kg	& \\
+\hline
+\end{tabular}
+\caption{Mercury derived mass estimate}
+\label{tab:mercurymass}
+\end{sidewaystable} 
+
+The Gemini spacecraft is the spacecraft with the most similar capabilities to the CLLARE CM, in that it allows EVA and can be adapted for long duration flights by the attachment of a supply module.  However, whereas the CLLARE CM has a crew of one, Gemini supported a crew of 2 (hence the name "Gemini" -- "twins").  It is fair to call the CLLARE CM a "one--man Gemini".  Thus, a mass estimate derived from the mass of Gemini can be expected to be an \emph{overestimate} of the mass of the CLLARE CM.
+
+Table \ref{tab:geminimass} gives the masses of all the Gemini spacecraft subsystems (data taken from \href{http://www.astronautix.com/craft/gemini.htm}{Encyclopedia Aeronautica}).  Beside each Gemini mass figure is an estimate of the mass of a corresponding CLLARE CM subsystem, with a justification.  This process leads to a total mass estimate of 1297 kg.
+
+\begin{sidewaystable}
+\centering
+\begin{tabular}{|l|c|c|l|}
+\hline
+Item	& Gemini mass & Est. CLLARE mass & Justification \\
+\hline \hline
+Structure		& 638 kg	& 638 kg &  \\
+Heat shield		& 144 kg	& 144 kg & \\
+RCS			& 133 kg	& 133 kg & \\
+Recovery equipment	& 98 kg		& 98 kg & \\
+Navigation equipment	& 62 kg		& 10 kg & Crossbow make a GPS/IMU unit with mass 1.6 kg \\
+Telemetry equipment	& 51 kg		& 51 kg & \\
+Electrical equipment	& 125 kg		& 10 kg & Ultracell XX55 has mass 1.6 kg \\
+Communications system	& 26 kg		& 26 kg & \\
+Crew seats and provisions & 426 kg	& 213 kg & Halved to account for difference in crew size \\
+Environmental control system	&  117 kg		& 117 kg & \\
+\hline \hline
+\textbf{Total}	& 1707 kg & 1297 kg	& \\
+\hline
+\end{tabular}
+\caption{Gemini derived mass estimate}
+\label{tab:geminimass}
+\end{sidewaystable} 
+
+Averaging our Mercury--derived underestimate of 932 kg and our Gemini--derived overestimate of 1297 kg, we estimate the empty mass of the CLLARE CM to be approximately 1114 kg.
+
+\subsubsection{Orbital Support Module}
+
+\subsubsection{Propulsion Module}
+
+\subsubsection{Lunar Lander}
 
 \subsection{Consumables masses}
 
-\subsection{Fuel masses}
+\subsection{Propellant masses}
 
 In this section we use the \href{http://en.wikipedia.org/wiki/Tsiolkovsky_rocket_equation}{Tsiolkovsky rocket equation} to estimate the required fuel masses for the mission, considering various fuel options.
 
-(Get figures for LOX/H2, LOX/CH4 LOX/RP-1)
+The most likely propellants for use on CLLARE are considered to be liquid oxygen (LOX) oxidiser and liquid hydrogen (LH2) fuel, and LOX oxidiser and liquid methane (LCH4) fuel.  LOX/LH2 offers the greatest specific impulse, but hydrogen has a very low density (leading to large, heavy storage tanks) and is highly explosive (e.g. Hindenburg disaster).  LOX/LCH4 offers a lower specific impulse in the 350s--380s range, but methane is much denser than hydrogen and also safer.
 
 \subsection{Total launch masses}
 
