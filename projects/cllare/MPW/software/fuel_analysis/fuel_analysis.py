@@ -2,8 +2,9 @@ from math import exp
 
 class Stack:
 
-	def __init__(self, cm_mass, ll_mass, pm_mass, astronaut_mass, suit_mass):
+	def __init__(self, cm_mass, osm_mass, ll_mass, pm_mass, astronaut_mass, suit_mass):
 		self.cm_mass = cm_mass
+		self.osm_mass = osm_mass
 		self.ll_mass = ll_mass
 		self.pm_mass = pm_mass
 		self.astronaut_mass = astronaut_mass
@@ -11,10 +12,10 @@ class Stack:
 
 	def tli_mass(self):
 
-		return self.cm_mass + self.ll_mass + self.pm_mass + self.astronaut_mass + self.suit_mass
+		return self.cm_mass + self.osm_mass + self.ll_mass + self.pm_mass + self.astronaut_mass + self.suit_mass
 	def loi_mass(self):
 
-		return self.cm_mass + self.ll_mass + self.pm_mass + self.astronaut_mass + self.suit_mass
+		return self.cm_mass + self.osm_mass + self.ll_mass + self.pm_mass + self.astronaut_mass + self.suit_mass
 
 	def landing_mass(self):
 
@@ -22,7 +23,7 @@ class Stack:
 
 	def tei_mass(self):
 
-		return self.cm_mass + self.pm_mass + self.astronaut_mass + self.suit_mass
+		return self.cm_mass + self.osm_mass + self.pm_mass + self.astronaut_mass + self.suit_mass
 
 
 class DeltaVBudget:
@@ -47,17 +48,17 @@ def compute_total_mass(stack, budget, isp):
 
 def main():
 
-	super_heavy_stack = Stack(1750, 600, 1000, 75, 25)
-	heavy_stack = Stack(1500, 500, 750, 75, 25)
-	med_stack = Stack(1250, 400, 500, 75, 25)
-	light_stack = Stack(1000, 300, 250, 75, 25)
-	super_light_stack = Stack(750, 200, 125, 75, 25)
+	super_heavy_stack = Stack(1750, 300, 600, 1000, 75, 25)
+	heavy_stack = Stack(1500, 250, 500, 750, 75, 25)
+	med_stack = Stack(1250, 200, 400, 500, 75, 25)
+	light_stack = Stack(1000, 150, 300, 250, 75, 25)
+	super_light_stack = Stack(750, 100, 200, 125, 75, 25)
 
 	budget = DeltaVBudget(3100, 1000, 3400, 700)
 
 	fp = open("fuel_analysis.txt","w")
 	fp.write("Isp, \"Super light\", Light, Medium, Heavy, \"Super heavy\"\n")
-	for isp in range(250, 500, 10):
+	for isp in range(250, 501, 10):
 		a = compute_total_mass(super_light_stack, budget, isp)
 		b = compute_total_mass(light_stack, budget, isp)
 		c = compute_total_mass(med_stack, budget, isp)
