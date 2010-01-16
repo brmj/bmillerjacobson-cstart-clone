@@ -1,4 +1,5 @@
 \documentclass{report}
+\usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{rotating}
@@ -48,7 +49,7 @@ Atmospheric reentry happens here.
 
 The CLLARE project is based around a set of modular hardware items, referred to as the core CLLARE hardware.  By combining items from the core hardware in appropriate configurations, a number of different mission types can be flown.  This approach allows a gradual progression toward the ultimate lunar goal.
 
-The sections below introduce the core hardware items.  Figure \ref{fig:cm_configs} shows the various configurations of the hardware.  Chapter \ref{chap:detailed} describes more detailed descriptions of each hardware item and its subsystems, including diagrams.
+The sections below introduce the core hardware items.  Chapter \ref{chap:detailed} describes more detailed descriptions of each hardware item and its subsystems, including diagrams.
 
 \subsection{The CLLARE Command Module}
 
@@ -56,48 +57,68 @@ The \href{http://cstart.org/wiki/CLLARE_Command_Module}{CLLARE Command Module} (
 
 As a stand alone unit, the CM is capable of supporting only suborbital flights, making it functionally equivalent to early (suborbital) flights of the US Mercury craft.  More ambitius flights, including lunar landing missions, are facilitated by the use of a family of attachable modules.
 
-\subsection{The CLLARE Retro Module}
+\subsection{The CLLARE Orbital Support Module}
 
-The \href{http://cstart.org/wiki/CLLARE_Retro_Module}{CLLARE Retro Module} (RM) is a small, cylindrical module which attaches to the rear of the CLLARE CM.  The module contains a set of small and simple rockets (either solid or hybrid fuelled).  The module facilitates the use of the CM for orbital flights, by providing the means to deorbit such a CM.  The manner in which the RM attaches to the rear of the CM is such that the two modules can be separated after a deorbit burn, prior to reentry.  The RM is not equipped to survive reentry and burns up in Earth's atmosphere.
+The \href{http://cstart.org/wiki/CLLARE_Orbital_Support_Module}{CLLARE Orbital Support Module} (OSM) is a small, truncated cone shaped module which attaches to the rear of the CLLARE CM.  The slope of the OSM is equal to the slope of the CM so that a CM-OSM combination has the appeareance of a single large truncate cone with a cylindrical nose.  The module facilitates the use of the CM for orbital flights in three ways:
+\begin{enumerate}
+\item The OSM contains a set of small retro rockets for providing deorbit burns.  These are simple solid or hybrid rockets designed for single use.  The retro rocket assembly is designed in such a way that it can be completely removed when the OSM is used as part of a hardware configuration where the assembly is unecessary.
+\item The OSM contains a set of additional RCS thrusters.  These thrusters can work together with the CM's RCS thrusters (which alone provide only attitude control) to allow accurate orbital maneuvering, including translation.
+\item The OSM can optionally contain supplies of various consumables to supplement those stored onboard the CM, extending its endurance from 24 hour to 7 days.
+\end{enumerate}
+The OSM is not equipped to survive reentry.  It is separated from the CM immediately after the deorbit burn and burns up in the atmosphere.
 
-A CLLARE CM-RM combination is functionally equivalent to later (orbital) flights of Mercury or, if EVA is performed, early flights of the US Gemini craft.
-
-\subsection{The CLLARE Mission Extension Module}
-
-The \href{http://cstart.org/wiki/CLLARE_Mission_Extension_Module}{CLLARE Mission Extension Module} (MEM) is a cylindrical module which attaches to the rear of the the CM.  The module contains sufficient supplies of all required consumables to extend the CM's standalone endurance of 24 hours to a total of 7 days.  Consumables are conveyed from the MEM to the CM through an umbillical system which penetrates the CM's heat shield in a controlled manner.
-
-The rear end of the MEM is sufficiently similar to the rear end of the CM that a CLLARE Retro Module can be attached to it, facilitating long-duration orbital missions.  In this configuration the MEM and RM are detached as a single unit prior to reentry.  The MEM is not equipped to survive reentry and burns up along with the RM.
-
-A CLLARE CM-MEM-RM combination is functionally equivalent to the later flights of Gemini.
+A CLLARE CM-OSM combination is functionally equivalent to later (orbital) flights of Mercury or, if EVA is performed, early flights of the US Gemini craft.
 
 \subsection{The CLLARE Propulsion Module}
 
-The \href{http://cstart.org/wiki/CLLARE_Propulsion_Module}{CLLARE Propulsion Module} (PM) is a cylindrical module which attaches to the rear of a CLLARE Command Module or Mission Extension Module.  The module contains a set of propellant tanks and contains a liquid bipropellant rocket at its end.  The PM is able to provide large changes in velocity to a CM or CM-MEM combination, allowing high-altitude Earth orbital flights or circumlunar flights.  The PM can also be used to perform deorbit burns, replacing the Retro Module for flights using a PM.  The PM is not equipped to survive reentry and burns up along with any other modules.
+The \href{http://cstart.org/wiki/CLLARE_Propulsion_Module}{CLLARE Propulsion Module} (PM) is a cylindrical module which attaches to the rear of a CLLARE Orbital Support Module.  The module contains a set of propellant tanks and contains either a single or a symmetric arrangement of liquid bipropellant rockets at its end.  The PM is able to provide large changes in velocity to a CM-OSM combination, allowing high-altitude Earth orbital flights or circumlunar flights.  The PM can also be used to perform deorbit burns, replacing the Retro Module for flights using a PM.  The PM is not equipped to survive reentry and burns up along with any other modules.
 
-A CLLARE CM-MEM-PM combination is functionally equivalent to an Apollo Command Module and Service Module (CSM) combination (with no docked Lunar Module) - the MEM-PM combination is roughly functionally equivalent to the the Apollo SM.
-
-In principle, multiple MEMs and PMs could be combined behind a single CM to allow arbitrarily long and distant flights, but launching such combinations would eventually become infesible.
+A CLLARE CM-OSM-PM combination is functionally equivalent to an Apollo Command Module and Service Module (CSM) combination (with no docked Lunar Module) - the OSM-PM combination is roughly functionally equivalent to the the Apollo SM.
 
 \subsection{The CLLARE Lunar Mission Module}
 
-The \href{http://cstart.org/wiki/CLLARE_Lunar_Mission_Module}{CLLARE Lunar Mission Module} (LMM) is a large cylindrical module which attaches to the rear of a CM-MEM combination.  The module provides all the facilities required to facilitate a lunar landing mission.  It includes a set of propellant tanks similar in design to those of the Propulsion Module, but larger (to support additional lunar capture and lunar escape burns) and space for the CLLARE Lunar Lander (see below) to dock.  Two ideas have been proposed for propulsion: in one, the LMM has a cluster of engines at its end, these engines being identical to thoseused on the PM; in the other, the Lunar Lander's engine (which is also identical to the PM engine) is used to provide propulsion.
+The \href{http://cstart.org/wiki/CLLARE_Lunar_Mission_Module}{CLLARE Lunar Mission Module} (LMM) is a large cylindrical module which attaches to the rear of a CM-OSM combination.  The module provides all the facilities required to facilitate a lunar landing mission.  It includes a set of propellant tanks similar in design to those of the Propulsion Module, but larger (to support additional lunar capture and lunar escape burns) and space for the CLLARE Lunar Lander (see below) to dock.  Two ideas have been proposed for propulsion: in one, the LMM has a cluster of engines at its end, these engines being identical to thoseused on the PM; in the other, the Lunar Lander's engine (which is also identical to the PM engine) is used to provide propulsion.
 
-A CLLARE CM-MEM-LMM combination is functionally equivalent to the full Apollo Spacecraft (i.e. Command Module, Service Module and Lunar Module).
+A CLLARE CM-OSM-LMM combination is functionally equivalent to the full Apollo Spacecraft (i.e. Command Module, Service Module and Lunar Module).
 
 \subsection{The CLLARE Lunar Lander}
 
 The \href{http://cstart.org/wiki/CLLARE_Lunar_Lander}{CLLARE Lunar Lander} (LL) is a light weight, open cabin lunar landing craft.  Unlike the Apollo lunar lander (and like the planned Soviet lunar lander), the LL is not composed of two separable stages.  The entire structure undergoes a lunar descent and a lunar ascent, with the same engine and set of fuel tanks used for both directions.  The lunar lander's engine is a liquid bipropellant rocket and is the same engine as used for the CLLARE Propulsion Module and some versions of the Lunar Mission Module.
 
-\begin{figure}[h] \label{fig:cm_configs}
+\section{Core Hardware Configurations}
+
+The CLLARE core hardware has been designed in such a way as to facilitate a range of configurations fulfilling a range of flight types.  The following subsections describe these configurations.  Figure \ref{fig:configs} shows diagrammatic representations of the different configurations.
+
+\begin{figure}[h] \label{fig:configs}
 \includegraphics[angle=270, scale=0.6]{images/cllare_cm_configs}
 \caption{Various configurations of the CLLARE core hardware (somewhat outdated).}
 \end{figure}
 
+\subsection{Suborbital flights}
+
+CM alone.
+
+\subsection{Short duration orbital flights}
+
+CM+OSM, with retro rockets but no consumables in OSM.
+
+\subsection{Long duration orbital flights}
+
+CM+OSM, with retro rockets and consumables in OSM.
+
+\subsection{High apogee and circumlunar flights}
+
+CM+OSM+PM, with consumables but no retro rockets in OSM.
+
+\subsection{Lunar landing flights}
+
+CM+OSM+LMM, with consumables but no retro rockets in OSM.
+
 \section{Launch Options}
 
-\subsection{Suborbital and orbital missions}
+\subsection{Suborbital and orbital flights}
 
-The proposed suborbital and orbital flight configurations (CM and CM-OSM) have estimated total masses in the vicinity of 1,000 kg and 1,250 kg, respectively (see Chapter \ref{chap:numeric} for details of these estimates).
+The proposed suborbital and orbital flight configurations (CM and CM+OSM) have estimated total masses in the vicinity of 1,000 kg and 1,250 kg, respectively (see Chapter \ref{chap:numeric} for details of these estimates).
 
 CSTART is not aware of any man--rated commercial launch vehicles designed to carry payloads of this mass, so is considering the development of its own launch capabilities for these missions.  The current plan of approach is to use variably sized clusters of small, simple and inexpensive rockets to lift payloads around 1,000 kg in mass into LEO, a concept pioneered by the \href{http://en.wikipedia.org/wiki/OTRAG}{OTRAG company} project in the 1970s.  We are keen to use hybrid rocket engines for the small rockets due to their high levels of safety and excellent trade-off between simplicity and performance.
 
@@ -107,7 +128,7 @@ A group called \href{http://www.copenhagensuborbitals.com/}{Copenhagen Suborbita
 
 \subsection{Lunar landing missions}
 
-The proposed lunar landing configurations (CM-MEM-LMM) have estimated total masses in the vicinity of 10,000 kg (see Chapter \ref{chap:numeric} for details of these estimates).  The \href{http://spacex.com}{SpaceX} company's \href{http://spacex.com/falcon9.php}{Falcon 9} is a man-rated, two-stage booster is capable of lifting approximately 10,000 kg of payload into LEO.
+The proposed lunar landing configurations (CM+OSM+LMM) have estimated total masses in the vicinity of 10,000 kg (see Chapter \ref{chap:numeric} for details of these estimates).  The \href{http://spacex.com}{SpaceX} company's \href{http://spacex.com/falcon9.php}{Falcon 9} is a man-rated, two-stage booster is capable of lifting approximately 10,000 kg of payload into LEO.
 
 \section{A proposed program of launches}
 
@@ -139,9 +160,26 @@ In this chapter we present estimates, principled arguments and calculations to e
 
 \section{Astrodynamics}
 
-\subsection{Trans Lunar Injection burn}
+\subsection{Trans Lunar Injection burn} \label{sec:tli}
 
-Required delta-v: $\simeq 3100$ m/s.
+The speed of a spacecraft in a circular orbit $a$ m above a uniform spherical planet of radius $r$ m and mass $m$ kg is given by:
+\begin{equation} \label{eq:v_orbit}
+|v_{orbit}| = \sqrt{\frac{Gm}{a+r}},
+\end{equation}
+where $G = 6.67428 \times 10^{-11} m^3 kg^{-1} s^{-2}$ is the universal gravitational constant.
+
+Earth has a mass of $m = 5.9736 \times 10^{24}$ kg and a mean radius of $r = 6,371,000$ m, so a spacecraft in a LEO of altitude $a = 200,000$ m has speed approximately $|v_{orbit}| \simeq 7910$ m/s.
+
+The escape ``velocity'' (actually an escape speed, as direction is unimportant) at a point $a$ m above the surface of a uniform spherical planet of radis $r$ m is given by:
+\begin{equation} \label{eq:v_escape}
+|v_{escape}| = \sqrt{\frac{2Gm}{a+r}}.
+\end{equation}
+Using appropriate values for Earth, the escape speed is approximately $|v_{escape}| \simeq 11187$ m/s.
+
+Thus the theoretically required delta-v for a TLI burn is:
+\begin{equation}
+|v_{escape}| - |v_{orbit}| \simeq 3276 m/s.
+\end{equation}
 
 Time between this burn and next burn: $\simeq 3$ days.
 
@@ -153,8 +191,14 @@ Time between this burn and next burn: $\simeq 6$ hours.
 
 \subsection{Trans Earth Injection burn}
 
+The analysis for this burn's delta-v requirement is identical to that presented in section \ref{sec:tli}.  We use equations \ref{eq:v_orbit} and \ref{eq:v_escape} with appropriate lunar orbit values ($a = 100,000$ m, $r = 1,737,100$ m and $m = 7.3477 \times 10^{22}$ kg to find $|v_{orbit}| \simeq 1680$ m/s and $|v_{escape}| \simeq 2376$ m/s.
+
+Thus the theoretically required delta-v for a TEI burn is:
+\begin{equation}
+|v_{escape}| - |v_{orbit}| \simeq = 696 m/s.
+\end{equation}
+
 Time between this burn and atmospheric reentry: $\simeq 3$ days.
-Required delta-v: $\simeq 700$ m/s.
 
 \section{Mass figures}
 
@@ -230,15 +274,38 @@ Averaging our Mercury--derived underestimate of 932 kg and our Gemini--derived o
 
 \subsection{Consumables masses}
 
+\subsubsection{Oxygen}
+\subsubsection{Water}
+\subsubsection{Methanol}
+
 \subsection{Propellant masses}
 
 In this section we use the \href{http://en.wikipedia.org/wiki/Tsiolkovsky_rocket_equation}{Tsiolkovsky rocket equation} to estimate the required fuel masses for the mission, considering various fuel options.
 
-The most likely propellants for use on CLLARE are considered to be liquid oxygen (LOX) oxidiser and liquid hydrogen (LH2) fuel, and LOX oxidiser and liquid methane (LCH4) fuel.  LOX/LH2 offers the greatest specific impulse, but hydrogen has a very low density (leading to large, heavy storage tanks) and is highly explosive (e.g. Hindenburg disaster).  LOX/LCH4 offers a lower specific impulse in the 350s--380s range, but methane is much denser than hydrogen and also safer.
+The Tsiolkovsky rocket equation (hereafter ``the rocket equation'') relates the mass of an object, $m_0$, a desired delta-v for that object, $\Delta v$, the specific impulse of a propellant (in seconds), $I_{sp}$ and the mass $m_1$ of the object plus the quantity of propellant required to achieve the delta-v:
+\begin{equation}
+m_1 = m_0\exp \left( \frac{\Delta v}{9.8 I_{sp}} \right)
+\end{equation}
+
+\subsubsection{Propellant options}
+
+The most likely propellants for use on CLLARE are considered to be liquid oxygen (LOX) oxidiser and liquid hydrogen (LH2) fuel, and LOX oxidiser and liquid methane (LCH4) fuel.
+
+LOX/LH2 offers the greatest specific impulse, in the 400s--450s range.  However hydrogen has a very low density (leading to large, heavy storage tanks) and is highly explosive (e.g. Hindenburg disaster).
+
+LOX/LCH4 offers a lower specific impulse than LOX/LH2, in the 350s--380s range, but methane is much denser than hydrogen and also safer.
+
+\subsubsection{Circumlunar flights}
+
+An ideal circumlunar flight of the CM+OSM+PM configuration, using a free-return trajectory, requires only a single burn: the TLI burn, which we found in \ref{sec:tli} to require a delta-v of 3276 m/s.  This delta-v must be applied to the mass of the CM+OSM+PM...
+
+\subsubsection{Lunar landing flights}
+
+Computing the propellant mass requirements for a lunar landing flight must be done in three steps.  We must compute the propellant mass required to carry the Lunar Lander to the lunar suface and back; We must compute the mass required to apply the TEI burn to the CM+OSM+PM configuration; Finally, we must compute the mass required to apply the TLI burn to the CM+OSM+PM configuration and the lunar lander, including the propellant accounted for in the first three steps.
 
 \subsection{Total launch masses}
 
-The table below summarises estimated total launch masses for various configurations of the CLLARE core hardware.
+The table below summarises estimated total launch masses for various configurations of the CLLARE core hardware, using the estimates developed in the preceeding sections of this chapter.
 
 \begin{tabular}{ | l | c | }
 \hline
@@ -247,14 +314,14 @@ Configuration & Estimated total mass (kg) \\
 \hline
 Suborbital (CM) & 1500 \\
 \hline
-Short Orbital (CM-RM) & 1600 \\
+Short Orbital (CM-OSM without consumables) & 1600 \\
 \hline
-Long Orbital (CM-MEM-RM) & ??? \\
+Long Orbital (CM-OSM with consumables) & ??? \\
 \hline
 High Altitude Orbital, Circumlunar & ??? \\
-(CM-MEM-PM) & \\
+(CM-OSM-PM) & \\
 \hline
-Lunar Landing (CM-MEM-LMM) & 8000 \\
+Lunar Landing (CM-OSM-LMM) & 8000 \\
 \hline
 \end{tabular}
 
@@ -266,10 +333,12 @@ Lunar Landing (CM-MEM-LMM) & 8000 \\
 
 \subsection{Launch costs}
 
+By far the greatest contributing factor to total flight costs will be the cost of launch to LEO. 
 \subsubsection{Suborbital and orbital missions}
 
 Unknown (self-built modular hybrid booster)
 
+\subsubsection{Circumlunar missions}
 \subsubsection{Lunar landing missions}
 
 A single launch of the Falcon 9 commercial booster costs US\$35,000,000.
@@ -283,6 +352,13 @@ A single launch of the Falcon 9 commercial booster costs US\$35,000,000.
 In this chapter we present detailed descriptions of some of the CLLARE core hardware items.  Complete technical descriptions and diagrams of all hardware items will be compiled into a separate publication at a future time.
 
 \section{The CLLARE Command Module}
+
+\subsection{Overview}
+
+\begin{itemize}
+\item Reusable
+\item Paraglider landing
+\end{itemize}
 
 \subsection{Structure and construction}
 
@@ -310,9 +386,12 @@ GPS/IMU unit & & & & \\
 Total power requirement & & & & $<4$ W \\
 \hline
 \end{tabular}
+
 \subsection{Environmental Control System}
 
 The \href{http://cstart.org/wiki/CLLARE_Environmental_Control_System}{CM's Enviromental Control System} is responsible for maintaining a habitable environment inside the CLLARE Command Module cabin. This involves maintaining an appropriate oxygen level, pressure level, temperature and more.
+
+\subsection{Waste Management System}
 
 \subsection{Communication System}
 
@@ -346,13 +425,13 @@ The \href{http://cstart.org/wiki/CLLARE_Main_Computer_System}{CM's Main Computer
 \item Authentication and execution of telecommands for the communicaton system.
 \end{itemize}
 
-\section{The CLLARE Retro Module}
+\section{The CLLARE Orbital Support Module}
 
 Discuss rocket options here.
 
-\section{The CLLARE Mission Extension Module}
-
 Discuss required consumables and storage options here: oxygen, nitrogen, methanol, water, anything else?
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{The CLLARE Propulsion Module}
 
@@ -360,15 +439,34 @@ Discuss fuel options here.
 
 Discuss cooling options here.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{The CLLARE Lunar Mission Module}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{The CLLARE Lunar Lander}
 
+\subsection{Overview}
+
+Automated landing?
+
 \subsection{Reaction Control System}
+
+Cold gas?
+
 \subsection{Power system}
+
+Batteries?  Solar panels?
+
 \subsection{Communication System}
+
 \subsection{Navigation System}
 
 The main difference between the LL's navigation system and the CM's is that the LL will require an altimeter of some kind.  An Australian--New Zealand group called \href{http://www.lunarnumbat.org}{Lunar Numbat} are working on (amongst other things) an \href{http://www.lunarnumbat.org/cgi-bin/twiki/view/LunarNumbat/LNTaskRadarAltimeter}{open source radar altimeter} for use by one of the Google Lunar X Prize teams, which may be appropriate.
+
+\subsection{Engine}
+
+Foo.
 
 \end{document}
