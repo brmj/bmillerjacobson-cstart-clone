@@ -210,11 +210,17 @@ Time between this burn and atmospheric reentry: $\simeq 3$ days.
 
 \subsubsection{Oxygen}
 
-The average adult human consumes 550 L of air per day.
+There are two stores of oxygen involved in the CLLARE hardware: a store in the CM sufficient to support 24 hours of habitation, including $x$ EVAs (complete repressurisations of the cabin), and a store in the OSM, to support an addition 6 days of habitation, including an additional $y$ EVAs.
+
+The two figures we require to estimate the required masses of oxygen for these two stores are an average oxygen consumption rate and a cabin oxygen capacity (assuming a 20\% oxygen atmosphere).
+
+Various sources around the web suggest that the average adult human consumes around 550 L of oxygen per day.  Gaseous oxygen at typical Earth surface pressures has a density of about 1.4 g/L, so that the oxygen consumption rate is 770 g per day. 
+
+The Mercury spacecraft had a habitable volume of 1.7 cubic metres.  We shall work with a slightly increased figure of 2.0 cubic metres, or 2000 L, to allow extra room for donning and removing an EVA suit.  To simplify calculations, let us work with a pressure of 1 atm (101.325 kPa) -- it will be easy to adjust our results for alternate pressures later.  Let us assume a cabin temperature of $20^\circ$ C.  Under these conditions, the \href{http://en.wikipedia.org/wiki/Ideal_gas_law}{ideal gas law} gives the cabin as containing 83.14 mol of gas.  If 20\% of this gas is oxygen, there are 16.63 mol of oxygen.  Diatomic oxygen has a molar mass of 32 g/mol, so this is 532 g of oxygen.
 
 \subsubsection{Water}
 
-16 L of water will provide 2 L per day for 8 days (longer than expected mission time).
+16 L of water will provide 2 L per day for 8 days (longer than expected mission time), for a total mass of 16 kg.
 
 \subsubsection{Methanol}
 
