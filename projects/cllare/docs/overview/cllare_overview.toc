@@ -31,21 +31,21 @@
 \contentsline {subsection}{\numberline {3.2.1}Consumables masses}{12}{subsection.3.2.1}
 \contentsline {subsubsection}{Oxygen}{12}{section*.2}
 \contentsline {subsubsection}{Water}{12}{section*.3}
-\contentsline {subsubsection}{Methanol}{12}{section*.4}
-\contentsline {subsection}{\numberline {3.2.2}Hardware masses}{12}{subsection.3.2.2}
-\contentsline {subsubsection}{Command Module}{12}{section*.5}
+\contentsline {subsubsection}{Methanol}{13}{section*.4}
+\contentsline {subsection}{\numberline {3.2.2}Hardware masses}{13}{subsection.3.2.2}
+\contentsline {subsubsection}{Command Module}{13}{section*.5}
 \contentsline {subsubsection}{Orbital Support Module}{13}{section*.6}
 \contentsline {subsubsection}{Propulsion Module}{13}{section*.7}
 \contentsline {subsubsection}{Lunar Lander}{16}{section*.8}
 \contentsline {subsection}{\numberline {3.2.3}Propellant masses}{16}{subsection.3.2.3}
 \contentsline {subsubsection}{Propellant options}{16}{section*.9}
-\contentsline {subsubsection}{Circumlunar flights}{16}{section*.10}
+\contentsline {subsubsection}{Circumlunar flights}{17}{section*.10}
 \contentsline {subsubsection}{Lunar landing flights}{17}{section*.11}
 \contentsline {subsection}{\numberline {3.2.4}Total launch masses}{18}{subsection.3.2.4}
-\contentsline {section}{\numberline {3.3}Cost figures}{18}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Vehicle costs}{18}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Fuel costs}{18}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Launch costs}{18}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.3}Cost figures}{19}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Vehicle costs}{19}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Fuel costs}{19}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Launch costs}{19}{subsection.3.3.3}
 \contentsline {subsubsection}{Suborbital and orbital missions}{19}{section*.12}
 \contentsline {subsubsection}{Circumlunar missions}{19}{section*.13}
 \contentsline {subsubsection}{Lunar landing missions}{19}{section*.14}

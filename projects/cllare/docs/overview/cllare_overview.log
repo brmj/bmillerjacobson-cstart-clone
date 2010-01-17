@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Arch Linux) (format=pdflatex 2009.10.14)  17 JAN 2010 23:53
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Arch Linux) (format=pdflatex 2009.10.14)  18 JAN 2010 01:53
 entering extended mode
  %&-line parsing enabled.
 **cllare_overview
@@ -283,7 +283,7 @@ fTeX warning (ext4): destination with the same identifier (name{page.1}) has be
 en already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.40 ...3}Propellant masses}{16}{subsection.3.2.3}
+l.40 ...3}Propellant masses}{15}{subsection.3.2.3}
                                                    [1
 
 ])
@@ -322,45 +322,49 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Chapter 3.
 [11
 
-]
-Overfull \hbox (9.33388pt too wide) in paragraph at lines 227--228
+] [12]
+Overfull \hbox (9.33388pt too wide) in paragraph at lines 233--234
 []\OT1/cmr/m/n/10 The Mer-cury space-craft is ar-guably the space-craft most si
 m-i-lar to the CLLARE
  []
 
-[12]
-Overfull \hbox (1.45927pt too wide) in paragraph at lines 233--251
+
+Overfull \hbox (1.45927pt too wide) in paragraph at lines 239--257
  [][] 
  []
 
+[13] [14] [15]
 
-LaTeX Warning: Reference `sec:rocet_eq' on page 13 undefined on input line 298.
+LaTeX Warning: Reference `sec:rocet_eq' on page 16 undefined on input line 304.
 
 
-[13] [14] [15] [16] <images/fuel_analysis.png, id=435, 642.4pt x 481.8pt>
+[16] <images/fuel_analysis.png, id=435, 642.4pt x 481.8pt>
 File: images/fuel_analysis.png Graphic file (type png)
 
 <use images/fuel_analysis.png>
-Overfull \hbox (40.44298pt too wide) in paragraph at lines 334--335
+Overfull \hbox (40.44298pt too wide) in paragraph at lines 340--341
 [][] 
  []
 
-[17 <./images/fuel_analysis.png (PNG copy)>]
-Overfull \hbox (15.86182pt too wide) in paragraph at lines 373--390
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[17]
+Overfull \hbox (15.86182pt too wide) in paragraph at lines 379--396
 [][] 
  []
 
-[18] [19]
+[18 <./images/fuel_analysis.png (PNG copy)>] [19]
 Chapter 4.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 423.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 429.
 
 (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 423.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 429.
 
-Overfull \hbox (16.13937pt too wide) in paragraph at lines 439--453
+Overfull \hbox (16.13937pt too wide) in paragraph at lines 445--459
 [][] 
  []
 
@@ -369,6 +373,9 @@ Overfull \hbox (16.13937pt too wide) in paragraph at lines 439--453
 ] [21] [22] [23] (./cllare_overview.aux)
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
@@ -389,9 +396,9 @@ st/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><
 /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on cllare_overview.pdf (24 pages, 287961 bytes).
+Output written on cllare_overview.pdf (24 pages, 290161 bytes).
 PDF statistics:
- 554 PDF objects out of 1000 (max. 8388607)
+ 555 PDF objects out of 1000 (max. 8388607)
  111 named destinations out of 1000 (max. 500000)
  503 words of extra memory for PDF output out of 10000 (max. 10000000)
 
