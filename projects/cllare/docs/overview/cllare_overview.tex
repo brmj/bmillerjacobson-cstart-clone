@@ -73,7 +73,9 @@ A CLLARE CM-OSM combination is functionally equivalent to later (orbital) flight
 
 The \href{http://cstart.org/wiki/CLLARE_Propulsion_Module}{CLLARE Propulsion Module} (PM) is a cylindrical module which attaches to the rear of a CLLARE Orbital Support Module.  The module contains a set of propellant tanks and contains either a single or a symmetric arrangement of liquid bipropellant rockets at its end.  The PM is able to provide large changes in velocity to a CM-OSM combination, allowing high-altitude Earth orbital flights or circumlunar flights.  The PM can also be used to perform deorbit burns, replacing the Retro Module for flights using a PM.  The PM is not equipped to survive reentry and burns up along with any other modules.
 
-A CLLARE CM-OSM-PM combination is functionally equivalent to an Apollo Command Module and Service Module (CSM) combination (with no docked Lunar Module) - the OSM-PM combination is roughly functionally equivalent to the the Apollo SM.
+Two variants of the PM are proposed, a ``light'' variant (PML) and a ``heavy'' variant (PMH).  The variants differ only in the length of their tanks (and hence the amount of delta-v they can impart). The PML is intended for use in circumlunar flights, whereas the PMH is intended for lunar landing flights.
+
+A CLLARE CM-OSM-PMH combination is functionally equivalent to an Apollo Command Module and Service Module (CSM) combination (with no docked Lunar Module) - the OSM-PM combination is roughly functionally equivalent to the the Apollo SM.
 
 \subsection{The CLLARE Lunar Mission Module}
 
@@ -125,6 +127,8 @@ CSTART is not aware of any man--rated commercial launch vehicles designed to car
 A group called \href{http://www.copenhagensuborbitals.com/}{Copenhagen Suborbitals}, based in Denmark, are currently working on a hybrid rocket engine designed to perform suborbital flights for a manned, lightweight ``micro space capsule''.  Copenhagen Suborbitals are already at the stage of performing static test firings of their rockets, with a first launch planned for mid 2010.  Like CSTART, Copenhagen Suborbitals is a volunteer operation funded by donations and sponsorships, with a strong commitment to open source principles.  The two groups are on friendly terms and CSTART hopes to gain valuable insight and experience from the Copenhagen Suborbitals team in constructing its own hybrid rocket launch systems.
 
 \subsection{Circumlunar missions}
+
+Soyuz?
 
 \subsection{Lunar landing missions}
 
@@ -202,6 +206,18 @@ Time between this burn and atmospheric reentry: $\simeq 3$ days.
 
 \section{Mass figures}
 
+\subsection{Consumables masses}
+
+\subsubsection{Oxygen}
+
+The average adult human consumes 550 L of air per day.
+
+\subsubsection{Water}
+
+16 L of water will provide 2 L per day for 8 days (longer than expected mission time).
+
+\subsubsection{Methanol}
+
 \subsection{Hardware masses}
 
 \subsubsection{Command Module}
@@ -268,17 +284,28 @@ Averaging our Mercury--derived underestimate of 932 kg and our Gemini--derived o
 
 \subsubsection{Orbital Support Module}
 
+Mercury's retro rocket pack: 237 kg (seems awfully heavy)
+
+Structural mass of Gemini's equipment module (much larger than our OSM): 250 kg
+
+
 \subsubsection{Propulsion Module}
+
+Estimating the mass of the PM is somewhat difficult.  A considerable proportion of the PM's total mass is contributed by its fuel tank.  The size of the tank, and hence its mass, depends on the total quantity of propellants required.  This, in turn, depends on the total mass of the hardware configuration, including the mass of the tank.
+
+For a rough estimate, we consider masses of the \href{http://en.wikipedia.org/wiki/Space_Shuttle_external_tank}{Space Shuttle external tank}, which holds liquid oxygen and liquid hydrogen in cylindrical structure.  An estimate derived from a liquid hydrogen tank will represent a ``worst case'' estimate, since liquid hydrogen has an extremely low density and hence tanks to significant quantities of it must be large.
+
+Let us consider the case where the entire hardware configuration for a lunar landing mission, with the Lunar Lander fuelled but the PM unfuelled has a mass of 4250 kg (this figure is based on considerable overestimates of the mass of other core hardware components).  To apply a total delta-v of $3276 + 1000 + 696 \simeq 5000$ m/s to this mass (for TLI, LOI and TEI) using liquid oxygen and liquid hyrdogen with a specific impulse of 425 s would require approximately 9,200 kg of propellant (this calculation is made using the Tsiolkovsky rocket equation, which is introduced in Section \ref{sec:rocet_eq}).  This is about 1.3\% of the propellant capacity of the Shuttle's external tank.  If we use the approximation that a tank's mass is directly proportional to its capacity, we can estimate the mass of the PM's tank at 1.3\% of the Shuttle external tank.
+
+There are a range of different models of external tank with differing masses.  The heaviest is the 35,000 kg Standard Weight tank and the lightest is the 26,500 kg Super Lightweight tank.  Using an average mass of 30,750 kg, our 1.3\% tank may have a mass in the vicinity of 385 kg.
+
+Accounting for the extra mass of the PM's engines, supporting structures, etc., it seems like a total mass of 500 kg for an empty PM is a reasonable rough estimate.
 
 \subsubsection{Lunar Lander}
 
-\subsection{Consumables masses}
+400 kg?
 
-\subsubsection{Oxygen}
-\subsubsection{Water}
-\subsubsection{Methanol}
-
-\subsection{Propellant masses}
+\subsection{Propellant masses} \label{sec:rocket_eq}
 
 In this section we use the \href{http://en.wikipedia.org/wiki/Tsiolkovsky_rocket_equation}{Tsiolkovsky rocket equation} to estimate the required fuel masses for the mission, considering various fuel options.
 
@@ -303,6 +330,42 @@ An ideal circumlunar flight of the CM+OSM+PM configuration, using a free-return 
 
 Computing the propellant mass requirements for a lunar landing flight must be done in three steps.  We must compute the propellant mass required to carry the Lunar Lander to the lunar suface and back; We must compute the mass required to apply the TEI burn to the CM+OSM+PM configuration; Finally, we must compute the mass required to apply the TLI burn to the CM+OSM+PM configuration and the lunar lander, including the propellant accounted for in the first three steps.
 
+\begin{figure}[h] \label{fig:fuel_analysis}
+\includegraphics[scale=0.6]{images/fuel_analysis}
+\caption{Total launch mass of CLLARE lunar landing mission configuration for various specific impulses.}
+\end{figure}
+
+Figure \ref{fig:fuel_analysis} shows the total launch mass (i.e. vehicles and fuel) for a lunar landing configuration of the core hardware versus various specific impulses, for a variety of vehicle mass estimates.  The ``baseline'' mass estimate, the case labelled ``Medium'' in the plot, has the values shown in Table \ref{tab:fuel_analysis} below.  The cases labelled ``Heavy'' and ``Super heavy'' have all values except the astronaut mass increased by 10\% and 20\% respectively, while the cases labelled ``Light'' and ``Super light'' have all values except the astronaut mass decreased by 10\% and 20\% respectively.  Horizontal lines on the plot show the maximum LEO payloads of the Falcon 9 and Falcon 9 Heavy launch vehicles.
+
+\begin{table} \label{tab:fuel_analysis}
+\centering
+\caption{``Medium'' mass estimates for lunar landing configuration.}
+\begin{tabular}{ | l | c | }
+\hline
+\textbf{Hardware item} & \textbf{Mass} \\
+\hline
+\hline
+CM		& 1114 kg \\
+\hline
+Astronaut	& 75 kg \\
+\hline
+EVA suit	& 25 kg \\
+\hline
+OSM		& 200 kg \\
+\hline
+LL		& 400 kg \\
+\hline
+PM		& 500 kg \\
+\hline
+\end{tabular}
+\end{table}
+
+Using the ``Medium'' mass estimates, the figure shows that if the Falcon 9 is to remain viable as a launch vehicle, a specific impulse of around 425s will be required.  This makes LOX/LH2 the only feasible choice of propellant for a hardware configuration of this mass.
+
+Note that the ``Heavy'' mass estimate, which adds just 10\% to the ``Medium'' estimate, requires a specific impulse of just slightly more than 450 s.  This is unrealistic even using LOX/LH2, suggesting that current mass estimates are very ``close to the line''.
+
+Note that for LOX/LCH4 to be a feasible propellant, the ``Medium'' estimate would need to turn out to be excessive by more than 20\%.
+
 \subsection{Total launch masses}
 
 The table below summarises estimated total launch masses for various configurations of the CLLARE core hardware, using the estimates developed in the preceeding sections of this chapter.
@@ -319,9 +382,9 @@ Short Orbital (CM-OSM without consumables) & 1600 \\
 Long Orbital (CM-OSM with consumables) & ??? \\
 \hline
 High Altitude Orbital, Circumlunar & ??? \\
-(CM-OSM-PM) & \\
+(CM-OSM-PML) & \\
 \hline
-Lunar Landing (CM-OSM-LMM) & 8000 \\
+Lunar Landing (CM-OSM-LLH-PMH) & 8000 \\
 \hline
 \end{tabular}
 
@@ -334,6 +397,7 @@ Lunar Landing (CM-OSM-LMM) & 8000 \\
 \subsection{Launch costs}
 
 By far the greatest contributing factor to total flight costs will be the cost of launch to LEO. 
+
 \subsubsection{Suborbital and orbital missions}
 
 Unknown (self-built modular hybrid booster)
@@ -467,6 +531,6 @@ The main difference between the LL's navigation system and the CM's is that the 
 
 \subsection{Engine}
 
-Foo.
+Discuss thrust requirements etc. here.
 
 \end{document}

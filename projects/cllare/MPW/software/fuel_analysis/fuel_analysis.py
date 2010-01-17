@@ -10,6 +10,7 @@ class Stack:
 		self.astronaut_mass = astronaut_mass
 		self.suit_mass = suit_mass
 
+
 	def tli_mass(self):
 
 		return self.cm_mass + self.osm_mass + self.ll_mass + self.pm_mass + self.astronaut_mass + self.suit_mass
@@ -48,11 +49,18 @@ def compute_total_mass(stack, budget, isp):
 
 def main():
 
-	super_heavy_stack = Stack(1750, 300, 600, 1000, 75, 25)
-	heavy_stack = Stack(1500, 250, 500, 750, 75, 25)
-	med_stack = Stack(1250, 200, 400, 500, 75, 25)
-	light_stack = Stack(1000, 150, 300, 250, 75, 25)
-	super_light_stack = Stack(750, 100, 200, 125, 75, 25)
+	cm_mass = 1114
+	osm_mass = 200
+	ll_mass = 400
+	pm_mass = 500
+	astronaut_mass = 75
+	suit_mass = 25
+	
+	super_heavy_stack = Stack(1.2*cm_mass, 1.2*osm_mass, 1.2*ll_mass, 1.2*pm_mass, astronaut_mass, 1.2*suit_mass)
+	heavy_stack = Stack(1.1*cm_mass, 1.1*osm_mass, 1.1*ll_mass, 1.1*pm_mass, astronaut_mass, 1.1*suit_mass)
+	med_stack = Stack(cm_mass, osm_mass, ll_mass, pm_mass, astronaut_mass, suit_mass)
+	light_stack = Stack(0.9*cm_mass, 0.9*osm_mass, 0.9*ll_mass, 0.9*pm_mass, astronaut_mass, 0.9*suit_mass)
+	super_light_stack = Stack(0.8*cm_mass, 0.8*osm_mass, 0.8*ll_mass, 0.8*pm_mass, astronaut_mass, 0.8*suit_mass)
 
 	budget = DeltaVBudget(3276, 1000, 3400, 700)
 
