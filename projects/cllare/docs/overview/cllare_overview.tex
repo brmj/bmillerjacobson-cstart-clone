@@ -4,13 +4,32 @@
 \usepackage{hyperref}
 \usepackage{rotating}
 
-\author{Luke Maurits, \\
+\hypersetup{colorlinks=true}
+\hypersetup{urlcolor=blue}
+
+\begin{document}
+
+\begin{titlepage}
+\centering
+\includegraphics{images/cstart_logo} \\
+\Large{\href{http://www.cstart.org}{Collaborative Space Travel and Research Team}} \\
+\vspace{0.5cm}
+\large{``Space exploration, by anyone, for everyone''} \\
+\vspace{4.0cm}
+\Large{CLLARE:} \\
+\Large{Collaborative Lunar Landing and Research Expedition} \\
+\Large{Project Overview} \\
+\vspace{2.0cm}
+\normalsize{Luke Maurits, \\
 Add your name here, \\
 If you contribute material, \\
-Use alphabetical order}
-\title{CLLARE Project Overview}
-\begin{document}
-\maketitle
+Use alphabetical order} \\
+\vspace{4.0cm}
+\includegraphics{images/cc_badge} \\
+This document is licensed under the \\
+\href{http://creativecommons.org/licenses/by-sa/3.0/}{Creative Commons Attribution-Share Alike 3.0 license}
+\end{titlepage}
+
 \tableofcontents
 
 \chapter{Introduction}
@@ -33,29 +52,31 @@ CLLARE is a project of the Collaborative Space Travel and Research Team (CSTART)
 
 \chapter{Project Overview}
 
-\section{Mission Overview}
+In this chapter we provide a high--level overview of the CLLARE project.  We discuss the flight plan for manned lunar landing flights, introduce the core hardware for carrying out such flights and the various possible configurations of this hardware, discuss launch options for getting the hardware configurations off the ground, and propose a program of flights gradually stepping from suborbital to lunar landing flights, effectively replicating the Mercury, Gemini and Apollo projects of early US manned spaceflight.  Later, in chapter \ref{chap:numeric} we present a numerical analysis of the project, estimating required velocity changed (``delta-v's''), travel times, vehicle masses, fuel requirements and cost estimates.  Chapter \ref{chap:detail} presents more detailed descriptions of the hardware as it is planned thus far.
 
-The CLLARE mission is based around a Lunar Orbit Rendezvous (LOR) structure.  A spacecraft composed of several connected modules is launched into a low Earth ``parking orbit'', using a multiple stage rocket booster.  Following successful completion of various checks and tests, a Trans Lunar Injection (TLI) burn is performed, taking the spacecraft out of LEO and putting it on a lunar free return trajectory: a trajectory such that, with no further changes in velocity, the craft will travel close enough to the moon for the moon's gravitational field to cause reversal in its direction, putting it on a return course for Earth.  This choice of trajectory is an important safety feature for CLLARE.
+\section{Flight Plan Overview}
 
-Once the spacecraft is sufficiently close to the moon, a Lunar Orbit Insertion (LOI) or ``lunar capture'' burn slows the spacecraft down to such a speed that it enters a low lunar orbit.
+The CLLARE flight plan is based around a Lunar Orbit Rendezvous (LOR) structure.  A spacecraft composed of several connected modules is launched into a circular low Earth ``parking orbit'' (altitude approximately 200 km), using a multiple stage rocket booster.  Following successful completion of various checks and tests, a Trans Lunar Injection (TLI) burn is performed, taking the spacecraft out of LEO and putting it on a lunar free return trajectory: a trajectory such that, with no further changes in velocity, the craft will travel close enough to the moon for the moon's gravitational field to cause reversal in its direction, putting it on a return course for Earth.  This choice of trajectory is an important safety feature for CLLARE.
 
-Lander descent and ascent happens here.
+Once the spacecraft is sufficiently close to the moon, a Lunar Orbit Insertion (LOI) or ``lunar capture'' burn slows the spacecraft down to such a speed that it enters a circular low lunar orbit (altitude approximately 100 km).  In this orbit, the astronaut transfers from the command module to a lunar lander in preparation for descent to the lunar surface.
+
+Descent is achieved through the use of a Descent Orbit Insertion (DOI) burn which changes the lunar lander's orbit from a circular orbit to a highly eccentric orbit with an altitude at perilune (lunar perihelion) of around 20 km.  A powered descent begins at perilune, culminating in a soft landing.
+
+At this time the astronaut engages in a few hours of lunar EVA.  The activities to be conducted during EVA have not yet been planned, but will be done so to maximise the scientific value of the expedition, subject to restrictions on equipment and landing site imposed by practical considerations.  At the end of EVA, the lunar lander returns the astronaut to the vicinity of the orbiting command module, whereupon the astronaut transfers back to the command module.
 
 Once the lunar rendezvous has been completed, a Trans Earth Injection (TEI) or ``lunar escape'' burn accelerates the spacecraft to a sufficiently high speed to escape the moon's gravitational field, leaving it on a course bound for Earth.
 
-Atmospheric reentry happens here.
+Upon arrival at Earth, atmospheric reentry is performed in the reentry vehicle.
 
 \section{Core CLLARE Hardware}
 
-The CLLARE project is based around a set of modular hardware items, referred to as the core CLLARE hardware.  By combining items from the core hardware in appropriate configurations, a number of different mission types can be flown.  This approach allows a gradual progression toward the ultimate lunar goal.
+The CLLARE project is based around a set of five hardware items, referred to as the core CLLARE hardware.  By combining items from the core hardware in appropriate configurations, a number of different mission types can be flown, ranging from suborbital flights to lunar landings.  This approach allows a gradual, cost-effective progression toward the ultimate lunar landing goal.
 
-The sections below introduce the core hardware items.  Chapter \ref{chap:detailed} describes more detailed descriptions of each hardware item and its subsystems, including diagrams.
+The sections below introduce the core hardware items.  Chapter \ref{chap:detail} contains more detailed descriptions of each hardware item and its subsystems, including diagrams.  Later in this chapter, Section \ref{sec:config} describes the various configurations of the hardware items which can be used to support a range of mission profiles.
 
 \subsection{The CLLARE Command Module}
 
-The \href{http://cstart.org/wiki/CLLARE_Command_Module}{CLLARE Command Module} (CM) is a one-person spacecraft in the ``truncated cone and cylindrical nose'' shape of the Mercury and Gemini spacecraft, which strongly influenced its design.  The CM contains sufficient onboard supplies of all required consumables to support its occupant for a duration of 24 hours, including support for one repressurisation of the capsule after extra vehicular activity (EVA) via an ingress-egress hatch.  An ablative heat shield permits the CM to reenter the Earth's atmosphere.  The CM will be capable of landing in water and possible also on land.  Suggested landing options include parachute, paraglider and ballute.  The CM will be designed to be as reusable as possible.
-
-As a stand alone unit, the CM is capable of supporting only suborbital flights, making it functionally equivalent to early (suborbital) flights of the US Mercury craft.  More ambitius flights, including lunar landing missions, are facilitated by the use of a family of attachable modules.
+The \href{http://cstart.org/wiki/CLLARE_Command_Module}{CLLARE Command Module} (CM) is a one-person spacecraft in the ``truncated cone and cylindrical nose'' shape of the Mercury and Gemini spacecraft, which strongly influenced its design.  The CM contains sufficient onboard supplies of all required consumables to support its occupant for a duration of 24 hours, including support for one repressurisation of the capsule after extra vehicular activity (EVA) via an ingress-egress hatch.  An ablative heat shield permits the CM to reenter the Earth's atmosphere.  The CM will be capable of landing in water and possibly also on land.  Suggested landing options include parachute, paraglider and ballute.  The CM will be designed to be as reusable as possible.
 
 \subsection{The CLLARE Orbital Support Module}
 
@@ -67,27 +88,23 @@ The \href{http://cstart.org/wiki/CLLARE_Orbital_Support_Module}{CLLARE Orbital S
 \end{enumerate}
 The OSM is not equipped to survive reentry.  It is separated from the CM immediately after the deorbit burn and burns up in the atmosphere.
 
-A CLLARE CM-OSM combination is functionally equivalent to later (orbital) flights of Mercury or, if EVA is performed, early flights of the US Gemini craft.
-
 \subsection{The CLLARE Propulsion Module}
 
-The \href{http://cstart.org/wiki/CLLARE_Propulsion_Module}{CLLARE Propulsion Module} (PM) is a cylindrical module which attaches to the rear of a CLLARE Orbital Support Module.  The module contains a set of propellant tanks and contains either a single or a symmetric arrangement of liquid bipropellant rockets at its end.  The PM is able to provide large changes in velocity to a CM-OSM combination, allowing high-altitude Earth orbital flights or circumlunar flights.  The PM can also be used to perform deorbit burns, replacing the Retro Module for flights using a PM.  The PM is not equipped to survive reentry and burns up along with any other modules.
+The \href{http://cstart.org/wiki/CLLARE_Propulsion_Module}{CLLARE Propulsion Module} (PM) is a module which attaches to the rear of a CLLARE Orbital Support Module.  The module contains a large propellant tank and a symmetric arrangement of liquid bipropellant rockets at its end.  Both the fuel and oxidiser for these rockets are stored in the one tank, with an internal bulkhead providing separation and insulation of the two propellants.  Helium gas is used as a pressurant to force the propellants into the combustion chambers.
+
+The PM is able to provide large changes in velocity to a CM-OSM combination, allowing high-altitude Earth orbital flights or circumlunar flights.  The PM can also be used to perform deorbit burns, replacing the Retro Module for flights using a PM.  The PM is not equipped to survive reentry and burns up along with any other modules.
 
 Two variants of the PM are proposed, a ``light'' variant (PML) and a ``heavy'' variant (PMH).  The variants differ only in the length of their tanks (and hence the amount of delta-v they can impart). The PML is intended for use in circumlunar flights, whereas the PMH is intended for lunar landing flights.
 
-A CLLARE CM-OSM-PMH combination is functionally equivalent to an Apollo Command Module and Service Module (CSM) combination (with no docked Lunar Module) - the OSM-PM combination is roughly functionally equivalent to the the Apollo SM.
-
-\subsection{The CLLARE Lunar Mission Module}
-
-The \href{http://cstart.org/wiki/CLLARE_Lunar_Mission_Module}{CLLARE Lunar Mission Module} (LMM) is a large cylindrical module which attaches to the rear of a CM-OSM combination.  The module provides all the facilities required to facilitate a lunar landing mission.  It includes a set of propellant tanks similar in design to those of the Propulsion Module, but larger (to support additional lunar capture and lunar escape burns) and space for the CLLARE Lunar Lander (see below) to dock.  Two ideas have been proposed for propulsion: in one, the LMM has a cluster of engines at its end, these engines being identical to thoseused on the PM; in the other, the Lunar Lander's engine (which is also identical to the PM engine) is used to provide propulsion.
-
-A CLLARE CM-OSM-LMM combination is functionally equivalent to the full Apollo Spacecraft (i.e. Command Module, Service Module and Lunar Module).
-
 \subsection{The CLLARE Lunar Lander}
 
-The \href{http://cstart.org/wiki/CLLARE_Lunar_Lander}{CLLARE Lunar Lander} (LL) is a light weight, open cabin lunar landing craft.  Unlike the Apollo lunar lander (and like the planned Soviet lunar lander), the LL is not composed of two separable stages.  The entire structure undergoes a lunar descent and a lunar ascent, with the same engine and set of fuel tanks used for both directions.  The lunar lander's engine is a liquid bipropellant rocket and is the same engine as used for the CLLARE Propulsion Module and some versions of the Lunar Mission Module.
+The \href{http://cstart.org/wiki/CLLARE_Lunar_Lander}{CLLARE Lunar Lander} (LL) is a light weight, open cabin lunar landing craft.  Unlike the Apollo lunar lander (and like the planned Soviet lunar lander), the LL is not composed of two separable stages.  The entire structure undergoes a lunar descent and a lunar ascent, with the same engine and set of fuel tanks used for both directions.  The lunar lander's engine is a liquid bipropellant rocket and is the same engine as used in the CLLARE Propulsion Module's symmetric arrangement.
 
-\section{Core Hardware Configurations}
+\subsection{The CLLARE Lunar EVA Suit}
+
+The \href{http://cstart.org/wiki/CLLARE_Lunar_EVA_Suit}{CLLARE Lunar EVA Suit} is a space suit suitable for use with EVA in LEO, lunar orbit and on the lunar surface.  (WE NEED TO EXPAND ON THIS)
+
+\section{Core Hardware Configurations} \label{sec:config}
 
 The CLLARE core hardware has been designed in such a way as to facilitate a range of configurations fulfilling a range of flight types.  The following subsections describe these configurations.  Figure \ref{fig:configs} shows diagrammatic representations of the different configurations.
 
@@ -99,40 +116,51 @@ The CLLARE core hardware has been designed in such a way as to facilitate a rang
 \subsection{Suborbital flights}
 
 CM alone.
+ 
+This configuration is functionally equivalent to early (suborbital) flights of the US Mercury craft.
 
 \subsection{Short duration orbital flights}
 
 CM+OSM, with retro rockets but no consumables in OSM.
 
+This hardware configuration is functionally equivalent to later (orbital) flights of Mercury or, if EVA is performed, early flights of the US Gemini craft.
 \subsection{Long duration orbital flights}
 
 CM+OSM, with retro rockets and consumables in OSM.
 
+This hardware configuration is functionally equivalent to the US Gemini craft.
+
 \subsection{High apogee and circumlunar flights}
 
-CM+OSM+PM, with consumables but no retro rockets in OSM.
+CM+OSM+PML, with consumables but no retro rockets in OSM.
+
+This configuration is functionally equivalent to both a Gemini capsule docked to an Agena Training Vehicle booster, and an Apollo Command Module and Service Module (CSM) combination (with no docked Lunar Module) - the OSM-PML combination is roughly functionally equivalent to the the Apollo SM.
 
 \subsection{Lunar landing flights}
 
-CM+OSM+LMM, with consumables but no retro rockets in OSM.
+LL+CM+OSM+PMH, with consumables but no retro rockets in OSM.
 
 \section{Launch Options}
 
+In this section we discuss launch options for the various hardware configurations.  In order to do so we require estimates of the total masses of each of the configurations in ready--to--launch condition.  We do not justify the mass figures used for the discussion of launch options here -- the figures we use are derived in detail in Chapter \ref{chap:numeric}.
+
 \subsection{Suborbital and orbital flights}
 
-The proposed suborbital and orbital flight configurations (CM and CM+OSM) have estimated total masses in the vicinity of 1,000 kg and 1,250 kg, respectively (see Chapter \ref{chap:numeric} for details of these estimates).
+The proposed suborbital and orbital flight configurations (CM and CM+OSM) have estimated total masses in the vicinity of 1,000 kg and 1,250 kg, respectively.
 
 CSTART is not aware of any man--rated commercial launch vehicles designed to carry payloads of this mass, so is considering the development of its own launch capabilities for these missions.  The current plan of approach is to use variably sized clusters of small, simple and inexpensive rockets to lift payloads around 1,000 kg in mass into LEO, a concept pioneered by the \href{http://en.wikipedia.org/wiki/OTRAG}{OTRAG company} project in the 1970s.  We are keen to use hybrid rocket engines for the small rockets due to their high levels of safety and excellent trade-off between simplicity and performance.
 
 A group called \href{http://www.copenhagensuborbitals.com/}{Copenhagen Suborbitals}, based in Denmark, are currently working on a hybrid rocket engine designed to perform suborbital flights for a manned, lightweight ``micro space capsule''.  Copenhagen Suborbitals are already at the stage of performing static test firings of their rockets, with a first launch planned for mid 2010.  Like CSTART, Copenhagen Suborbitals is a volunteer operation funded by donations and sponsorships, with a strong commitment to open source principles.  The two groups are on friendly terms and CSTART hopes to gain valuable insight and experience from the Copenhagen Suborbitals team in constructing its own hybrid rocket launch systems.
 
-\subsection{Circumlunar missions}
+\subsection{High altitude and Circumlunar missions}
+
+The proposed high altitude and circumlunar flight configuration (CM+OSM+PML) has an estimated total mass in the vicinity of ???? kg.
 
 Soyuz?
 
 \subsection{Lunar landing missions}
 
-The proposed lunar landing configurations (CM+OSM+LMM) have estimated total masses in the vicinity of 10,000 kg (see Chapter \ref{chap:numeric} for details of these estimates).  The \href{http://spacex.com}{SpaceX} company's \href{http://spacex.com/falcon9.php}{Falcon 9} is a man-rated, two-stage booster is capable of lifting approximately 10,000 kg of payload into LEO.
+The proposed lunar landing configurations (LL+CM+OSM+PMH) has an estimated total masses in the vicinity of 10,000 kg.  The \href{http://spacex.com}{SpaceX} company's \href{http://spacex.com/falcon9.php}{Falcon 9} is a man-rated, two-stage booster is capable of lifting approximately 10,000 kg of payload into LEO.
 
 \section{A proposed program of launches}
 
@@ -185,11 +213,11 @@ Thus the theoretically required delta-v for a TLI burn is:
 |v_{escape}| - |v_{orbit}| \simeq 3276 m/s.
 \end{equation}
 
-Time between this burn and next burn: $\simeq 3$ days.
+Note that this figure is, in fact, an upper bound on the TLI delta-v.  It is possible to send a spacecraft from LEO to the moon without technically escaping Earth's gravity, by putting the space craft into a highly eccentric Earth orbit whose apogee is equal to or greater than the moon's distance from the Earth.  In practice, CSTART expects to use such an orbit to save on propellant mass, however for preliminary planning purposes we use the figure above.
 
 \subsection{Lunar Orbit Insertion burn}
 
-Required delta-v: $\simeq 1000$ m/s.
+The delta-v required for Lunar Orbit Insertion depends upon the velocity of the spacecraft at the time it reaches a suitable distance from the moon for insertion; this velocity, in turn, depends on the TLI delta-v which was used.  For preliminary planning purposes, we use a required delta-v of 1000 m/s, which is an approximate figure for LOI on a free--return trajectory.  These trajectories involve the highest lunar approach delta-v of all trajectories which CSTART expects to consider.
 
 Time between this burn and next burn: $\simeq 6$ hours.
 
@@ -232,7 +260,7 @@ We derive an estimated mass for the empty CM vehicle by considering the masses o
 
 The Mercury spacecraft is arguably the spacecraft most similar to the CLLARE CM, in that it is the only craft shaped like a truncated cone with a cylindrical nose which has a crew capacity of one.  However, the capabilities of the CLLARE CM exceed those of Mercury somewhat, in that the CLLARE CM supports EVA.  Since the CLLARE CM will require the addition of an ingress-egress hatch and also extra room in the crew cabin to facilitate the application and removal of a spacesuit, we expect the CLLARE CM to be slightly larger than Mercury.  Thus, a mass estimate derived from the mass of Mercury can be expected to be an \emph{underestimate} of the mass of the CLLARE CM.
 
-Table \ref{tab:mercurymass} gives the masses of all the Mercury spacecraft subsystems (data taken from \href{http://www.astronautix.com/craft/mercury.htm}{Encyclopedia Aeronautica}).  Beside each Mercury mass figure is an estimate of the mass of a corresponding CLLARE CM subsystem, with a justification.  This process leads to a total mass estimate of 932 kg.
+Table \ref{tab:mercurymass} gives the masses of all the Mercury spacecraft subsystems (data taken from \href{http://www.astronautix.com/craft/mercury.htm}{Encyclopedia Astronautix}).  Beside each Mercury mass figure is an estimate of the mass of a corresponding CLLARE CM subsystem, with a justification.  This process leads to a total mass estimate of 932 kg.
  
 \begin{sidewaystable}
 \centering
@@ -245,22 +273,22 @@ Heat shield		& 272 kg	& 272 kg & \\
 RCS			& 40 kg		& 40 kg & \\
 Recovery equipment	& 60 kg		& 60 kg & \\
 Navigation equipment	& 40 kg		& 10 kg & Crossbow make a GPS/IMU unit with mass 1.6 kg \\
-Telemetry equipment	& 50 kg		& 50 kg & \\
+Telemetry equipment	& 50 kg		& 10 kg & This is just some sensors and a single computer board \\
 Electrical equipment	& 80 kg		& 10 kg & Ultracell XX55 has mass 1.6 kg \\
 Communications system	& 20 kg		& 20 kg & \\
 Crew seats and provisions & 80 kg	& 80 kg & \\
 Environmental control system	& 50 kg		& 50 kg & \\
 \hline \hline
-\textbf{Total}	& 1032 kg & 932 kg	& \\
+\textbf{Total}	& 1032 kg & 892 kg	& \\
 \hline
 \end{tabular}
 \caption{Mercury derived mass estimate}
 \label{tab:mercurymass}
 \end{sidewaystable} 
 
-The Gemini spacecraft is the spacecraft with the most similar capabilities to the CLLARE CM, in that it allows EVA and can be adapted for long duration flights by the attachment of a supply module.  However, whereas the CLLARE CM has a crew of one, Gemini supported a crew of 2 (hence the name "Gemini" -- "twins").  It is fair to call the CLLARE CM a "one--man Gemini".  Thus, a mass estimate derived from the mass of Gemini can be expected to be an \emph{overestimate} of the mass of the CLLARE CM.
+The Gemini spacecraft is the spacecraft with the most similar capabilities to the CLLARE CM, in that it allows EVA and can be adapted for long duration flights by the attachment of a supply module.  However, whereas the CLLARE CM has a crew of one, Gemini supported a crew of 2 (hence the name ``Gemini'' -- ``twins'').  It is fair to call the CLLARE CM a ``one--man Gemini''.  Thus, a mass estimate derived from the mass of Gemini can be expected to be an \emph{overestimate} of the mass of the CLLARE CM.
 
-Table \ref{tab:geminimass} gives the masses of all the Gemini spacecraft subsystems (data taken from \href{http://www.astronautix.com/craft/gemini.htm}{Encyclopedia Aeronautica}).  Beside each Gemini mass figure is an estimate of the mass of a corresponding CLLARE CM subsystem, with a justification.  This process leads to a total mass estimate of 1297 kg.
+Table \ref{tab:geminimass} gives the masses of all the Gemini spacecraft subsystems (data taken from \href{http://www.astronautix.com/craft/gemini.htm}{Encyclopedia Astronautix}).  Beside each Gemini mass figure is an estimate of the mass of a corresponding CLLARE CM subsystem, with a justification.  This process leads to a total mass estimate of 1297 kg.
 
 \begin{sidewaystable}
 \centering
@@ -273,20 +301,20 @@ Heat shield		& 144 kg	& 144 kg & \\
 RCS			& 133 kg	& 133 kg & \\
 Recovery equipment	& 98 kg		& 98 kg & \\
 Navigation equipment	& 62 kg		& 10 kg & Crossbow make a GPS/IMU unit with mass 1.6 kg \\
-Telemetry equipment	& 51 kg		& 51 kg & \\
-Electrical equipment	& 125 kg		& 10 kg & Ultracell XX55 has mass 1.6 kg \\
+Telemetry equipment	& 51 kg		& 10 kg & This is just some sensors and a single computer board \\
+Electrical equipment	& 125 kg	& 10 kg & Ultracell XX55 has mass 1.6 kg \\
 Communications system	& 26 kg		& 26 kg & \\
-Crew seats and provisions & 426 kg	& 213 kg & Halved to account for difference in crew size \\
+Crew seats and provisions & 426 kg	& 80 kg & Using figure from Mercury -- Gemini had two ejection seats (with rockets, parachutes, etc.) \\
 Environmental control system	&  117 kg		& 117 kg & \\
 \hline \hline
-\textbf{Total}	& 1707 kg & 1297 kg	& \\
+\textbf{Total}	& 1707 kg & 1123 kg	& \\
 \hline
 \end{tabular}
 \caption{Gemini derived mass estimate}
 \label{tab:geminimass}
 \end{sidewaystable} 
 
-Averaging our Mercury--derived underestimate of 932 kg and our Gemini--derived overestimate of 1297 kg, we estimate the empty mass of the CLLARE CM to be approximately 1114 kg.
+Averaging our Mercury--derived underestimate of 892 kg and our Gemini--derived overestimate of 1123 kg, we estimate the empty mass of the CLLARE CM to be approximately 1008 kg.
 
 \subsubsection{Orbital Support Module}
 
@@ -294,18 +322,17 @@ Mercury's retro rocket pack: 237 kg (seems awfully heavy)
 
 Structural mass of Gemini's equipment module (much larger than our OSM): 250 kg
 
-
 \subsubsection{Propulsion Module}
 
 Estimating the mass of the PM is somewhat difficult.  A considerable proportion of the PM's total mass is contributed by its fuel tank.  The size of the tank, and hence its mass, depends on the total quantity of propellants required.  This, in turn, depends on the total mass of the hardware configuration, including the mass of the tank.
 
 For a rough estimate, we consider masses of the \href{http://en.wikipedia.org/wiki/Space_Shuttle_external_tank}{Space Shuttle external tank}, which holds liquid oxygen and liquid hydrogen in cylindrical structure.  An estimate derived from a liquid hydrogen tank will represent a ``worst case'' estimate, since liquid hydrogen has an extremely low density and hence tanks to significant quantities of it must be large.
 
-Let us consider the case where the entire hardware configuration for a lunar landing mission, with the Lunar Lander fuelled but the PM unfuelled has a mass of 4250 kg (this figure is based on considerable overestimates of the mass of other core hardware components).  To apply a total delta-v of $3276 + 1000 + 696 \simeq 5000$ m/s to this mass (for TLI, LOI and TEI) using liquid oxygen and liquid hyrdogen with a specific impulse of 425 s would require approximately 9,200 kg of propellant (this calculation is made using the Tsiolkovsky rocket equation, which is introduced in Section \ref{sec:rocet_eq}).  This is about 1.3\% of the propellant capacity of the Shuttle's external tank.  If we use the approximation that a tank's mass is directly proportional to its capacity, we can estimate the mass of the PM's tank at 1.3\% of the Shuttle external tank.
+Let us consider the case where the entire hardware configuration for a lunar landing mission, with the Lunar Lander fuelled but the PM unfuelled has a mass of 4250 kg (this figure is based on considerable overestimates of the mass of other core hardware components).  To apply a total delta-v of $3276 + 1000 + 696 \simeq 5000$ m/s to this mass (for TLI, LOI and TEI) using a liquid oxygen and liquid hyrdogen engine with a specific impulse of 425 s would require approximately 9,200 kg of propellant (this calculation is made using the Tsiolkovsky rocket equation, which is introduced in Section \ref{sec:rocket_eq}).  This is about 1.3\% of the propellant capacity of the Shuttle's external tank.  If we use the approximation that a tank's mass is directly proportional to its capacity, we can estimate the mass of the PM's tank at 1.3\% of the Shuttle external tank.
 
 There are a range of different models of external tank with differing masses.  The heaviest is the 35,000 kg Standard Weight tank and the lightest is the 26,500 kg Super Lightweight tank.  Using an average mass of 30,750 kg, our 1.3\% tank may have a mass in the vicinity of 385 kg.
 
-Accounting for the extra mass of the PM's engines, supporting structures, etc., it seems like a total mass of 500 kg for an empty PM is a reasonable rough estimate.
+Accounting for the extra mass of the PM's engines, supporting structures, etc., it seems like a total mass of 500 kg for an empty PM is a reasonable rough estimate.  This is for the PMH variant.  The PML variant has to impart roughly 60\% the delta-v of the PMH and so will be less massive.
 
 \subsubsection{Lunar Lander}
 
@@ -330,7 +357,7 @@ LOX/LCH4 offers a lower specific impulse than LOX/LH2, in the 350s--380s range, 
 
 \subsubsection{Circumlunar flights}
 
-An ideal circumlunar flight of the CM+OSM+PM configuration, using a free-return trajectory, requires only a single burn: the TLI burn, which we found in \ref{sec:tli} to require a delta-v of 3276 m/s.  This delta-v must be applied to the mass of the CM+OSM+PM...
+An ideal circumlunar flight of the CM+OSM+PM configuration, using a free-return trajectory, requires only a single burn: the TLI burn, which we found in \ref{sec:tli} to require a delta-v of 3276 m/s.  This delta-v must be applied to the mass of the CM+OSM+PML...
 
 \subsubsection{Lunar landing flights}
 
@@ -381,16 +408,16 @@ The table below summarises estimated total launch masses for various configurati
 Configuration & Estimated total mass (kg) \\
 \hline
 \hline
-Suborbital (CM) & 1500 \\
+Suborbital (CM) & 1000 \\
 \hline
-Short Orbital (CM-OSM without consumables) & 1600 \\
+Short Orbital (CM-OSM without consumables) & 1250 \\
 \hline
-Long Orbital (CM-OSM with consumables) & ??? \\
+Long Orbital (CM-OSM with consumables) & 1350 \\
 \hline
-High Altitude Orbital, Circumlunar & ??? \\
+High Altitude Orbital, Circumlunar & ???? \\
 (CM-OSM-PML) & \\
 \hline
-Lunar Landing (CM-OSM-LLH-PMH) & 8000 \\
+Lunar Landing (CM-OSM-LLH-PMH) & 10,000 \\
 \hline
 \end{tabular}
 
@@ -409,6 +436,7 @@ By far the greatest contributing factor to total flight costs will be the cost o
 Unknown (self-built modular hybrid booster)
 
 \subsubsection{Circumlunar missions}
+
 \subsubsection{Lunar landing missions}
 
 A single launch of the Falcon 9 commercial booster costs US\$35,000,000.
@@ -417,7 +445,7 @@ A single launch of the Falcon 9 commercial booster costs US\$35,000,000.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Detailed Hardware Descriptions} \label{chap:detailed}
+\chapter{Detailed Hardware Descriptions} \label{chap:detail}
 
 In this chapter we present detailed descriptions of some of the CLLARE core hardware items.  Complete technical descriptions and diagrams of all hardware items will be compiled into a separate publication at a future time.
 
@@ -427,6 +455,8 @@ In this chapter we present detailed descriptions of some of the CLLARE core hard
 
 \begin{itemize}
 \item Reusable
+\item Glass cockpit
+\item Lifting reentry
 \item Paraglider landing
 \end{itemize}
 
@@ -437,6 +467,8 @@ Discuss CM structure here.
 \subsection{Reaction Control System}
 
 The \href{http://cstart.org/wiki/CLLARE_CM_Reaction_Control_System}{CM's Reaction Control System} (RCS) provides pitch, yaw and roll control for the CM, to be used both during spaceflight and reentry. It is the CM's only self-contained means of propulsion.
+
+An RCS based on the use of cold gas such as nitrogen or carbon dioxide would be preferred for simplicity and safety, but there are concerns about the performance of such systems being able to meet the necessary demands.  If cold gas cannot be made to work, the use of hydrogen peroxide monopropellant rockets may be considered preferentially to full blown bipropellant liquid rockets.
 
 \subsection{Power system}
 
@@ -459,9 +491,15 @@ Total power requirement & & & & $<4$ W \\
 
 \subsection{Environmental Control System}
 
-The \href{http://cstart.org/wiki/CLLARE_Environmental_Control_System}{CM's Enviromental Control System} is responsible for maintaining a habitable environment inside the CLLARE Command Module cabin. This involves maintaining an appropriate oxygen level, pressure level, temperature and more.
+The \href{http://cstart.org/wiki/CLLARE_Environmental_Control_System}{CM's Enviromental Control System} is responsible for maintaining a habitable environment inside the CLLARE Command Module cabin. This involves maintaining an appropriate oxygen, pressure and humidity levels, temperature and more.
+
+Little design work on the ECS has been performed thus far.
 
 \subsection{Waste Management System}
+
+The \href{http://cstart.org/wiki/CLLARE_Waste_Management_System}{CM's Waste Management System} is responsible for the collection and storage of bodily waste for the duration of flights.
+
+Little design work on the WMS has been performed thus far, though we are keen to improve on the much--hated ``Apollo bags'' of previous lunar missions, to the extent that we can within our space and mass restrictions.  The Soyuz/Mir space toilet is a possible source of inspiration.
 
 \subsection{Communication System}
 
@@ -482,18 +520,29 @@ The use of \href{http://en.wikipedia.org/wiki/Software_defined_radio}{software-d
 
 \subsection{Navigation System}
 
-The \href{http://cstart.org/wiki/CLLARE_CM_Navigation_System}{CM's Navigation System} uses various hardware sensors and interactions with other subsystems to provide high accuracy estimates of position, orientation and velocity at all stages of the mission.  Plans for the navigation system include the use of an inertial measurement unit, radio round--trip--time and Doppler shift measuremets, StarTrackers and more.
+The \href{http://cstart.org/wiki/CLLARE_CM_Navigation_System}{CM's Navigation System} uses various hardware sensors and interactions with other subsystems to provide high accuracy estimates of position, orientation and translational and rotational velocities at all stages of the mission.  Plans for the navigation system include the use of GPS, inertial measurement units, radio round--trip--time and Doppler shift measuremets, StarTrackers and more.
+
+The integration of data from this varied range of sources, each with distinct inherrent accuracies and error profiles, into a single, optimal estimate of position, orientation and velocities will require the use of ``filtering'' software, such as Kalman filters or recursive Bayesian estimation.
 
 \subsection{Computer System}
 
 The \href{http://cstart.org/wiki/CLLARE_Main_Computer_System}{CM's Main Computer System} provides computational services for most other subsystems, including but not limited to:
 \begin{itemize}
 \item Encoding of audio and video data for onboard storage and transmission by the communications system.
+\item High--reliability onboard storage of audio, video, telementry and navigation data.
 \item Control of oxygen injection valves for the environmental control system.
 \item Kalman filtering for the navigation system.
 \item Formatting of raw sensor data into telemetry packets for the communicaton system.
 \item Authentication and execution of telecommands for the communicaton system.
 \end{itemize}
+
+\subsubsection{Hardware}
+
+The issue of radiation shielding for space--fairing computers is of considerable importance.  Special radiation--hardened CPUs for us in space exist, but these are both difficult to acquire and significantly underpowered compared to the leading edge of consumer computer hardware.  Thus we expect that the CLLARE Main Computer System will use consumer computer hardware which will be protected from radiation by custom--built shielding.  The desire to minimise the mass of this shielding provides a strong motivation for keeping the computer hardware as compact as possible.  It is anticipated that small, cheap, low-power embedded systems like (but not necessarily) the BeagleBoard will best meet our requirements.
+
+\subsubsection{Software}
+
+The CSTART Social Contract stipulates that ``all computers onboard CSTART rockets and spacecraft which run operating systems will run operating systems whose kernel and basic userland utilities satisfy the Free Software Foundation's Free Software Definition''.  Thus, it is likely that a GNU/Linux distribution or one of the free BSD--derived operating systems will be used.  The userland software running on this operating system will necessarily have to be custom developed by CSTART volunteers.  The Social Contract stipulates that this software will be GPL3 licensed, and development is expected to happen in an open and decentralised fashion.
 
 \section{The CLLARE Orbital Support Module}
 
@@ -505,19 +554,17 @@ Discuss required consumables and storage options here: oxygen, nitrogen, methano
 
 \section{The CLLARE Propulsion Module}
 
-Discuss fuel options here.
+Discuss fuel/pressurant options here.
 
-Discuss cooling options here.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{The CLLARE Lunar Mission Module}
+Discuss nozzle cooling options here.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{The CLLARE Lunar Lander}
 
 \subsection{Overview}
+
+Super minimalist!
 
 Automated landing?
 
@@ -531,6 +578,8 @@ Batteries?  Solar panels?
 
 \subsection{Communication System}
 
+Use orbiting CM as a relay?
+
 \subsection{Navigation System}
 
 The main difference between the LL's navigation system and the CM's is that the LL will require an altimeter of some kind.  An Australian--New Zealand group called \href{http://www.lunarnumbat.org}{Lunar Numbat} are working on (amongst other things) an \href{http://www.lunarnumbat.org/cgi-bin/twiki/view/LunarNumbat/LNTaskRadarAltimeter}{open source radar altimeter} for use by one of the Google Lunar X Prize teams, which may be appropriate.
@@ -538,5 +587,18 @@ The main difference between the LL's navigation system and the CM's is that the 
 \subsection{Engine}
 
 Discuss thrust requirements etc. here.
+
+Gimballed?
+
+\subsection{The CLLARE Lunar EVA Suit}
+
+Someone needs to expand on this:
+\begin{itemize}
+\item Needs to be suitable for EVA in LEO, in lunar orbit, on lunar surface.
+\item Needs to support a few hours of activity without external supplies.
+\item Needs to be as light as possible.
+\item Elasticated, mechanical counter--pressure concept (Webb et. al.) looks promising.
+\item Will work closely with Open Luna Foundation.
+\end{itemize}
 
 \end{document}
