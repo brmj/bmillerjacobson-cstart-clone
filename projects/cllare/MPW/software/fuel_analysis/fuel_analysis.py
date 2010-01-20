@@ -62,7 +62,7 @@ def main():
 	light_stack = Stack(0.9*cm_mass, 0.9*osm_mass, 0.9*ll_mass, 0.9*pm_mass, astronaut_mass, 0.9*suit_mass)
 	super_light_stack = Stack(0.8*cm_mass, 0.8*osm_mass, 0.8*ll_mass, 0.8*pm_mass, astronaut_mass, 0.8*suit_mass)
 
-	budget = DeltaVBudget(3276, 800, 3400, 700)
+	budget = DeltaVBudget(3276, 1000, 4200, 700)
 
 	fp = open("fuel_analysis.txt","w")
 	fp.write("Isp, \"Super light\", Light, Medium, Heavy, \"Super heavy\"\n")
