@@ -113,8 +113,9 @@ The \href{http://cstart.org/wiki/CLLARE_Lunar_EVA_Suit}{CLLARE Lunar EVA Suit} i
 The CLLARE core hardware has been designed in such a way as to facilitate a range of configurations fulfilling a range of flight types.  The following subsections describe these configurations.  Figure \ref{fig:configs} shows diagrammatic representations of the different configurations.
 
 \begin{figure}[h] \label{fig:configs}
-\includegraphics[angle=270, scale=0.6]{images/cllare_cm_configs}
-\caption{Various configurations of the CLLARE core hardware (somewhat outdated).}
+\centering
+\includegraphics[scale=0.6]{images/cllare_hardware_configs}
+\caption{Various configurations of the CLLARE core hardware.  From left to right: suborbital, low altitude orbital, high altitude orbital or circumlunar, and lunar landing.  Diagrams not to scale.}
 \end{figure}
 
 \subsection{Suborbital configuration}
@@ -253,7 +254,7 @@ Determining the delta-v required for lunar descent and ascent is less straightfo
 
 \subsection{Consumables masses}
 
-\subsubsection{Oxygen}
+\subsubsection{Breathing gas}
 
 There are two stores of oxygen involved in the CLLARE hardware: a store in the CM sufficient to support 24 hours of habitation, including $x$ EVAs (complete repressurisations of the cabin), and a store in the OSM, to support an addition 6 days of habitation, including an additional $y$ EVAs.
 
@@ -263,9 +264,11 @@ Various sources around the web suggest that the average adult human consumes aro
 
 The Mercury spacecraft had a habitable volume of 1.7 cubic metres.  We shall work with a slightly increased figure of 2.0 cubic metres, or 2000 L, to allow extra room for donning and removing an EVA suit.  To simplify calculations, let us work with a pressure of 1 atm (101.325 kPa) -- it will be easy to adjust our results for alternate pressures later.  Let us assume a cabin temperature of $20^\circ$ C.  Under these conditions, the \href{http://en.wikipedia.org/wiki/Ideal_gas_law}{ideal gas law} gives the cabin as containing 83.14 mol of gas.  If 20\% of this gas is oxygen, there are 16.63 mol of oxygen.  Diatomic oxygen has a molar mass of 32 g/mol, so this is 532 g of oxygen.
 
+The remaining 80\% of the atmosphere must be composed of an inert ``filler gas'', and some of this gas must be stored for repressurisation after EVA.  Nitrogen is the most likely choice, to closely reproduce the atmosphere on Earth.  From our calcultions above, the pressurised cabin will contain 83.14 mol of gas.  If 80\% of this gas is nitrogen, there are 66.52 mol of nitrogen.  Diatomic nitrogen has a molar mass of 28 g/mol, so this is 1862.56 g or around 1.9 kg of nitrogen.
+
 \subsubsection{Water}
 
-16 L of water will provide 2 L per day for 8 days (longer than expected mission time), for a total mass of 16 kg.
+20 L of water will provide 2 L per day for 10 days (longer than expected mission time), for a total mass of 20 kg.
 
 \subsubsection{Methanol}
 
