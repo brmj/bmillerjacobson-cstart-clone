@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Arch Linux) (format=pdflatex 2009.10.14)  20 JAN 2010 19:05
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Arch Linux) (format=pdflatex 2009.10.14)  21 JAN 2010 13:11
 entering extended mode
  %&-line parsing enabled.
 **cllare_overview
@@ -302,7 +302,7 @@ File: images/cc_badge.png Graphic file (type png)
 duplicate ignored
 <to be read again> 
                    \relax 
-l.40 ...3}Propellant masses}{20}{subsection.3.2.3}
+l.40 ...3}Propellant masses}{19}{subsection.3.2.3}
                                                    [1
 
 ])
@@ -322,104 +322,94 @@ Overfull \hbox (67.10616pt too wide) in paragraph at lines 49--49
 Chapter 2.
 [5
 
-] [6] [7] <images/cllare_cm_configs.png, id=377, 1027.84pt x 770.88pt>
-File: images/cllare_cm_configs.png Graphic file (type png)
+] [6] [7]
+<images/cllare_hardware_configs.png, id=377, 531.9875pt x 377.41pt>
+File: images/cllare_hardware_configs.png Graphic file (type png)
 
-<use images/cllare_cm_configs.png>
-Overfull \hbox (117.53157pt too wide) in paragraph at lines 116--117
-[][] 
- []
-
-
-LaTeX Warning: Float too large for page by 99.70876pt on input line 118.
-
+<use images/cllare_hardware_configs.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[8] [9] [10]
-Overfull \hbox (3.91623pt too wide) in paragraph at lines 178--179
+[8] [9 <./images/cllare_hardware_configs.png (PNG copy)>] [10] [11]
+Overfull \hbox (3.91623pt too wide) in paragraph at lines 179--180
 []\OT1/cmr/m/n/10 CLLARE 1: Un-manned sub-or-bital flight (closely mon-i-tored 
 crash test dummy
  []
 
-[11] [12] [13 <./images/cllare_cm_configs.png (PNG copy)>]
+[12]
 Chapter 3.
-[14
+[13
 
-] [15]
-Overfull \hbox (9.33388pt too wide) in paragraph at lines 278--279
+] [14]
+Overfull \hbox (9.33388pt too wide) in paragraph at lines 279--280
 []\OT1/cmr/m/n/10 The Mer-cury space-craft is ar-guably the space-craft most si
 m-i-lar to the CLLARE
  []
 
 
-Overfull \hbox (15.41759pt too wide) in paragraph at lines 284--302
+Overfull \hbox (15.41759pt too wide) in paragraph at lines 285--303
  [][] 
  []
 
-[16] [17]
-Overfull \hbox (171.80672pt too wide) in paragraph at lines 312--330
+[15] [16]
+Overfull \hbox (171.80672pt too wide) in paragraph at lines 313--331
  [][] 
  []
 
-[18] [19] <images/fuel_analysis.png, id=469, 642.4pt x 481.8pt>
+[17] [18] <images/fuel_analysis.png, id=465, 642.4pt x 481.8pt>
 File: images/fuel_analysis.png Graphic file (type png)
 
 <use images/fuel_analysis.png>
-Overfull \hbox (40.44298pt too wide) in paragraph at lines 384--385
+Overfull \hbox (40.44298pt too wide) in paragraph at lines 385--386
 [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[20] [21 <./images/fuel_analysis.png (PNG copy)>]
-Overfull \hbox (15.86182pt too wide) in paragraph at lines 423--440
+[19] [20 <./images/fuel_analysis.png (PNG copy)>]
+Overfull \hbox (15.86182pt too wide) in paragraph at lines 424--441
 [][] 
  []
 
-[22] [23]
+[21] [22]
 Chapter 4.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 474.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 475.
 
 (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 474.
- [24
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 475.
+ [23
 
 ]
-Overfull \hbox (16.13937pt too wide) in paragraph at lines 494--508
+Overfull \hbox (16.13937pt too wide) in paragraph at lines 495--509
 [][] 
  []
 
-[25] [26] [27] [28] (./cllare_overview.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[24] [25] [26] [27] (./cllare_overview.aux) ) 
 Here is how much of TeX's memory you used:
- 5055 strings out of 493848
- 71270 string characters out of 1154031
- 147520 words of memory out of 3000000
- 8153 multiletter control sequences out of 15000+50000
+ 5052 strings out of 493848
+ 71277 string characters out of 1154031
+ 147519 words of memory out of 3000000
+ 8151 multiletter control sequences out of 15000+50000
  7170 words of font info for 26 fonts, out of 3000000 for 5000
  714 hyphenation exceptions out of 8191
  30i,10n,36p,1081b,367s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
-/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-
-Output written on cllare_overview.pdf (29 pages, 305964 bytes).
+</usr/share/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.p
+fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on cllare_overview.pdf (28 pages, 282258 bytes).
 PDF statistics:
- 601 PDF objects out of 1000 (max. 8388607)
- 120 named destinations out of 1000 (max. 500000)
+ 597 PDF objects out of 1000 (max. 8388607)
+ 119 named destinations out of 1000 (max. 500000)
  529 words of extra memory for PDF output out of 10000 (max. 10000000)
 
