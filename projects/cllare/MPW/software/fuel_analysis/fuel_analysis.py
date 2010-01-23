@@ -49,12 +49,12 @@ def compute_total_mass(stack, budget, isp):
 
 def main():
 
-	cm_mass = 1114
+	cm_mass = 1008
 	osm_mass = 200
-	ll_mass = 400
+	ll_mass = 300
 	pm_mass = 500
 	astronaut_mass = 75
-	suit_mass = 25
+	suit_mass = 100
 	
 	super_heavy_stack = Stack(1.2*cm_mass, 1.2*osm_mass, 1.2*ll_mass, 1.2*pm_mass, astronaut_mass, 1.2*suit_mass)
 	heavy_stack = Stack(1.1*cm_mass, 1.1*osm_mass, 1.1*ll_mass, 1.1*pm_mass, astronaut_mass, 1.1*suit_mass)
