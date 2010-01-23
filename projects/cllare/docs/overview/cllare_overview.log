@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Arch Linux) (format=pdflatex 2009.10.14)  21 JAN 2010 13:11
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Arch Linux) (format=pdflatex 2009.10.14)  23 JAN 2010 15:43
 entering extended mode
  %&-line parsing enabled.
 **cllare_overview
@@ -231,7 +231,11 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \rot@mess@toks=\toks21
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 7.
- (./cllare_overview.aux)
+ (./cllare_overview.aux
+
+LaTeX Warning: Label `tab:fuel_analysis' multiply defined.
+
+)
 \openout1 = `cllare_overview.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -248,8 +252,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
-
-(/usr/share/texmf-dist/tex/context/base/supp-pdf.tex
+ (/usr/share/texmf-dist/tex/context/base/supp-pdf.tex
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count109
 \scratchdimen=\dimen117
@@ -331,7 +334,7 @@ File: images/cllare_hardware_configs.png Graphic file (type png)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [8] [9 <./images/cllare_hardware_configs.png (PNG copy)>] [10] [11]
-Overfull \hbox (3.91623pt too wide) in paragraph at lines 179--180
+Overfull \hbox (3.91623pt too wide) in paragraph at lines 181--182
 []\OT1/cmr/m/n/10 CLLARE 1: Un-manned sub-or-bital flight (closely mon-i-tored 
 crash test dummy
  []
@@ -341,75 +344,102 @@ Chapter 3.
 [13
 
 ] [14]
-Overfull \hbox (9.33388pt too wide) in paragraph at lines 279--280
+Overfull \hbox (9.33388pt too wide) in paragraph at lines 283--284
 []\OT1/cmr/m/n/10 The Mer-cury space-craft is ar-guably the space-craft most si
 m-i-lar to the CLLARE
  []
 
-
-Overfull \hbox (15.41759pt too wide) in paragraph at lines 285--303
+[15]
+Overfull \hbox (15.41759pt too wide) in paragraph at lines 289--307
  [][] 
  []
 
-[15] [16]
-Overfull \hbox (171.80672pt too wide) in paragraph at lines 313--331
+
+Overfull \hbox (10.43147pt too wide) in paragraph at lines 317--336
  [][] 
  []
 
-[17] [18] <images/fuel_analysis.png, id=465, 642.4pt x 481.8pt>
+[16] [17] [18] [19] <images/fuel_analysis.png, id=474, 642.4pt x 481.8pt>
 File: images/fuel_analysis.png Graphic file (type png)
 
 <use images/fuel_analysis.png>
-Overfull \hbox (40.44298pt too wide) in paragraph at lines 385--386
+Overfull \hbox (40.44298pt too wide) in paragraph at lines 390--391
 [][] 
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Reference `tab:deltav-budget' on page 20 undefined on input line
+ 394.
 
-[19] [20 <./images/fuel_analysis.png (PNG copy)>]
-Overfull \hbox (15.86182pt too wide) in paragraph at lines 424--441
+[20 <./images/fuel_analysis.png (PNG copy)>]
+Overfull \hbox (15.86182pt too wide) in paragraph at lines 448--465
 [][] 
  []
 
 [21] [22]
 Chapter 4.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 475.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 499.
 
 (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 475.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 499.
  [23
 
 ]
-Overfull \hbox (16.13937pt too wide) in paragraph at lines 495--509
+Overfull \hbox (16.13937pt too wide) in paragraph at lines 519--533
 [][] 
  []
 
-[24] [25] [26] [27] (./cllare_overview.aux) ) 
+[24] [25] <images/cllare_pm_concept.png, id=524, 671.50874pt x 479.7925pt>
+File: images/cllare_pm_concept.png Graphic file (type png)
+
+<use images/cllare_pm_concept.png>
+Overfull \hbox (57.90836pt too wide) in paragraph at lines 601--602
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[26] <images/cllare_ll_concept_labelled.png, id=531, 550.055pt x 568.1225pt>
+File: images/cllare_ll_concept_labelled.png Graphic file (type png)
+
+<use images/cllare_ll_concept_labelled.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[27 <./images/cllare_pm_concept.png (PNG copy)>] [28 <./images/cllare_ll_concep
+t_labelled.png (PNG copy)>] [29] (./cllare_overview.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 5052 strings out of 493848
- 71277 string characters out of 1154031
- 147519 words of memory out of 3000000
- 8151 multiletter control sequences out of 15000+50000
+ 5070 strings out of 493848
+ 71704 string characters out of 1154031
+ 151666 words of memory out of 3000000
+ 8162 multiletter control sequences out of 15000+50000
  7170 words of font info for 26 fonts, out of 3000000 for 5000
  714 hyphenation exceptions out of 8191
  30i,10n,36p,1081b,367s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.p
-fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on cllare_overview.pdf (28 pages, 282258 bytes).
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+
+Output written on cllare_overview.pdf (30 pages, 324874 bytes).
 PDF statistics:
- 597 PDF objects out of 1000 (max. 8388607)
- 119 named destinations out of 1000 (max. 500000)
- 529 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 612 PDF objects out of 1000 (max. 8388607)
+ 124 named destinations out of 1000 (max. 500000)
+ 539 words of extra memory for PDF output out of 10000 (max. 10000000)
 

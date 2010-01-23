@@ -144,6 +144,8 @@ The final and ``ultimate'' configuration of the core hardware consists of a CM-O
 
 In this configuration, the PMH provides the propulsion required for TLI, LOI and TEI burns.  Transfer from the CM to the LL in lunar orbit is achieved via a short EVA.  Note that, unlike Apollo, the LL is attached to the nose of the CM from the beginning, rather than having to be transferred there from behind after TLI.  This is made possible by the use of an aerodynamic fairing on the planned launch vehicle (see Section \ref{sec:launchopt} later in this chapter).
 
+It is noteworthy that in this configuration, should the PMH be damaged during a flight, the LL engine can provide emergency propulsion for a LL-CM-OSM ``subcraft'' which separates from the PMH.  This technique would be very similar to that used on the infamous Apollo 13 flight.  We show later in Chapter \ref{chap:numeric} that a fully fuelled LL would be able to impart sufficient delta-v to a LL-CM-OSM subcraft for TEI from lunar orbit.
+
 This configuration is functionally equivalent to the complete Apollo spacecraft, consisting of the CSM combination with the Lunar Module docked to the nose of the CM.
 
 \section{Launch Options} \label{sec:launchopt}
@@ -324,7 +326,8 @@ Navigation equipment	& 62 kg		& 10 kg & Crossbow make a GPS/IMU unit with mass 1
 Telemetry equipment	& 51 kg		& 10 kg & This is just some sensors and a single computer board \\
 Electrical equipment	& 125 kg	& 10 kg & Ultracell XX55 has mass 1.6 kg \\
 Communications system	& 26 kg		& 26 kg & \\
-Crew seats and provisions & 426 kg	& 80 kg & Using figure from Mercury -- Gemini had two ejection seats (with rockets, parachutes, etc.) \\
+Crew seats and provisions & 426 kg	& 80 kg & Using figure from Mercury -- Gemini had two \\
+				& 	&	& ejection seats (with rockets, parachutes, etc.) \\
 Environmental control system	&  117 kg		& 117 kg & \\
 \hline \hline
 \textbf{Total}	& 1707 kg & 1123 kg	& \\
@@ -381,14 +384,14 @@ An ideal circumlunar flight of the CM-OSM-PML configuration, using a free-return
 
 \subsubsection{Lunar landing flights}
 
-Computing the propellant mass requirements for a lunar landing flight must be done in three steps.  We must compute the propellant mass required to carry the Lunar Lander to the lunar suface and back; We must compute the mass required to apply the TEI burn to the CM-OSM-PMH configuration; Finally, we must compute the mass required to apply the TLI burn to the CM-OSM-PMH configuration and the lunar lander, including the propellant accounted for in the first three steps.
+Computing the propellant mass requirements for a lunar landing flight must be done in three steps.  We must compute the propellant mass required to carry the Lunar Lander to the lunar suface and back; We must compute the mass required to apply the TEI burn to the CM-OSM-PMH configuration; Finally, we must compute the mass required to apply the TLI burn to the CM-OSM-PMH configuration and the lunar lander, including the propellant accounted for in the first three steps.  A simple piece of software has been developed by CSTART to simplify the process of estimating propellant masses for the entire flight.
 
 \begin{figure}[h] \label{fig:fuel_analysis}
 \includegraphics[scale=0.6]{images/fuel_analysis}
 \caption{Total launch mass of CLLARE lunar landing mission configuration for various specific impulses.}
 \end{figure}
 
-Figure \ref{fig:fuel_analysis} shows the total launch mass (i.e. vehicles and fuel) for a lunar landing configuration of the core hardware versus various specific impulses, for a variety of vehicle mass estimates.  The ``baseline'' mass estimate, the case labelled ``Medium'' in the plot, has the values shown in Table \ref{tab:fuel_analysis} below.  The cases labelled ``Heavy'' and ``Super heavy'' have all values except the astronaut mass increased by 10\% and 20\% respectively, while the cases labelled ``Light'' and ``Super light'' have all values except the astronaut mass decreased by 10\% and 20\% respectively.  Horizontal lines on the plot show the maximum LEO payloads of the Falcon 9 and Falcon 9 Heavy launch vehicles.
+Figure \ref{fig:fuel_analysis} shows the total launch mass (i.e. vehicles and fuel) for a lunar landing configuration of the core hardware versus various specific impulses, for a variety of vehicle mass estimates.  The ``baseline'' mass estimate, the case labelled ``Medium'' in the plot, has the values shown in Table \ref{tab:fuel_analysis} below.  The cases labelled ``Heavy'' and ``Super heavy'' have all values except the astronaut mass increased by 10\% and 20\% respectively, while the cases labelled ``Light'' and ``Super light'' have all values except the astronaut mass decreased by 10\% and 20\% respectively.  The delta-v requirements used to generate the plot are those listed in Table \ref{tab:deltav-budget} below, with a 10\% additional allowance for each burn as a ``safety margin'' to allow for occasional corrections.  Horizontal lines on the plot show the maximum LEO payloads of the Falcon 9 and Falcon 9 Heavy launch vehicles.
 
 \begin{table} \label{tab:fuel_analysis}
 \centering
@@ -398,17 +401,36 @@ Figure \ref{fig:fuel_analysis} shows the total launch mass (i.e. vehicles and fu
 \textbf{Hardware item} & \textbf{Mass} \\
 \hline
 \hline
-CM		& 1114 kg \\
+CM		& 1008 kg \\
 \hline
 Astronaut	& 75 kg \\
 \hline
-EVA suit	& 25 kg \\
+EVA suit	& 100 kg \\
 \hline
 OSM		& 200 kg \\
 \hline
-LL		& 400 kg \\
+LL		& 300 kg \\
 \hline
 PM		& 500 kg \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table} \label{tab:fuel_analysis}
+\centering
+\caption{Delta-v budget for lunar landing flight.}
+\begin{tabular}{ | l | c | }
+\hline
+\textbf{Burn} & \textbf{Delta-v} \\
+\hline
+\hline
+TLI	& 3276 m/s \\
+\hline
+LOI	& 1000 m/s \\
+\hline
+Lunar ascent/descent	& 4200 m/s \\
+\hline
+TEI	& 700 m/s \\
 \hline
 \end{tabular}
 \end{table}
@@ -513,7 +535,7 @@ Total power requirement & & & & $<4$ W \\
 
 The \href{http://cstart.org/wiki/CLLARE_Environmental_Control_System}{CM's Enviromental Control System} is responsible for maintaining a habitable environment inside the CLLARE Command Module cabin. This involves maintaining an appropriate oxygen, pressure and humidity levels, temperature and more.
 
-Little design work on the ECS has been performed thus far.
+Little design work on the ECS has been performed thus far.  The use of a 20\% oxygen, 80\% nitrogen atmosphere maintained at room temperature is considered attractive as it enables the use of commercial electronics without modification.
 
 \subsection{Waste Management System}
 
@@ -574,23 +596,38 @@ Discuss required consumables and storage options here: oxygen, nitrogen, methano
 
 \section{The CLLARE Propulsion Module}
 
+\begin{figure}[h] \label{fig:pm}
+\centering
+\includegraphics[scale=0.6]{images/cllare_pm_concept}
+\caption{Concept diagram for CLLARE Propulsion Module, with external view (top) and internal view (bottom).  Diagrams not to scale.}
+\end{figure}
+
 \subsection{Propellant tank}
 
 Both the fuel and oxidiser for these rockets are stored in the one tank, with an internal bulkhead providing separation and insulation of the two propellants.  Helium gas is used as a pressurant to force the propellants into the combustion chambers.
 
 \subsection{Engines}
 
-Discuss nozzle cooling options here.
+The PM features an ``engine cluster'' at its rear, consisting of a symmetric arrangement of 4 or 5 engines in a ``cross shape''.  These engines are precisely the same as the engine used on the lunar lander.  The cross shaped cluster of engines permits some degree of steering of hardware configurations using the PM, via differential thrusting of various engines.  Failure of individual engines can be compensated for by shutting down the opposite engine (obviously not required in the case of the central engine in a 5 engine cluster).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{The CLLARE Lunar Lander}
 
+\begin{figure}[h] \label{fig:ll}
+\centering
+\includegraphics[scale=0.6]{images/cllare_ll_concept_labelled}
+\caption{Concept diagram for CLLARE Lunar Lander.  Diagram not to scale.}
+\end{figure}
 \subsection{Overview}
 
-Super minimalist!
-
-Automated landing?
+\begin{itemize}
+\item Super minimalist!
+\item Open cab (life support provided by suit)
+\item Single engine/stage
+\item 3 legs
+\item Landing as close to fully automated as possible
+\end{itemize}
 
 \subsection{Reaction Control System}
 

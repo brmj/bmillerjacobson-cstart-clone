@@ -29,26 +29,26 @@
 \contentsline {subsection}{\numberline {3.1.4}Lunar descent and ascent}{14}{subsection.3.1.4}
 \contentsline {section}{\numberline {3.2}Mass figures}{14}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Consumables masses}{14}{subsection.3.2.1}
-\contentsline {subsubsection}{Oxygen}{14}{section*.2}
+\contentsline {subsubsection}{Breathing gas}{14}{section*.2}
 \contentsline {subsubsection}{Water}{15}{section*.3}
 \contentsline {subsubsection}{Methanol}{15}{section*.4}
 \contentsline {subsection}{\numberline {3.2.2}Hardware masses}{15}{subsection.3.2.2}
 \contentsline {subsubsection}{Command Module}{15}{section*.5}
-\contentsline {subsubsection}{Orbital Support Module}{17}{section*.6}
-\contentsline {subsubsection}{Propulsion Module}{17}{section*.7}
+\contentsline {subsubsection}{Orbital Support Module}{16}{section*.6}
+\contentsline {subsubsection}{Propulsion Module}{16}{section*.7}
 \contentsline {subsubsection}{Lunar Lander}{19}{section*.8}
 \contentsline {subsection}{\numberline {3.2.3}Propellant masses}{19}{subsection.3.2.3}
 \contentsline {subsubsection}{Propellant options}{19}{section*.9}
 \contentsline {subsubsection}{Circumlunar flights}{19}{section*.10}
-\contentsline {subsubsection}{Lunar landing flights}{19}{section*.11}
+\contentsline {subsubsection}{Lunar landing flights}{20}{section*.11}
 \contentsline {subsection}{\numberline {3.2.4}Total launch masses}{21}{subsection.3.2.4}
-\contentsline {section}{\numberline {3.3}Cost figures}{21}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Vehicle costs}{21}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Fuel costs}{21}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Launch costs}{21}{subsection.3.3.3}
-\contentsline {subsubsection}{Suborbital and orbital missions}{21}{section*.12}
-\contentsline {subsubsection}{Circumlunar missions}{21}{section*.13}
-\contentsline {subsubsection}{Lunar landing missions}{21}{section*.14}
+\contentsline {section}{\numberline {3.3}Cost figures}{22}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Vehicle costs}{22}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Fuel costs}{22}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Launch costs}{22}{subsection.3.3.3}
+\contentsline {subsubsection}{Suborbital and orbital missions}{22}{section*.12}
+\contentsline {subsubsection}{Circumlunar missions}{22}{section*.13}
+\contentsline {subsubsection}{Lunar landing missions}{22}{section*.14}
 \contentsline {subsection}{\numberline {3.3.4}Total costs}{22}{subsection.3.3.4}
 \contentsline {chapter}{\numberline {4}Detailed Hardware Descriptions}{23}{chapter.4}
 \contentsline {section}{\numberline {4.1}The CLLARE Command Module}{23}{section.4.1}
@@ -69,9 +69,9 @@
 \contentsline {subsection}{\numberline {4.3.2}Engines}{26}{subsection.4.3.2}
 \contentsline {section}{\numberline {4.4}The CLLARE Lunar Lander}{27}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Overview}{27}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Reaction Control System}{27}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Power system}{27}{subsection.4.4.3}
-\contentsline {subsection}{\numberline {4.4.4}Communication System}{27}{subsection.4.4.4}
-\contentsline {subsection}{\numberline {4.4.5}Navigation System}{27}{subsection.4.4.5}
-\contentsline {subsection}{\numberline {4.4.6}Engine}{27}{subsection.4.4.6}
-\contentsline {subsection}{\numberline {4.4.7}The CLLARE Lunar EVA Suit}{27}{subsection.4.4.7}
+\contentsline {subsection}{\numberline {4.4.2}Reaction Control System}{28}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Power system}{28}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Communication System}{28}{subsection.4.4.4}
+\contentsline {subsection}{\numberline {4.4.5}Navigation System}{29}{subsection.4.4.5}
+\contentsline {subsection}{\numberline {4.4.6}Engine}{29}{subsection.4.4.6}
+\contentsline {subsection}{\numberline {4.4.7}The CLLARE Lunar EVA Suit}{29}{subsection.4.4.7}
