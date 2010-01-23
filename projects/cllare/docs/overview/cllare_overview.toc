@@ -72,6 +72,7 @@
 \contentsline {subsection}{\numberline {4.4.2}Reaction Control System}{28}{subsection.4.4.2}
 \contentsline {subsection}{\numberline {4.4.3}Power system}{28}{subsection.4.4.3}
 \contentsline {subsection}{\numberline {4.4.4}Communication System}{28}{subsection.4.4.4}
-\contentsline {subsection}{\numberline {4.4.5}Navigation System}{29}{subsection.4.4.5}
-\contentsline {subsection}{\numberline {4.4.6}Engine}{29}{subsection.4.4.6}
-\contentsline {subsection}{\numberline {4.4.7}The CLLARE Lunar EVA Suit}{29}{subsection.4.4.7}
+\contentsline {subsection}{\numberline {4.4.5}Navigation System}{28}{subsection.4.4.5}
+\contentsline {subsection}{\numberline {4.4.6}Engine}{28}{subsection.4.4.6}
+\contentsline {subsection}{\numberline {4.4.7}The CLLARE Lunar EVA Suit}{28}{subsection.4.4.7}
+\contentsline {chapter}{\numberline {5}Concept Art}{29}{chapter.5}

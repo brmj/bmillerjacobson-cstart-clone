@@ -162,13 +162,13 @@ A group called \href{http://www.copenhagensuborbitals.com/}{Copenhagen Suborbita
 
 \subsection{High apogee orbital and circumlunar missions}
 
-The proposed high apogee orbital and circumlunar flight configuration (CM-OSM-PML) has an estimated total mass in the vicinity of 3250 kg.
+The proposed high apogee orbital and circumlunar flight configuration (CM-OSM-PML) has an estimated total mass between 3678 kg and 5333 kg, depending upon choice of propellant.
 
 The \href{http://en.wikipedia.org/wiki/Soyuz-FG}{Soyuz-FG} is a man--rated launch vehicle with an extremely well established reliability.  It is used by the Russian Federal Space Agency (RKA) to transfer crews to the International Space Station in Soyuz spacecraft, which have a launch mass of around 7000 kg.  It may be suitable for launching CM-OSM-PML configurations, subject to cooperation from the RKA.  A commercial version of this launch vehicle, the Soyuz-FG/Frigat, has a LEO payload of 7800 kg.  Commercial Soyuz-FG/Frigat launches are handled by the \href{http://www.starsem.com}{Starsem} company.  A total of 9 commercial launches have been carried out to date, although none have been manned.
 
 \subsection{Lunar landing missions}
 
-The proposed lunar landing configurations (LL-CM-OSM-PMH) has an estimated total masses in the vicinity of 10,000 kg.
+The proposed lunar landing configurations (LL-CM-OSM-PMH) has an estimated total masses in the vicinity of 10,000 kg, using liquid oxygen and liquid hydrogen as propellants.
 
 The \href{http://spacex.com}{SpaceX} company's \href{http://spacex.com/falcon9.php}{Falcon 9} is a man-rated, two-stage booster capable of lifting 10,450 kg of payload into LEO.  The Falcon 9 is currently under development, but is nearly ready and may be suitable for launching lunar landing configurations of the CLLARE hardware.
 
@@ -380,7 +380,7 @@ LOX/LCH4 offers a lower specific impulse than LOX/LH2, in the 350s--380s range, 
 
 \subsubsection{Circumlunar flights}
 
-An ideal circumlunar flight of the CM-OSM-PML configuration, using a free-return trajectory, requires only a single burn: the TLI burn, which we found in \ref{sec:tli} to require a delta-v of 3276 m/s.  This delta-v must be applied to the mass of the CM-OSM-PML...
+An ideal circumlunar flight of the CM-OSM-PML configuration, using a free-return trajectory, requires only a single burn: the TLI burn, which we found in \ref{sec:tli} to require a delta-v of 3276 m/s.  This delta-v must be applied to the mass of the CM-OSM-PML, which is estimaged at around 1750 kg.  For the lowest likely specific impulse of 300 s, the rocket equation gives a total fuelled mass of 5333 kg, and for the highest likely specific impulse of 450 s, the rocket equation gives a total fuelled mass of 3679 kg.
 
 \subsubsection{Lunar landing flights}
 
@@ -580,7 +580,7 @@ The \href{http://cstart.org/wiki/CLLARE_Main_Computer_System}{CM's Main Computer
 
 \subsubsection{Hardware}
 
-The issue of radiation shielding for space--fairing computers is of considerable importance.  Special radiation--hardened CPUs for us in space exist, but these are both difficult to acquire and significantly underpowered compared to the leading edge of consumer computer hardware.  Thus we expect that the CLLARE Main Computer System will use consumer computer hardware which will be protected from radiation by custom--built shielding.  The desire to minimise the mass of this shielding provides a strong motivation for keeping the computer hardware as compact as possible.  It is anticipated that small, cheap, low-power embedded systems like (but not necessarily) the BeagleBoard will best meet our requirements.
+The issue of radiation shielding for space--fairing computers is of considerable importance.  Special radiation--hardened CPUs for us in space exist, but these are both difficult to acquire and significantly underpowered compared to the leading edge of consumer computer hardware.  Thus we expect that the CLLARE Main Computer System will use consumer computer hardware which will be protected from radiation by custom--built shielding.  The desire to minimise the mass of this shielding provides a strong motivation for keeping the computer hardware as compact as possible.  It is anticipated that small, cheap, low-power embedded systems like (but not necessarily) the \href{http://beagleboard.org}{BeagleBoard} will best meet our requirements.
 
 \subsubsection{Software}
 
@@ -614,11 +614,6 @@ The PM features an ``engine cluster'' at its rear, consisting of a symmetric arr
 
 \section{The CLLARE Lunar Lander}
 
-\begin{figure}[h] \label{fig:ll}
-\centering
-\includegraphics[scale=0.6]{images/cllare_ll_concept_labelled}
-\caption{Concept diagram for CLLARE Lunar Lander.  Diagram not to scale.}
-\end{figure}
 \subsection{Overview}
 
 \begin{itemize}
@@ -662,4 +657,18 @@ Someone needs to expand on this:
 \item Will work closely with Open Luna Foundation.
 \end{itemize}
 
+\chapter{Concept Art}
+
+\begin{figure}[h] \label{fig:cm_on_modular_booster}
+\centering
+\includegraphics[scale=0.6]{images/cm_on_modular_booster}
+\caption{Concept rendering of CLLARE Command Module atop a booster made of simple, modular hybrid rockets.  Render not to scale.}
+\end{figure}
+
+\begin{figure}[h] \label{fig:cllare_lunar_landing_config}
+\centering
+\includegraphics[scale=0.6]{images/cllare_lunar_landing_config}
+\caption{Concept diagram for lunar landing configuration of CLLARE core hardware.  Diagram not to scale.}
+
+\end{figure}
 \end{document}
