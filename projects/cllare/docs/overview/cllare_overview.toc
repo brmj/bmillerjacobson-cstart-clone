@@ -54,25 +54,25 @@
 \contentsline {section}{\numberline {4.1}The CLLARE Command Module}{23}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Overview}{23}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Structure and construction}{23}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Reaction Control System}{23}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Power system}{24}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.3}Reaction Control System}{24}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Power system}{25}{subsection.4.1.4}
 \contentsline {subsection}{\numberline {4.1.5}Environmental Control System}{25}{subsection.4.1.5}
-\contentsline {subsection}{\numberline {4.1.6}Waste Management System}{25}{subsection.4.1.6}
-\contentsline {subsection}{\numberline {4.1.7}Communication System}{25}{subsection.4.1.7}
+\contentsline {subsection}{\numberline {4.1.6}Waste Management System}{26}{subsection.4.1.6}
+\contentsline {subsection}{\numberline {4.1.7}Communication System}{26}{subsection.4.1.7}
 \contentsline {subsection}{\numberline {4.1.8}Navigation System}{26}{subsection.4.1.8}
-\contentsline {subsection}{\numberline {4.1.9}Computer System}{26}{subsection.4.1.9}
+\contentsline {subsection}{\numberline {4.1.9}Computer System}{27}{subsection.4.1.9}
 \contentsline {subsubsection}{Hardware}{27}{section*.15}
 \contentsline {subsubsection}{Software}{27}{section*.16}
-\contentsline {section}{\numberline {4.2}The CLLARE Orbital Support Module}{27}{section.4.2}
-\contentsline {section}{\numberline {4.3}The CLLARE Propulsion Module}{27}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Propellant tank}{27}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Engines}{28}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.2}The CLLARE Orbital Support Module}{28}{section.4.2}
+\contentsline {section}{\numberline {4.3}The CLLARE Propulsion Module}{28}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Propellant tank}{29}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Engines}{29}{subsection.4.3.2}
 \contentsline {section}{\numberline {4.4}The CLLARE Lunar Lander}{29}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Overview}{29}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}Reaction Control System}{29}{subsection.4.4.2}
 \contentsline {subsection}{\numberline {4.4.3}Power system}{29}{subsection.4.4.3}
 \contentsline {subsection}{\numberline {4.4.4}Communication System}{29}{subsection.4.4.4}
-\contentsline {subsection}{\numberline {4.4.5}Navigation System}{29}{subsection.4.4.5}
-\contentsline {subsection}{\numberline {4.4.6}Engine}{29}{subsection.4.4.6}
-\contentsline {subsection}{\numberline {4.4.7}The CLLARE Lunar EVA Suit}{29}{subsection.4.4.7}
-\contentsline {chapter}{\numberline {5}Concept Art}{31}{chapter.5}
+\contentsline {subsection}{\numberline {4.4.5}Navigation System}{30}{subsection.4.4.5}
+\contentsline {subsection}{\numberline {4.4.6}Engine}{30}{subsection.4.4.6}
+\contentsline {subsection}{\numberline {4.4.7}The CLLARE Lunar EVA Suit}{31}{subsection.4.4.7}
+\contentsline {chapter}{\numberline {5}Concept Art}{32}{chapter.5}
