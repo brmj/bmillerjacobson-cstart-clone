@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Arch Linux) (format=pdflatex 2009.10.14)  23 JAN 2010 15:43
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Arch Linux) (format=pdflatex 2009.10.14)  23 JAN 2010 16:08
 entering extended mode
  %&-line parsing enabled.
 **cllare_overview
@@ -290,11 +290,11 @@ LaTeX Info: Redefining \pageref on input line 10.
 
 \AtBeginShipoutBox=\box30
 
-<images/cstart_logo.png, id=254, 143.53625pt x 45.16875pt>
+<images/cstart_logo.png, id=258, 143.53625pt x 45.16875pt>
 File: images/cstart_logo.png Graphic file (type png)
 
 <use images/cstart_logo.png>
-<images/cc_badge.png, id=256, 88.33pt x 31.11626pt>
+<images/cc_badge.png, id=260, 88.33pt x 31.11626pt>
 File: images/cc_badge.png Graphic file (type png)
  <use images/cc_badge.png>
 [1
@@ -305,7 +305,7 @@ File: images/cc_badge.png Graphic file (type png)
 duplicate ignored
 <to be read again> 
                    \relax 
-l.40 ...3}Propellant masses}{19}{subsection.3.2.3}
+l.40 ...3}Propellant masses}{18}{subsection.3.2.3}
                                                    [1
 
 ])
@@ -326,7 +326,7 @@ Chapter 2.
 [5
 
 ] [6] [7]
-<images/cllare_hardware_configs.png, id=377, 531.9875pt x 377.41pt>
+<images/cllare_hardware_configs.png, id=382, 531.9875pt x 377.41pt>
 File: images/cllare_hardware_configs.png Graphic file (type png)
 
 <use images/cllare_hardware_configs.png>
@@ -359,7 +359,7 @@ Overfull \hbox (10.43147pt too wide) in paragraph at lines 317--336
  [][] 
  []
 
-[16] [17] [18] [19] <images/fuel_analysis.png, id=474, 642.4pt x 481.8pt>
+[16] [17] [18] [19] <images/fuel_analysis.png, id=479, 642.4pt x 481.8pt>
 File: images/fuel_analysis.png Graphic file (type png)
 
 <use images/fuel_analysis.png>
@@ -392,7 +392,7 @@ Overfull \hbox (16.13937pt too wide) in paragraph at lines 519--533
 [][] 
  []
 
-[24] [25] <images/cllare_pm_concept.png, id=524, 671.50874pt x 479.7925pt>
+[24] [25] <images/cllare_pm_concept.png, id=530, 671.50874pt x 479.7925pt>
 File: images/cllare_pm_concept.png Graphic file (type png)
 
 <use images/cllare_pm_concept.png>
@@ -403,15 +403,30 @@ Overfull \hbox (57.90836pt too wide) in paragraph at lines 601--602
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[26] <images/cllare_ll_concept_labelled.png, id=531, 550.055pt x 568.1225pt>
-File: images/cllare_ll_concept_labelled.png Graphic file (type png)
+[26] [27 <./images/cllare_pm_concept.png (PNG copy)>] [28]
+Chapter 5.
+<images/cm_on_modular_booster.jpg, id=549, 173.64874pt x 600.2425pt>
+File: images/cm_on_modular_booster.jpg Graphic file (type jpg)
 
-<use images/cllare_ll_concept_labelled.png>
+<use images/cm_on_modular_booster.jpg>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[27 <./images/cllare_pm_concept.png (PNG copy)>] [28 <./images/cllare_ll_concep
-t_labelled.png (PNG copy)>] [29] (./cllare_overview.aux)
+<images/cllare_lunar_landing_config.png, id=550, 592.2125pt x 377.41pt>
+File: images/cllare_lunar_landing_config.png Graphic file (type png)
+
+<use images/cllare_lunar_landing_config.png>
+Overfull \hbox (10.33023pt too wide) in paragraph at lines 670--671
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[29
+
+] [30 <./images/cm_on_modular_booster.jpg>] [31 <./images/cllare_lunar_landing_
+config.png (PNG copy)>] (./cllare_overview.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -420,10 +435,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5070 strings out of 493848
- 71704 string characters out of 1154031
- 151666 words of memory out of 3000000
- 8162 multiletter control sequences out of 15000+50000
+ 5082 strings out of 493848
+ 71981 string characters out of 1154031
+ 151686 words of memory out of 3000000
+ 8168 multiletter control sequences out of 15000+50000
  7170 words of font info for 26 fonts, out of 3000000 for 5000
  714 hyphenation exceptions out of 8191
  30i,10n,36p,1081b,367s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -437,9 +452,9 @@ st/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
 
-Output written on cllare_overview.pdf (30 pages, 324874 bytes).
+Output written on cllare_overview.pdf (32 pages, 334849 bytes).
 PDF statistics:
- 612 PDF objects out of 1000 (max. 8388607)
- 124 named destinations out of 1000 (max. 500000)
- 539 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 630 PDF objects out of 1000 (max. 8388607)
+ 128 named destinations out of 1000 (max. 500000)
+ 552 words of extra memory for PDF output out of 10000 (max. 10000000)
 
