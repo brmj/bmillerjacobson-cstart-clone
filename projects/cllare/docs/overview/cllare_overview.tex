@@ -235,8 +235,6 @@ Note that this figure is, in fact, an upper bound on the TLI delta-v.  It is pos
 
 The delta-v required for Lunar Orbit Insertion depends upon the velocity of the spacecraft at the time it reaches a suitable distance from the moon for insertion; this velocity, in turn, depends on the TLI delta-v which was used.  For preliminary planning purposes, we use a required delta-v of 1000 m/s, which is an approximate figure for LOI on a free--return trajectory.  These trajectories involve the highest lunar approach delta-v of all trajectories which CSTART expects to consider.
 
-Time between this burn and next burn: $\simeq 6$ hours.
-
 \subsection{Trans Earth Injection burn}
 
 The analysis for this burn's delta-v requirement is identical to that presented in section \ref{sec:tli}.  We use equations \ref{eq:v_orbit} and \ref{eq:v_escape} with appropriate lunar orbit values ($a = 100,000$ m, $r = 1,737,100$ m and $m = 7.3477 \times 10^{22}$ kg to find $|v_{orbit}| \simeq 1680$ m/s and $|v_{escape}| \simeq 2376$ m/s.
@@ -246,11 +244,13 @@ Thus the theoretically required delta-v for a TEI burn is:
 |v_{escape}| - |v_{orbit}| \simeq = 696 m/s.
 \end{equation}
 
-Time between this burn and atmospheric reentry: $\simeq 3$ days.
-
 \subsection{Lunar descent and ascent}
 
-Determining the delta-v required for lunar descent and ascent is less straightforward than requiring the other delta-v figures.  We showed in the previous section that the orbital velocity for a 100 km lunar orbit is roughly 1860 m/s.  Since the LL is at rest after landing, descent and ascent both involve a literal change in velocity of that amount, for a total of 3720 m/s.  However, the requirement that the LL impact the moon's surface with both horizontal and vertical velocities as close to zero as possible prevents a straightforward application of exactly 1860 m/s of delta-v for landing...
+Determining the delta-v required for lunar descent and ascent is less straightforward than requiring the other delta-v figures.  We showed in the previous section that the orbital velocity for a 100 km lunar orbit is roughly 1860 m/s.  Since the LL is at rest after landing, descent and ascent both involve a literal change in velocity of that amount, for a total of 3720 m/s.  However, the requirement that the LL impact the moon's surface with both horizontal and vertical velocities as close to zero as possible prevents a straightforward application of exactly 1860 m/s of delta-v for descent, and similarly the need for the orbital velocity of 1860 m/s to be achieved at a particular hight and in a particular direction prevents a straightforward application of exactly 1860 m/s of delta-v for ascent.
+
+The precise delta-v budget required for descent and ascent depends upon the particular descent and ascent strategies used.  These have not yet been planned for CLLARE (although when they are planned it seems likely that they will be planned so as to minimise total delta-v).
+
+For the purposes of preliminary planning, we use a total descent and ascent delta-v requirement of 4700 m/s, based on the corresponding delta-v for the Apollo lunar landings.
 
 \section{Mass figures}
 
@@ -359,7 +359,7 @@ Accounting for the extra mass of the PM's engines, supporting structures, etc., 
 
 \subsubsection{Lunar Lander}
 
-400 kg?
+For the purposes of initial considerations, we use an estimated mass of 300 kg for the unfuelled lunar lander. (TODO: Justify this -- there are some rough estimates in the forums that do so)
 
 \subsection{Propellant masses} \label{sec:rocket_eq}
 
@@ -374,7 +374,7 @@ m_1 = m_0\exp \left( \frac{\Delta v}{9.8 I_{sp}} \right)
 
 The most likely propellants for use on CLLARE are considered to be liquid oxygen (LOX) oxidiser and liquid hydrogen (LH2) fuel, and LOX oxidiser and liquid methane (LCH4) fuel.
 
-LOX/LH2 offers the greatest specific impulse, in the 400s--450s range.  However hydrogen has a very low density (leading to large, heavy storage tanks) and is highly explosive (e.g. Hindenburg disaster).
+LOX/LH2 offers the greatest specific impulse, in the 400s--450s range.  However hydrogen has a very low density (leading to large, heavy storage tanks) and is highly explosive.
 
 LOX/LCH4 offers a lower specific impulse than LOX/LH2, in the 350s--380s range, but methane is much denser than hydrogen and also safer.
 
@@ -428,18 +428,18 @@ TLI	& 3276 m/s \\
 \hline
 LOI	& 1000 m/s \\
 \hline
-Lunar ascent/descent	& 4200 m/s \\
+Lunar ascent/descent	& 4700 m/s \\
 \hline
 TEI	& 700 m/s \\
 \hline
 \end{tabular}
 \end{table}
 
-Using the ``Medium'' mass estimates, the figure shows that if the Falcon 9 is to remain viable as a launch vehicle, a specific impulse of around 425s will be required.  This makes LOX/LH2 the only feasible choice of propellant for a hardware configuration of this mass.
+Using the ``Medium'' mass estimates, the figure shows that if the Falcon 9 is to remain viable as a launch vehicle, a specific impulse of around 450s will be required.  This is at the far upper end of impulses achievable using LOX/LH2, making that the only feasible choice of propellant for a hardware configuration of this mass.
 
-Note that the ``Heavy'' mass estimate, which adds just 10\% to the ``Medium'' estimate, requires a specific impulse of just slightly more than 450 s.  This is unrealistic even using LOX/LH2, suggesting that current mass estimates are very ``close to the line''.
+Note that the ``Heavy'' mass estimate, which adds just 10\% to the ``Medium'' estimate, requires a specific impulse of around 475 s.  This is unrealistic using LOX/LH2 or any other propellant combination CSTART is aware of, suggesting that current mass estimates are right on the line of feasibility and great care must be taken to ensure the actual hardware masses do not exceed the ``Medium'' estimates.
 
-Note that for LOX/LCH4 to be a feasible propellant, the ``Medium'' estimate would need to turn out to be excessive by more than 20\%.
+Note that for LOX/LCH4 to be a feasible propellant, the ``Medium'' estimate would need to turn out to be excessive by more than 20\% -- probably somewhere around 30\%.  This unlikely, although not impossible.
 
 \subsection{Total launch masses}
 
@@ -516,9 +516,9 @@ In this chapter we present detailed descriptions of some of the CLLARE core hard
 \caption{Concept diagram for contents of CLLARE Command Module pressure vessel.  Diagram not to scale.}
 \end{figure}
 
-The proposed structure of the conical part of command module (picutred in Figure \ref{fig:cm_structure} consists of a conical frame built from titanium, with an ablative heat shield acting as a base cap and an outer shell covering the rest of the frame, providing heat shielding during reentry and insualtion while in space.  Inside of the frame is mounted an aluminium pressure vessel with an ingress/egress hatch on the top, featuring a window.
+The proposed structure of the conical part of command module (picutred in Figure \ref{fig:cm_structure} consists of a conical frame built from titanium, with an ablative heat shield acting as a base cap and an outer shell covering the rest of the frame, providing heat shielding during reentry and insualtion while in space.  Inside of the frame is mounted an aluminium pressure vessel with an ingress/egress hatch on the top, featuring a window.  The heat shield and the shell are necessarily single--use only.  The pressure vessel and its contents are intended be reusable.  The reusability of the frame will be determined later after consideration of the forces it may be subject to during a flight.
 
-The pressure vessel (pictured in Figure \ref{fig:cm_internals}) is divided into two separate parts.  The largest part of the pressure vessel is where the astronaut is seated during flight.  This part of the pressure vessel is vented prior to EVA, so everything inside it must be vacuum safe.  A second, much smaller pressure vessel in the front and bottom of the main vessel contains the air--breathing fuel cells and all electronics.  This pressure vessel remains pressurised at all times, including during EVA, facilitating the use of commercial Earth--based electronics.  While the main part of the vessel is pressurised, the flow of gas between the two pressure vessels is permitted by open valves, so that heat generated by the electronics is able to heat the cabin.
+The pressure vessel (pictured in Figure \ref{fig:cm_internals}) is divided into two separate parts.  The largest part of the pressure vessel is where the astronaut is seated during flight.  This part of the pressure vessel is vented prior to EVA, so everything inside it must be vacuum safe.  A second, much smaller pressure vessel in the front and bottom of the main vessel contains the air--breathing fuel cells and all electronics.  This pressure vessel remains pressurised at all times, including during EVA, facilitating the use of commercial Earth--based electronics.  While the main part of the vessel is pressurised, the flow of gas between the two pressure vessels is permitted by open valves, so that heat generated by the electronics is able to heat the cabin.  Injection of oxygen into the pressure vessel happens through the smaller vessel, so that the fuel cells can continue to run while EVA is in progress.
 
 TODO: Need to discuss structure of nose cylinder.
 
