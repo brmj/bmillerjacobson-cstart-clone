@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Arch Linux) (format=pdflatex 2009.10.14)  25 JAN 2010 11:16
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Arch Linux) (format=pdflatex 2009.10.14)  27 JAN 2010 13:56
 entering extended mode
  %&-line parsing enabled.
 **cllare_overview
@@ -231,11 +231,7 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \rot@mess@toks=\toks21
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 7.
- (./cllare_overview.aux
-
-LaTeX Warning: Label `tab:fuel_analysis' multiply defined.
-
-)
+ (./cllare_overview.aux)
 \openout1 = `cllare_overview.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -252,7 +248,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
- (/usr/share/texmf-dist/tex/context/base/supp-pdf.tex
+
+(/usr/share/texmf-dist/tex/context/base/supp-pdf.tex
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count109
 \scratchdimen=\dimen117
@@ -317,7 +314,7 @@ Chapter 1.
 [3
 
 ]
-Overfull \hbox (67.10616pt too wide) in paragraph at lines 49--49
+Overfull \hbox (67.10616pt too wide) in paragraph at lines 51--51
 []\OT1/cmr/bx/n/14.4 How can I sug-gest changes/corrections/improvements
  []
 
@@ -326,7 +323,7 @@ Chapter 2.
 [5
 
 ] [6] [7]
-<images/cllare_hardware_configs.png, id=382, 531.9875pt x 377.41pt>
+<images/cllare_hardware_configs.png, id=384, 531.9875pt x 377.41pt>
 File: images/cllare_hardware_configs.png Graphic file (type png)
 
 <use images/cllare_hardware_configs.png>
@@ -334,7 +331,7 @@ File: images/cllare_hardware_configs.png Graphic file (type png)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [8] [9 <./images/cllare_hardware_configs.png (PNG copy)>] [10] [11]
-Overfull \hbox (3.91623pt too wide) in paragraph at lines 181--182
+Overfull \hbox (3.91623pt too wide) in paragraph at lines 185--186
 []\OT1/cmr/m/n/10 CLLARE 1: Un-manned sub-or-bital flight (closely mon-i-tored 
 crash test dummy
  []
@@ -344,142 +341,132 @@ Chapter 3.
 [13
 
 ] [14]
-Overfull \hbox (9.33388pt too wide) in paragraph at lines 283--284
+Overfull \hbox (9.33388pt too wide) in paragraph at lines 287--288
 []\OT1/cmr/m/n/10 The Mer-cury space-craft is ar-guably the space-craft most si
 m-i-lar to the CLLARE
  []
 
 [15]
-Overfull \hbox (15.41759pt too wide) in paragraph at lines 289--307
+Overfull \hbox (15.41759pt too wide) in paragraph at lines 293--311
  [][] 
  []
 
 
-Overfull \hbox (10.43147pt too wide) in paragraph at lines 317--336
+Overfull \hbox (10.43147pt too wide) in paragraph at lines 321--340
  [][] 
  []
 
-[16] [17] [18] [19] <images/fuel_analysis.png, id=478, 642.4pt x 481.8pt>
+[16] [17] [18] [19] <images/fuel_analysis.png, id=480, 642.4pt x 481.8pt>
 File: images/fuel_analysis.png Graphic file (type png)
 
 <use images/fuel_analysis.png>
-Overfull \hbox (40.44298pt too wide) in paragraph at lines 390--391
+Overfull \hbox (40.44298pt too wide) in paragraph at lines 394--395
 [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Reference `tab:deltav-budget' on page 20 undefined on input line
- 394.
-
 [20]
-Overfull \hbox (15.86182pt too wide) in paragraph at lines 448--465
+Overfull \hbox (15.86182pt too wide) in paragraph at lines 455--472
 [][] 
  []
 
 [21 <./images/fuel_analysis.png (PNG copy)>] [22] [23]
 Chapter 4.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 499.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 506.
 
 (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 499.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 506.
 
-<images/cllare_cm_structure_concept.png, id=506, 745.78625pt x 568.1225pt>
+<images/cllare_cm_structure_concept.png, id=509, 745.78625pt x 568.1225pt>
 File: images/cllare_cm_structure_concept.png Graphic file (type png)
 
 <use images/cllare_cm_structure_concept.png>
-Overfull \hbox (102.4752pt too wide) in paragraph at lines 509--510
+Overfull \hbox (102.4752pt too wide) in paragraph at lines 516--517
  [][] 
  []
 
 
-<images/cllare_cm_pressure_vessel_contents.png, id=507, 1151.30125pt x 711.6587
+<images/cllare_cm_pressure_vessel_contents.png, id=510, 1151.30125pt x 711.6587
 5pt>
 File: images/cllare_cm_pressure_vessel_contents.png Graphic file (type png)
  <use images/cllare_cm_pressure_vessel_contents.png> [24
 
 ] [25 <./images/cllare_cm_structure_concept.png (PNG copy)>]
-Overfull \hbox (16.13937pt too wide) in paragraph at lines 535--549
+Overfull \hbox (16.13937pt too wide) in paragraph at lines 542--556
 [][] 
  []
 
 [26 <./images/cllare_cm_pressure_vessel_contents.png (PNG copy)>] [27] [28]
-<images/cllare_pm_concept.png, id=549, 671.50874pt x 479.7925pt>
+<images/cllare_pm_concept.png, id=552, 671.50874pt x 479.7925pt>
 File: images/cllare_pm_concept.png Graphic file (type png)
 
 <use images/cllare_pm_concept.png>
-Overfull \hbox (57.90836pt too wide) in paragraph at lines 617--618
+Overfull \hbox (57.90836pt too wide) in paragraph at lines 624--625
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/cllare_ll_concept_labelled.png, id=550, 550.055pt x 568.1225pt>
+<images/cllare_ll_concept_labelled.png, id=554, 550.055pt x 568.1225pt>
 File: images/cllare_ll_concept_labelled.png Graphic file (type png)
 
-<use images/cllare_ll_concept_labelled.png>
+<use images/cllare_ll_concept_labelled.png> [29]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[29] [30 <./images/cllare_pm_concept.png (PNG copy)>] [31 <./images/cllare_ll_c
-oncept_labelled.png (PNG copy)>] [32]
+[30 <./images/cllare_pm_concept.png (PNG copy)>] [31 <./images/cllare_ll_concep
+t_labelled.png (PNG copy)>] [32] [33]
 Chapter 5.
-<images/cm_on_modular_booster.jpg, id=574, 173.64874pt x 600.2425pt>
+<images/cm_on_modular_booster.jpg, id=583, 173.64874pt x 600.2425pt>
 File: images/cm_on_modular_booster.jpg Graphic file (type jpg)
 
 <use images/cm_on_modular_booster.jpg>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/cllare_lunar_landing_config.png, id=575, 592.2125pt x 377.41pt>
+<images/cllare_lunar_landing_config.png, id=584, 592.2125pt x 377.41pt>
 File: images/cllare_lunar_landing_config.png Graphic file (type png)
 
 <use images/cllare_lunar_landing_config.png>
-Overfull \hbox (10.33023pt too wide) in paragraph at lines 692--693
+Overfull \hbox (10.33023pt too wide) in paragraph at lines 699--700
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[33
+[34
 
-] [34 <./images/cm_on_modular_booster.jpg>] [35 <./images/cllare_lunar_landing_
-config.png (PNG copy)>] (./cllare_overview.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+] [35 <./images/cm_on_modular_booster.jpg>] [36 <./images/cllare_lunar_landing_
+config.png (PNG copy)>] (./cllare_overview.aux) ) 
 Here is how much of TeX's memory you used:
- 5107 strings out of 493848
- 72719 string characters out of 1154031
- 152857 words of memory out of 3000000
- 8183 multiletter control sequences out of 15000+50000
- 7170 words of font info for 26 fonts, out of 3000000 for 5000
+ 5111 strings out of 493848
+ 72762 string characters out of 1154031
+ 152958 words of memory out of 3000000
+ 8185 multiletter control sequences out of 15000+50000
+ 7338 words of font info for 27 fonts, out of 3000000 for 5000
  714 hyphenation exceptions out of 8191
- 30i,10n,36p,1081b,367s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
-/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-
-Output written on cllare_overview.pdf (36 pages, 425075 bytes).
+ 30i,10n,36p,1082b,367s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex
+10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
+sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmtt10.pfb>
+Output written on cllare_overview.pdf (37 pages, 442117 bytes).
 PDF statistics:
- 655 PDF objects out of 1000 (max. 8388607)
- 135 named destinations out of 1000 (max. 500000)
+ 670 PDF objects out of 1000 (max. 8388607)
+ 136 named destinations out of 1000 (max. 500000)
  567 words of extra memory for PDF output out of 10000 (max. 10000000)
 

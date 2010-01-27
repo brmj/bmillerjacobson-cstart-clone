@@ -46,7 +46,11 @@ CLLARE is a project of the Collaborative Space Travel and Research Team (CSTART)
 
 \section{How can I get involved in CLLARE?}
 
+TODO: Expand on this!  See the page ``\href{http://cstart.org/wiki/Getting_involved_in_CLLARE}{Getting involved in CLLARE}'' of the CSTART Wiki.
+
 \section{How can I suggest changes/corrections/improvements to this document?}
+
+TODO: Expand on this!  Email Luke Maurits (\texttt{lmaurits -at- cstart -dot- org}).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -162,9 +166,9 @@ A group called \href{http://www.copenhagensuborbitals.com/}{Copenhagen Suborbita
 
 \subsection{High apogee orbital and circumlunar missions}
 
-The proposed high apogee orbital and circumlunar flight configuration (CM-OSM-PML) has an estimated total mass between 3678 kg and 5333 kg, depending upon choice of propellant.
+The proposed high apogee orbital and circumlunar flight configuration (CM-OSM-PML) has an estimated total mass of 3679 kg, depending upon choice of propellant.
 
-The \href{http://en.wikipedia.org/wiki/Soyuz-FG}{Soyuz-FG} is a man--rated launch vehicle with an extremely well established reliability.  It is used by the Russian Federal Space Agency (RKA) to transfer crews to the International Space Station in Soyuz spacecraft, which have a launch mass of around 7000 kg.  It may be suitable for launching CM-OSM-PML configurations, subject to cooperation from the RKA.  A commercial version of this launch vehicle, the Soyuz-FG/Frigat, has a LEO payload of 7800 kg.  Commercial Soyuz-FG/Frigat launches are handled by the \href{http://www.starsem.com}{Starsem} company.  A total of 9 commercial launches have been carried out to date, although none have been manned.
+The \href{http://en.wikipedia.org/wiki/Soyuz-FG}{Soyuz-FG} is a man--rated launch vehicle with an extremely well established reliability.  It is used by the Russian Federal Space Agency (RKA) to transfer crews to the International Space Station in Soyuz spacecraft, which have a launch mass of around 7,000 kg.  It may be suitable for launching CM-OSM-PML configurations, subject to cooperation from the RKA.  A commercial version of this launch vehicle, the Soyuz-FG/Frigat, has a LEO payload of 7800 kg.  Commercial Soyuz-FG/Frigat launches are handled by the \href{http://www.starsem.com}{Starsem} company.  A total of 9 commercial launches have been carried out to date, although none have been manned.
 
 \subsection{Lunar landing missions}
 
@@ -393,9 +397,10 @@ Computing the propellant mass requirements for a lunar landing flight must be do
 
 Figure \ref{fig:fuel_analysis} shows the total launch mass (i.e. vehicles and fuel) for a lunar landing configuration of the core hardware versus various specific impulses, for a variety of vehicle mass estimates.  The ``baseline'' mass estimate, the case labelled ``Medium'' in the plot, has the values shown in Table \ref{tab:fuel_analysis} below.  The cases labelled ``Heavy'' and ``Super heavy'' have all values except the astronaut mass increased by 10\% and 20\% respectively, while the cases labelled ``Light'' and ``Super light'' have all values except the astronaut mass decreased by 10\% and 20\% respectively.  The delta-v requirements used to generate the plot are those listed in Table \ref{tab:deltav-budget} below, with a 10\% additional allowance for each burn as a ``safety margin'' to allow for occasional corrections.  Horizontal lines on the plot show the maximum LEO payloads of the Falcon 9 and Falcon 9 Heavy launch vehicles.
 
-\begin{table} \label{tab:fuel_analysis}
+\begin{table}
 \centering
 \caption{``Medium'' mass estimates for lunar landing configuration.}
+ \label{tab:fuel_analysis}
 \begin{tabular}{ | l | c | }
 \hline
 \textbf{Hardware item} & \textbf{Mass} \\
@@ -416,9 +421,10 @@ PM		& 500 kg \\
 \end{tabular}
 \end{table}
 
-\begin{table} \label{tab:fuel_analysis}
+\begin{table}
 \centering
 \caption{Delta-v budget for lunar landing flight.}
+\label{tab:deltav-budget}
 \begin{tabular}{ | l | c | }
 \hline
 \textbf{Burn} & \textbf{Delta-v} \\
@@ -441,6 +447,7 @@ Note that the ``Heavy'' mass estimate, which adds just 10\% to the ``Medium'' es
 
 Note that for LOX/LCH4 to be a feasible propellant, the ``Medium'' estimate would need to turn out to be excessive by more than 20\% -- probably somewhere around 30\%.  This unlikely, although not impossible.
 
+In light of the results of this analysis, which suggest that the common PM/LL engine may need a specific impulse of 450s, we use the lower end point of the fuelled mass range for circumlunar flights found in the previous section, i.e. 3679 kg.
 \subsection{Total launch masses}
 
 The table below summarises estimated total launch masses for various configurations of the CLLARE core hardware, using the estimates developed in the preceeding sections of this chapter.
@@ -456,7 +463,7 @@ Short Orbital (CM-OSM without consumables) & 1250 \\
 \hline
 Long Orbital (CM-OSM with consumables) & 1350 \\
 \hline
-High Altitude Orbital, Circumlunar & ???? \\
+High Altitude Orbital, Circumlunar & 3679 \\
 (CM-OSM-PML) & \\
 \hline
 Lunar Landing (CM-OSM-LLH-PMH) & 10,000 \\
@@ -624,7 +631,9 @@ Both the fuel and oxidiser for these rockets are stored in the one tank, with an
 
 \subsection{Engines}
 
-The PM features an ``engine cluster'' at its rear, consisting of a symmetric arrangement of 4 or 5 engines in a ``cross shape''.  These engines are precisely the same as the engine used on the lunar lander.  The cross shaped cluster of engines permits some degree of steering of hardware configurations using the PM, via differential thrusting of various engines.  Failure of individual engines can be compensated for by shutting down the opposite engine (obviously not required in the case of the central engine in a 5 engine cluster).
+The PM features an ``engine cluster'' at its rear, consisting of a symmetric arrangement of 4 or 5 engines in a ``cross shape''.  These engines are precisely the same as the engine used on the Lunar Lander.  The cross shaped cluster of engines permits some degree of steering of hardware configurations using the PM, via differential thrusting of various engines.  Failure of individual engines can be compensated for by shutting down the opposite engine (obviously not required in the case of the central engine in a 5 engine cluster).
+
+In Section \ref{sec:ll_engine} we calculate that the Lunar Lander's engine will need to provide at least a thrust of 3.5 kN for lunar descent/ascent.  Thus a cluster of 4 or 5 of these engines will provide a total PM thrust of between 14 and 17.5 kN (compared with 91.2 kN for the Apollo Service Module's engine).  With a fully fuelled mass of around 10,000 kg, this leads to an initial acceleration during TLI of between 1.4 and 1.75 m/s/s.  This is a very low acceleration compared to Apollo TLI (which peaked at around 1.5 g or just under 15 m/s/s), which will necessitate a longer duration TLI burn.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -638,35 +647,29 @@ The PM features an ``engine cluster'' at its rear, consisting of a symmetric arr
 
 \subsection{Overview}
 
-\begin{itemize}
-\item Super minimalist!
-\item Open cab (life support provided by suit)
-\item Single engine/stage
-\item 3 legs
-\item Landing as close to fully automated as possible
-\end{itemize}
+The CLLARE Lunar Lander is an extremely minimalist lunar landing vehicle, inspired by a wide range of minimalist landing plans from the Apollo era.  Its most striking difference compared to the Apollo Lunar Module is the fact that it is an ``open cab'' design: the astronaut is not enclosed inside a pressure vessel of any kind.  Instead the astronaut is seated in a seat attached to the exterior of the lander, wit life support provided by the EVA suit.  Harness and restraint technology from moder roller coasters and similar amusement rides are expected to be a source of inspiration for making this arrangement as safe as possible.  Unlike the Apollo LM, the CLLARE LL is a single stage vehicle, using the same engine and fuel tanks to power both descent and ascent.  The CLLARE LL has three legs arranged in an equilateral triangle configuration, rather than four legs in a square configuration, in order to minimise mass.  It is hoped that modern computers and navigation electronics will facilitate an almost completely automated descent process for the LL.
 
 \subsection{Reaction Control System}
 
-Cold gas?
+As with the Command Module, an RCS based on the use of cold gas such as nitrogen or carbon dioxide would be preferred for simplicity and safety.  Note that the LL's RCS must be capable of controlling orientation and position independently.  A set of four ``thruster blocks'', mounted symmetrically in a cross shape, with each thruster block containing 4 orthogonal thrusters, is probably the most straightforward way to achieve this.
 
 \subsection{Power system}
 
-Batteries?  Solar panels?
+Long life batteries are probably the most realistic choice of power source for the lander, since its operational life time will be too short for fuel cells to be worth while.
 
 \subsection{Communication System}
 
-Use orbiting CM as a relay?
+The communications system of the LL will be similar to that of the CM in many respects (such as the use of software-defined radio and multiplexing technology).  However, there will be no telecommand channel (the delay in radio communication between the Earth and moon will prevent the reliable piloting of the LL by remote control from Earth).  The LL is expected to use the orbiting CM as a communications relay rather than transmitting directly to Earth itself.  This will result in radio black outs while the CM is behind the moon from the LL's point of view, but the alternative is to drastically increase the transmission power and antenna size of the LL's communication system, resulting in a higher power demand and a more massive lander.
 
 \subsection{Navigation System}
 
 The main difference between the LL's navigation system and the CM's is that the LL will require an altimeter of some kind.  An Australian--New Zealand group called \href{http://www.lunarnumbat.org}{Lunar Numbat} are working on (amongst other things) an \href{http://www.lunarnumbat.org/cgi-bin/twiki/view/LunarNumbat/LNTaskRadarAltimeter}{open source radar altimeter} for use by one of the Google Lunar X Prize teams, which may be appropriate.
 
-\subsection{Engine}
+\subsection{Engine} \label{sec:ll_engine}
 
-Discuss thrust requirements etc. here.
+We put an initial estimate on the required thrust of the LL engine, despite not having a careful descent plan, by using figures from the Apollo Lunar Module.  The Apollo LM's descent stage mass was 10,149 kg and the ascent stage mass was 4,547 kg, for a total LM mass of 14,696 kg.  The LM's descent engine produced a thrust of 44.40 kN, resulting in a descent acceleration of 3.02 m/s/s.  The LM's ascent engine produced a thrust of 15.6 kN, resulting in an ascent acceleration of 3.43 m/s/s.  We estimate the fuelled mass of the CLLARE LL to be no greater than 1000 kg.  Thus to produce an acceleration of up to 3.5 m/s/s, to roughly match maximum Apollo acceleration, requires an engine thrust of 3.5 kN. 
 
-Gimballed?
+It has not yet been determined whether or not the LL engine will be gimballed or whether it will be fixed, with orientation of the LL via RCS taking the place of gimballing.
 
 \subsection{The CLLARE Lunar EVA Suit}
 
@@ -680,6 +683,10 @@ Someone needs to expand on this:
 \end{itemize}
 
 \chapter{Concept Art}
+
+This chapter contains various items of concept art for the CLLARE project.
+
+In many items of concept art, items of the CLLARE core hardware are depicted bearing a flag which features an image of the Earth from space on a blue background.  The reason for this is that CSTART is an official partner of the \href{http://www.oneflaginspace.org}{One Flag in Space} project, whose mission is ``to promote the use of the ``Blue Marble'' as a symbol of world unity in space exploration. It is a symbol that anyone, anywhere in the world can relate to, regardless of nationality, ethnic origin or religious beliefs, yet does not require political collaboration between space-faring nations''.  The CSTART Social Contract stipulates that, in support of the ideals of One Flag in Space, all CSTART spacecraft shall bear the Blue Marble flag, and that no CSTART spacecraft shall bear the flag of any nation of Earth.
 
 \begin{figure}[h] \label{fig:cm_on_modular_booster}
 \centering
