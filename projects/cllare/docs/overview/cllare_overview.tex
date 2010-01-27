@@ -20,10 +20,8 @@
 \Large{Collaborative Lunar Landing and Research Expedition} \\
 \Large{Project Overview} \\
 \vspace{2.0cm}
-\normalsize{Luke Maurits, \\
-Add your name here, \\
-If you contribute material, \\
-Use alphabetical order} \\
+\normalsize{Version 0.18, \\
+\today} \\
 \vspace{4.0cm}
 \includegraphics{images/cc_badge} \\
 This document is licensed under the \\
@@ -46,11 +44,17 @@ CLLARE is a project of the Collaborative Space Travel and Research Team (CSTART)
 
 \section{How can I get involved in CLLARE?}
 
-TODO: Expand on this!  See the page ``\href{http://cstart.org/wiki/Getting_involved_in_CLLARE}{Getting involved in CLLARE}'' of the CSTART Wiki.
+The definitive guide to getting involved in CLLARE can be found at the ``\href{http://cstart.org/wiki/Getting_involved_in_CLLARE}{Getting involved in CLLARE}'' page of the CSTART Wiki.
 
-\section{How can I suggest changes/corrections/improvements to this document?}
+\section{How can I suggest changes, corrections and improvements to this document?}
 
-TODO: Expand on this!  Email Luke Maurits (\texttt{lmaurits -at- cstart -dot- org}).
+The following people are currently responsible for maintaining this document:
+\begin{itemize}
+\item Luke Maurits (\texttt{lmaurits -at- cstart -dot- org})
+\end{itemize}
+You can email spelling and grammar corrections, suggested restructurings, more detailed and up--to--date descriptions of the project, improved diagrams and concept art to anybody on this list to have the material considered for inclusion in the next version of this document.
+
+If you'd like to become a maintainer of this document, email one of the current maintainers to express your interest.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -110,7 +114,7 @@ The LL plays the role of the ``landing vehicle'' of the modular spacecraft descr
 
 \subsection{The CLLARE Lunar EVA Suit}
 
-The \href{http://cstart.org/wiki/CLLARE_Lunar_EVA_Suit}{CLLARE Lunar EVA Suit} is a space suit suitable for use with EVA in LEO, lunar orbit and on the lunar surface.  (WE NEED TO EXPAND ON THIS)
+The \href{http://cstart.org/wiki/CLLARE_Lunar_EVA_Suit}{CLLARE Lunar EVA Suit} is a space suit suitable for use with EVA in LEO, lunar orbit and on the lunar surface.  The Lunar EVA suit must provide protection from the vacuum of space, thermal extremes and micrometeoroids.  The Suit is to contain an entirely self--contained life support system, most likely in the form of a ``backpack'', containing enough consumables to support an astronaut for at least 6 hours independent of any spacecraft.  The suit will feature an integrated microphone and camera, and a communication system for transmitting audio and video from these devices over a short range.
 
 \section{Core Hardware Configurations} \label{sec:config}
 
@@ -164,6 +168,8 @@ CSTART is not aware of any man--rated commercial launch vehicles designed to car
 
 A group called \href{http://www.copenhagensuborbitals.com/}{Copenhagen Suborbitals}, based in Denmark, are currently working on a hybrid rocket engine designed to perform suborbital flights for a manned, lightweight ``micro space capsule''.  Copenhagen Suborbitals are already at the stage of performing static test firings of their rockets, with a first launch planned for mid 2010.  Like CSTART, Copenhagen Suborbitals is a volunteer operation funded by donations and sponsorships, with a strong commitment to open source principles.  The two groups are on friendly terms and CSTART hopes to gain valuable insight and experience from the Copenhagen Suborbitals team in constructing its own hybrid rocket launch systems.
 
+While, in sections that follow, we consider commercial launch options for heavier configurations of the CLLARE hardware, the OTRAG approach of clustering small and simple rockets is expected to scale to the point that, if it was for some reason considered desirable, all configurations of the core hardware could be launched using appropriately sized hybrid clusters.
+
 \subsection{High apogee orbital and circumlunar missions}
 
 The proposed high apogee orbital and circumlunar flight configuration (CM-OSM-PML) has an estimated total mass of 3679 kg, depending upon choice of propellant.
@@ -172,11 +178,11 @@ The \href{http://en.wikipedia.org/wiki/Soyuz-FG}{Soyuz-FG} is a man--rated launc
 
 \subsection{Lunar landing missions}
 
-The proposed lunar landing configurations (LL-CM-OSM-PMH) has an estimated total masses in the vicinity of 10,000 kg, using liquid oxygen and liquid hydrogen as propellants.
+The proposed lunar landing configurations (LL-CM-OSM-PMH) has an estimated total masses between 10,000 and 11,000 kg, using liquid oxygen and liquid hydrogen as propellants.
 
 The \href{http://spacex.com}{SpaceX} company's \href{http://spacex.com/falcon9.php}{Falcon 9} is a man-rated, two-stage booster capable of lifting 10,450 kg of payload into LEO.  The Falcon 9 is currently under development, but is nearly ready and may be suitable for launching lunar landing configurations of the CLLARE hardware.
 
-The Falcon 9 is a strongly preferred launch option for lunar landing configurations, as its aerodynamic fairing facilitates positioning the LL infront of the CM from the beginning of the flight.  Without this fairing the LL would need to be stored behind the CM, necessitating either a docking operation after launch or a longer and more complicated transfer EVA.
+The Falcon 9 is a strongly preferred launch option for lunar landing configurations, as its aerodynamic fairing facilitates positioning the LL infront of the CM from the beginning of the flight.  Without this fairing the LL would need to be stored behind the CM in an aerodynamic fairing, increasing the mass of the lunar landing configuration and necessitating either a docking operation after launch or a longer and more complicated transfer EVA.
 
 \section{A proposed program of flights}
 
@@ -272,6 +278,8 @@ The Mercury spacecraft had a habitable volume of 1.7 cubic metres.  We shall wor
 
 The remaining 80\% of the atmosphere must be composed of an inert ``filler gas'', and some of this gas must be stored for repressurisation after EVA.  Nitrogen is the most likely choice, to closely reproduce the atmosphere on Earth.  From our calcultions above, the pressurised cabin will contain 83.14 mol of gas.  If 80\% of this gas is nitrogen, there are 66.52 mol of nitrogen.  Diatomic nitrogen has a molar mass of 28 g/mol, so this is 1862.56 g or around 1.9 kg of nitrogen.
 
+These figures will be used in a future version of this document to develop a refined estimate of the mass of the CM Environmental Control System. 
+
 \subsubsection{Water}
 
 20 L of water will provide 2 L per day for 10 days (longer than expected mission time), for a total mass of 20 kg.
@@ -301,11 +309,11 @@ Recovery equipment	& 60 kg		& 60 kg & \\
 Navigation equipment	& 40 kg		& 10 kg & Crossbow make a GPS/IMU unit with mass 1.6 kg \\
 Telemetry equipment	& 50 kg		& 10 kg & This is just some sensors and a single computer board \\
 Electrical equipment	& 80 kg		& 10 kg & Ultracell XX55 has mass 1.6 kg \\
-Communications system	& 20 kg		& 20 kg & \\
+Communications system	& 20 kg		& 10 kg & This is just some circuit boards and antennae \\
 Crew seats and provisions & 80 kg	& 80 kg & \\
 Environmental control system	& 50 kg		& 50 kg & \\
 \hline \hline
-\textbf{Total}	& 1032 kg & 892 kg	& \\
+\textbf{Total}	& 1032 kg & 882 kg	& \\
 \hline
 \end{tabular}
 \caption{Mercury derived mass estimate}
@@ -329,23 +337,23 @@ Recovery equipment	& 98 kg		& 98 kg & \\
 Navigation equipment	& 62 kg		& 10 kg & Crossbow make a GPS/IMU unit with mass 1.6 kg \\
 Telemetry equipment	& 51 kg		& 10 kg & This is just some sensors and a single computer board \\
 Electrical equipment	& 125 kg	& 10 kg & Ultracell XX55 has mass 1.6 kg \\
-Communications system	& 26 kg		& 26 kg & \\
+Communications system	& 26 kg		& 10 kg & This is just some circuit boards and antennae. \\
 Crew seats and provisions & 426 kg	& 80 kg & Using figure from Mercury -- Gemini had two \\
 				& 	&	& ejection seats (with rockets, parachutes, etc.) \\
 Environmental control system	&  117 kg		& 117 kg & \\
 \hline \hline
-\textbf{Total}	& 1707 kg & 1123 kg	& \\
+\textbf{Total}	& 1707 kg & 1113 kg	& \\
 \hline
 \end{tabular}
 \caption{Gemini derived mass estimate}
 \label{tab:geminimass}
 \end{sidewaystable} 
 
-Averaging our Mercury--derived underestimate of 892 kg and our Gemini--derived overestimate of 1123 kg, we estimate the empty mass of the CLLARE CM to be approximately 1008 kg.
+Averaging our Mercury--derived underestimate of 882 kg and our Gemini--derived overestimate of 1113 kg, we estimate the empty mass of the CLLARE CM to be approximately 997.3 kg.
 
 \subsubsection{Orbital Support Module}
 
-Mercury's retro rocket pack: 237 kg (seems awfully heavy)
+Mercury's retro rocket pack: 237 kg (seems awfully heavy?)
 
 Structural mass of Gemini's equipment module (much larger than our OSM): 250 kg
 
@@ -400,7 +408,7 @@ Figure \ref{fig:fuel_analysis} shows the total launch mass (i.e. vehicles and fu
 \begin{table}
 \centering
 \caption{``Medium'' mass estimates for lunar landing configuration.}
- \label{tab:fuel_analysis}
+\label{tab:fuel_analysis}
 \begin{tabular}{ | l | c | }
 \hline
 \textbf{Hardware item} & \textbf{Mass} \\
@@ -488,9 +496,26 @@ Unknown (self-built modular hybrid booster)
 
 \subsubsection{Lunar landing missions}
 
-A single launch of the Falcon 9 commercial booster costs US\$35,000,000.
+A single launch of the Falcon 9 commercial booster is expected to cost US\$35,000,000.
 
 \subsection{Total costs}
+
+\begin{tabular}{ | l | c | }
+\hline
+Flight type & Estimated total cost (USD) \\
+\hline
+\hline
+Suborbital & ??? \\
+\hline
+Short Orbital & ??? \\
+\hline
+Long Orbital & ??? \\
+\hline
+High Altitude Orbital, Circumlunar & ??? \\
+\hline
+Lunar Landing & $\leq$ 50,000,000 \\
+\hline
+\end{tabular}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -502,12 +527,7 @@ In this chapter we present detailed descriptions of some of the CLLARE core hard
 
 \subsection{Overview}
 
-\begin{itemize}
-\item Reusable
-\item Glass cockpit
-\item Lifting reentry
-\item Paraglider landing
-\end{itemize}
+The CLLARE Command Module is a simple, versatile, partially reusable single--person space capsule.  The CM is designed to facilitate the use of standard commercial electronics as much as possible, to minimize cost.  Modern computer technology is used to simplify operation as much as possible, e.g. through the use of ``glass cockpit'' technology, providing detailed and intuitive graphical display of information, and through maximum automation of all aspects of flight.  The CM is capable of atmospheric reentry thanks to an ablative heat shield, and is shaped and has its centre of mass positioned such that it generates some degree of lift during reentry, reducing acceleration experienced by the occupant.  Once at a sufficiently low altitude and speed during reentry, the CM is hoped to be able to use a paraglider to engage in a controlled landing on either land or water.  If this is found to be infeasible, a parachute will be used instead.
 
 \subsection{Structure and construction}
 
@@ -523,26 +543,42 @@ In this chapter we present detailed descriptions of some of the CLLARE core hard
 \caption{Concept diagram for contents of CLLARE Command Module pressure vessel.  Diagram not to scale.}
 \end{figure}
 
-The proposed structure of the conical part of command module (picutred in Figure \ref{fig:cm_structure} consists of a conical frame built from titanium, with an ablative heat shield acting as a base cap and an outer shell covering the rest of the frame, providing heat shielding during reentry and insualtion while in space.  Inside of the frame is mounted an aluminium pressure vessel with an ingress/egress hatch on the top, featuring a window.  The heat shield and the shell are necessarily single--use only.  The pressure vessel and its contents are intended be reusable.  The reusability of the frame will be determined later after consideration of the forces it may be subject to during a flight.
+The proposed structure of the conical part of command module (picutred in Figure \ref{fig:cm_structure} consists of a conical frame built from titanium, with an ablative heat shield acting as a base cap and an outer shell covering the rest of the frame, providing heat shielding during reentry and insualtion while in space.  Inside of the frame is mounted an aluminium pressure vessel with an ingress/egress hatch on the top, featuring a window.  The hatch and window of the pressure vessel are expected to be very similar in shape and function to those located on the Gemini spacecraft.
 
-The pressure vessel (pictured in Figure \ref{fig:cm_internals}) is divided into two separate parts.  The largest part of the pressure vessel is where the astronaut is seated during flight.  This part of the pressure vessel is vented prior to EVA, so everything inside it must be vacuum safe.  A second, much smaller pressure vessel in the front and bottom of the main vessel contains the air--breathing fuel cells and all electronics.  This pressure vessel remains pressurised at all times, including during EVA, facilitating the use of commercial Earth--based electronics.  While the main part of the vessel is pressurised, the flow of gas between the two pressure vessels is permitted by open valves, so that heat generated by the electronics is able to heat the cabin.  Injection of oxygen into the pressure vessel happens through the smaller vessel, so that the fuel cells can continue to run while EVA is in progress.
+The heat shield and the shell are necessarily single--use only.  The pressure vessel and its contents are intended be reusable.  The reusability of the frame will be determined later after consideration of the forces it may be subject to during a flight.
 
-TODO: Need to discuss structure of nose cylinder.
+The pressure vessel (pictured in Figure \ref{fig:cm_internals}) is divided into two separate parts.  The largest part of the pressure vessel is the cabin, where the astronaut is seated during flight.  This part of the pressure vessel is vented prior to EVA, so everything inside it must be vacuum safe.  A second, smaller pressure vessel contains the air--breathing fuel cells and the vast majority of the CM's electronics.  This pressure vessel remains pressurised at all times, including during EVA, and has its temperature and humidity levels maintained in a range matching typical Earth environments, facilitating the use of standard commercial electronics.  While the main part of the vessel is pressurised, the flow of gas between the two pressure vessels is permitted by open valves, so that heat generated by the electronics is able to heat the cabin.  Injection of oxygen into the pressure vessel happens through the smaller vessel, so that the fuel cells can continue to run while EVA is in progress.
+
+The cylindrical nose of the CM is composed of a number of separate sections joined together, with each section performing its own function.  One section contains the CM's Reaction Control System, another contains the parachutes/paraglider/ballutes required for reentry and yet another contains various peripherals such as horizon sensors and cameras.  Note that any sections forward of that containing the parachutes or other reentry gear must be jetisonned prior to reentry, so nothing vital to reentry operation should be positioned in such sections.  Antennae are expected to be integrated into some sections, with some antennae possibly spanning multiple sections.  Each nose section is built to a standard template, relating to the connection and separation of consecutive sections and the passing of power/data connectivity from each section to the next.
 
 \subsection{Reaction Control System}
 
 The \href{http://cstart.org/wiki/CLLARE_CM_Reaction_Control_System}{CM's Reaction Control System} (RCS) provides pitch, yaw and roll control for the CM, to be used both during spaceflight and reentry. It is the CM's only self-contained means of propulsion.
 
+The CM RCS is contained in the cylindrical nose of the module, near the end which attaches to the cone.  It consists of eight individual thrusters, arranged as four pairs of thrusters, with the four pairs pointing in mutually orthogonal directions.  By selectively firing certain thrusters, this arrangement allows roll maneuvers without translation, and pitch and yaw maneuvers with some incidental translation (when mated with an OSM, the CM is able to undergo independent rotation and translation).
+
 An RCS based on the use of cold gas such as nitrogen or carbon dioxide would be preferred for simplicity and safety, but there are concerns about the performance of such systems being able to meet the necessary demands.  If cold gas cannot be made to work, the use of hydrogen peroxide monopropellant rockets may be considered preferentially to full blown bipropellant liquid rockets.
 
 \subsection{Power system}
 
-The \href{http://cstart.org/wiki/CLLARE_CM_Power_System}{CM's power system} provides 12V and 24V DC power to other subsystems, generated by an array of small and rugged atmosphere breathing methanol fuel cells, such as the \href{http://www.ultracellpower.com/assets/XX55_Data_Sheet_01-27-2009.pdf}{Ultracell XX55}.  A set of backup batteries provide continuity of power during temporary interruptions to methanol or oxygen supplies.
+The \href{http://cstart.org/wiki/CLLARE_CM_Power_System}{CM's power system} provides 12V and 24V DC power to other subsystems, generated by an array of small and rugged atmosphere--breathing methanol fuel cells, such as the \href{http://www.ultracellpower.com/assets/XX55_Data_Sheet_01-27-2009.pdf}{Ultracell XX55}.  A set of rechargable backup batteries (potentially Lithium Ion) provide continuity of power during temporary interruptions to methanol or oxygen supplies.
 
+The power requirements of the power system are not expected to exceed 100 W and may be considerably less.  See Table \ref{tab:voltage_power} below for estimates of voltage and power requirements for various applications.
+
+\begin{table}
+\centering
+\caption{Estimated voltage and power requirements for various applications}
+\label{tab:voltage_power}
 \begin{tabular}{ | l | c | c | c | c | }
 \hline
 Application & Voltage & Unit Power & Multiplier & Total power \\
 \hline
+\hline
+LED cabin lighting & ?? & ?? & ? & ?? \\
+\hline
+Rendezvous light beacon & ?? & ?? & ? & ?? \\
+\hline
+Single board computer & ?? & ?? & 6 & ?? \\
 \hline
 USRP comms board & 6V & ?? & 1 & ?? \\
 \hline
@@ -550,13 +586,14 @@ Crossbow NAV440 & 9-42 & $<4$ W & 1 & $<4$ W \\
 GPS/IMU unit & & & & \\
 \hline
 \hline
-Total power requirement & & & & $<4$ W \\
+Total power requirements & & & & ??? W \\
 \hline
 \end{tabular}
+\end{table}
 
 \subsection{Environmental Control System}
 
-The \href{http://cstart.org/wiki/CLLARE_Environmental_Control_System}{CM's Enviromental Control System} is responsible for maintaining a habitable environment inside the CLLARE Command Module cabin. This involves maintaining an appropriate oxygen, pressure and humidity levels, temperature and more.
+The \href{http://cstart.org/wiki/CLLARE_Environmental_Control_System}{CM's Enviromental Control System} is responsible for maintaining a habitable environment inside the CLLARE Command Module cabin. This involves maintaining appropriate oxygen, pressure and humidity levels, temperature and more.
 
 Little design work on the ECS has been performed thus far.  The use of a 20\% oxygen, 80\% nitrogen atmosphere maintained at room temperature is considered attractive as it enables the use of commercial electronics without modification.
 
@@ -585,7 +622,7 @@ The use of \href{http://en.wikipedia.org/wiki/Software_defined_radio}{software-d
 
 \subsection{Navigation System}
 
-The \href{http://cstart.org/wiki/CLLARE_CM_Navigation_System}{CM's Navigation System} uses various hardware sensors and interactions with other subsystems to provide high accuracy estimates of position, orientation and translational and rotational velocities at all stages of the mission.  Plans for the navigation system include the use of GPS, inertial measurement units, radio round--trip--time and Doppler shift measuremets, StarTrackers and more.
+The \href{http://cstart.org/wiki/CLLARE_CM_Navigation_System}{CM's Navigation System} uses various hardware sensors and interactions with other subsystems to provide high accuracy estimates of position, orientation and translational and rotational velocities at all stages of the mission.  Plans for the navigation system include the use of GPS, horizon sensors, inertial measurement units, radio round--trip--time and Doppler shift measuremets, StarTrackers and more.
 
 The integration of data from this varied range of sources, each with distinct inherrent accuracies and error profiles, into a single, optimal estimate of position, orientation and velocities will require the use of ``filtering'' software, such as Kalman filters or recursive Bayesian estimation.
 
@@ -611,23 +648,38 @@ The CSTART Social Contract stipulates that ``all computers onboard CSTART rocket
 
 \section{The CLLARE Orbital Support Module}
 
-Discuss rocket options here.
+\subsection{Structure}
 
-Discuss required consumables and storage options here: oxygen, nitrogen, methanol, water, anything else?
+The envisaged structure of the OSM is straightforward.  A titanium frame provides both the overall shape of the module and a place to mount consumable tanks.  An outer skin of aluminium is placed over the frame to provide an aerodynamic shape and thermal and micrometeoroid shielding of the OSM contents.
+
+\subsection{Retro Rockets}
+
+In the low apogee orbital flight configuratiion of the CLLARE core hardware, the OSM must contain a set of retrorockets to facilitate deorbit burns leading to reentry.  These rockets are used once only and do not require controllability (i.e. no throttline or stopping/starting required).  Solid rockets or simple hybrid rockets should be entirely adequate.
+
+\subsection{Reaction Control System}
+
+The OSM's RCS consists of a set of four ``thruster blocks'', mounted on the exterior of the OSM at 90 degree intervals, aligned with the four pairs of thrusters in the CM's nose RCS.  Each thruster block containis four orthogonal thrusters, two parallel to the CM's heat shield--nose axis and two orthogonal to it.  This arrangement allows, by coordinating activation of thrusters from the CM's and OSM's RCSes, independent translation and rotation.
+
+As with the Command Module, an RCS based on the use of cold gas such as nitrogen or carbon dioxide would be preferred for simplicity and safety.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{The CLLARE Propulsion Module}
 
-\begin{figure}[h] \label{fig:pm}
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.6]{images/cllare_pm_concept}
 \caption{Concept diagram for CLLARE Propulsion Module, with external view (top) and internal view (bottom).  Diagrams not to scale.}
+\label{fig:pm}
 \end{figure}
+
+\subsection{Overview}
+
+The Propulsion Module consists primarily of a single, large, ``bullet--shaped'' (i.e. cylindrical with hemispherical ends) propellant tank (discussed in more detail below).  At one end of this tank, a truss--like structure connects it to a short cylindrical, enclosed structure which contains tanks of pressurised helium gas and which connects to the end of an Orbital Support Module.  At the other end of the tank, a similar truss--like structure connects it to an enclosed structure which contains the engine cluster (also discussed below).  Figure \ref{fig:pm} depicts this arrangement diagramatically.
 
 \subsection{Propellant tank}
 
-Both the fuel and oxidiser for these rockets are stored in the one tank, with an internal bulkhead providing separation and insulation of the two propellants.  Helium gas is used as a pressurant to force the propellants into the combustion chambers.
+The PM's propellant tank contains both the fuel \emph{and} oxidiser for the engine cluster: an internal bulkhead separates and thermally insulates the two propellants.  This arrangement was used in the fuel tanks of the uppermost stage of Saturn V rocket to great effect, saving a significant amount of mass over two separate tanks.  Helium gas stored in tanks at the forward end of the PM is used as a pressurant to force the propellants out of their tank and into the combustion chambers and the engines.
 
 \subsection{Engines}
 
@@ -649,17 +701,21 @@ In Section \ref{sec:ll_engine} we calculate that the Lunar Lander's engine will 
 
 The CLLARE Lunar Lander is an extremely minimalist lunar landing vehicle, inspired by a wide range of minimalist landing plans from the Apollo era.  Its most striking difference compared to the Apollo Lunar Module is the fact that it is an ``open cab'' design: the astronaut is not enclosed inside a pressure vessel of any kind.  Instead the astronaut is seated in a seat attached to the exterior of the lander, wit life support provided by the EVA suit.  Harness and restraint technology from moder roller coasters and similar amusement rides are expected to be a source of inspiration for making this arrangement as safe as possible.  Unlike the Apollo LM, the CLLARE LL is a single stage vehicle, using the same engine and fuel tanks to power both descent and ascent.  The CLLARE LL has three legs arranged in an equilateral triangle configuration, rather than four legs in a square configuration, in order to minimise mass.  It is hoped that modern computers and navigation electronics will facilitate an almost completely automated descent process for the LL.
 
+\subsection{Structure}
+
+The precise structure of the LL is under active discussion.
+
 \subsection{Reaction Control System}
 
 As with the Command Module, an RCS based on the use of cold gas such as nitrogen or carbon dioxide would be preferred for simplicity and safety.  Note that the LL's RCS must be capable of controlling orientation and position independently.  A set of four ``thruster blocks'', mounted symmetrically in a cross shape, with each thruster block containing 4 orthogonal thrusters, is probably the most straightforward way to achieve this.
 
 \subsection{Power system}
 
-Long life batteries are probably the most realistic choice of power source for the lander, since its operational life time will be too short for fuel cells to be worth while.
+Long life batteries are probably the most realistic choice of power source for the lander, since its operational life time will be too short for fuel cells to be worth while.  The need to maintain a nearly full charge for 3--5 days during transfer to the moon will present a challenge, as the LL's open cab design means that the batteries will be exposed to open space and hence may experience extremes of temperature
 
 \subsection{Communication System}
 
-The communications system of the LL will be similar to that of the CM in many respects (such as the use of software-defined radio and multiplexing technology).  However, there will be no telecommand channel (the delay in radio communication between the Earth and moon will prevent the reliable piloting of the LL by remote control from Earth).  The LL is expected to use the orbiting CM as a communications relay rather than transmitting directly to Earth itself.  This will result in radio black outs while the CM is behind the moon from the LL's point of view, but the alternative is to drastically increase the transmission power and antenna size of the LL's communication system, resulting in a higher power demand and a more massive lander.
+The communications system of the LL will be similar to that of the CM in many respects (such as the use of software-defined radio and multiplexing technology).  However, there will be no telecommand channel (the delay in radio communication between the Earth and moon will prevent the reliable piloting of the LL by remote control from Earth).  The LL is expected to use the orbiting CM as a communications relay rather than transmitting directly to Earth itself.  This will result in radio black outs while the CM is behind the moon from the LL's point of view, but the alternative is to drastically increase the transmission power and antenna size of the LL's communication system to facilitate direct transission to Earth, resulting in a higher power demand and a more massive lander.
 
 \subsection{Navigation System}
 
@@ -673,14 +729,11 @@ It has not yet been determined whether or not the LL engine will be gimballed or
 
 \subsection{The CLLARE Lunar EVA Suit}
 
-Someone needs to expand on this:
-\begin{itemize}
-\item Needs to be suitable for EVA in LEO, in lunar orbit, on lunar surface.
-\item Needs to support a few hours of activity without external supplies.
-\item Needs to be as light as possible.
-\item Elasticated, mechanical counter--pressure concept (Webb et. al.) looks promising.
-\item Will work closely with Open Luna Foundation.
-\end{itemize}
+The requirements for the Lunar EVA Suit are that it provide all the various protections, supplies and services required to independently support an astronaut in LEO, lunar orbit and on the lunar surface for at least 6 hours.  Various basic electronic facilities (radio communication of voice and video and possibly biomedical telemetry) should also be provided by the suit.
+
+CSTART is not alone in its need for a suit meeting these criteria.  The \href{http://www.openluna.org/}{Open Luna Foundation} ``seeks to return mankind to the lunar surface, first through robotic missions, followed by manned exploration, culminating in an eight person permanent outpost, and to do all of this in a way that it is accessible to everyone. [Their] research and technology will be open-source, [they] are privately funded, and one of [their] specific goals is to reach out to the community and educational systems to spread interest, enthusiasm, and involvement''.  The OLF have done considerable design work and analogue testing of lunar EVA suits.  CSTART and OLF are on friendly terms and CSTART looks forward to extensive cooperation with the OLF on development of lunar EVA suit technology.
+
+Importantly, the OLF have fostered an industry partnership with the \href{http://www.elasticspacesuit.com/}{Webb Elastic Garments Group}, who are working on a ``space activity suit'', which uses elastic materials to provide mechanical counter--pressure to expanding astronaut's body, rather than using gas pressure to do this (which has been the approach of all manned space missions to date).  This option is considered very attractive as it results in a drastically lighter suit with improved mobility.
 
 \chapter{Concept Art}
 
