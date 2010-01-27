@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Arch Linux) (format=pdflatex 2009.10.14)  28 JAN 2010 04:08
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Arch Linux) (format=pdflatex 2009.10.14)  28 JAN 2010 05:17
 entering extended mode
  %&-line parsing enabled.
 **cllare_overview
@@ -407,40 +407,45 @@ Overfull \hbox (5.08382pt too wide) in paragraph at lines 572--592
  [][] 
  []
 
-[27] [28] [29]
-<images/cllare_pm_concept.png, id=584, 671.50874pt x 479.7925pt>
+[27] [28] [29] <images/cllare_osm_concept.png, id=584, 666.49pt x 465.74pt>
+File: images/cllare_osm_concept.png Graphic file (type png)
+
+<use images/cllare_osm_concept.png>
+Overfull \hbox (54.89708pt too wide) in paragraph at lines 657--658
+ [][] 
+ []
+
+<images/cllare_pm_concept.png, id=585, 671.50874pt x 479.7925pt>
 File: images/cllare_pm_concept.png Graphic file (type png)
 
 <use images/cllare_pm_concept.png>
-Overfull \hbox (57.90836pt too wide) in paragraph at lines 671--672
+Overfull \hbox (57.90836pt too wide) in paragraph at lines 678--679
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[30] [31 <./images/cllare_pm_concept.png (PNG copy)>]
-<images/cllare_ll_concept_labelled.png, id=598, 550.055pt x 568.1225pt>
+[30] [31 <./images/cllare_osm_concept.png (PNG copy)>]
+<images/cllare_ll_concept_labelled.png, id=600, 550.055pt x 568.1225pt>
 File: images/cllare_ll_concept_labelled.png Graphic file (type png)
 
-<use images/cllare_ll_concept_labelled.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[32] [33 <./images/cllare_ll_concept_labelled.png (PNG copy)>] [34] [35]
+<use images/cllare_ll_concept_labelled.png> [32 <./images/cllare_pm_concept.png
+ (PNG copy)>] [33 <./images/cllare_ll_concept_labelled.png (PNG copy)>]
+[34] [35]
 Chapter 5.
-<images/cm_on_modular_booster.jpg, id=624, 173.64874pt x 600.2425pt>
+<images/cm_on_modular_booster.jpg, id=626, 173.64874pt x 600.2425pt>
 File: images/cm_on_modular_booster.jpg Graphic file (type jpg)
 
 <use images/cm_on_modular_booster.jpg>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/cllare_lunar_landing_config.png, id=625, 592.2125pt x 377.41pt>
+<images/cllare_lunar_landing_config.png, id=627, 592.2125pt x 377.41pt>
 File: images/cllare_lunar_landing_config.png Graphic file (type png)
 
 <use images/cllare_lunar_landing_config.png>
-Overfull \hbox (10.33023pt too wide) in paragraph at lines 752--753
+Overfull \hbox (10.33023pt too wide) in paragraph at lines 759--760
  [][] 
  []
 
@@ -452,10 +457,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 ] [37 <./images/cm_on_modular_booster.jpg>] [38 <./images/cllare_lunar_landing_
 config.png (PNG copy)>] (./cllare_overview.aux) ) 
 Here is how much of TeX's memory you used:
- 5125 strings out of 493848
- 72974 string characters out of 1154031
- 153140 words of memory out of 3000000
- 8191 multiletter control sequences out of 15000+50000
+ 5132 strings out of 493848
+ 73150 string characters out of 1154031
+ 153243 words of memory out of 3000000
+ 8196 multiletter control sequences out of 15000+50000
  7338 words of font info for 27 fonts, out of 3000000 for 5000
  714 hyphenation exceptions out of 8191
  30i,10n,36p,1082b,367s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -470,9 +475,9 @@ m/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
 sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmtt10.pfb>
-Output written on cllare_overview.pdf (39 pages, 456039 bytes).
+Output written on cllare_overview.pdf (39 pages, 471108 bytes).
 PDF statistics:
- 712 PDF objects out of 1000 (max. 8388607)
- 144 named destinations out of 1000 (max. 500000)
- 607 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 716 PDF objects out of 1000 (max. 8388607)
+ 145 named destinations out of 1000 (max. 500000)
+ 612 words of extra memory for PDF output out of 10000 (max. 10000000)
 

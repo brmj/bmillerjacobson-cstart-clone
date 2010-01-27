@@ -71,13 +71,13 @@
 \contentsline {subsection}{\numberline {4.3.1}Overview}{30}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Propellant tank}{31}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}Engines}{32}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}The CLLARE Lunar Lander}{32}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Overview}{32}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Structure}{32}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Reaction Control System}{32}{subsection.4.4.3}
-\contentsline {subsection}{\numberline {4.4.4}Power system}{33}{subsection.4.4.4}
+\contentsline {section}{\numberline {4.4}The CLLARE Lunar Lander}{33}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Overview}{33}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Structure}{34}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Reaction Control System}{34}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Power system}{34}{subsection.4.4.4}
 \contentsline {subsection}{\numberline {4.4.5}Communication System}{34}{subsection.4.4.5}
 \contentsline {subsection}{\numberline {4.4.6}Navigation System}{34}{subsection.4.4.6}
-\contentsline {subsection}{\numberline {4.4.7}Engine}{34}{subsection.4.4.7}
-\contentsline {subsection}{\numberline {4.4.8}The CLLARE Lunar EVA Suit}{34}{subsection.4.4.8}
+\contentsline {subsection}{\numberline {4.4.7}Engine}{35}{subsection.4.4.7}
+\contentsline {subsection}{\numberline {4.4.8}The CLLARE Lunar EVA Suit}{35}{subsection.4.4.8}
 \contentsline {chapter}{\numberline {5}Concept Art}{36}{chapter.5}
