@@ -1,0 +1,26 @@
+\contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}
+\contentsline {section}{\numberline {1.1}What is OHKLA?}{2}{section.1.1}
+\contentsline {section}{\numberline {1.2}Who is organizing OHKLA?}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}How can I get involved in OHKLA?}{3}{section.1.3}
+\contentsline {section}{\numberline {1.4}How can I suggest changes, corrections and improvements to this document?}{3}{section.1.4}
+\contentsline {chapter}{\numberline {2}Project Overview}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}Project motivation}{4}{section.2.1}
+\contentsline {section}{\numberline {2.2}Flight plan overview}{4}{section.2.2}
+\contentsline {section}{\numberline {2.3}Hardware overview}{4}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}The OHKLA Booster structure}{4}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}The OHKLA Payload structure}{4}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}The OHKLA Hybrid Rocket Engine}{4}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}The OHKLA Avionics System}{5}{subsection.2.3.4}
+\contentsline {chapter}{\numberline {3}Numerical Analysis}{6}{chapter.3}
+\contentsline {subsection}{\numberline {3.0.5}Impulsive launch approximation}{6}{subsection.3.0.5}
+\contentsline {subsubsection}{Aerodynamic model}{6}{section*.2}
+\contentsline {subsubsection}{Delta-v requirement estimation}{6}{section*.3}
+\contentsline {subsubsection}{Propellant mass approximation}{6}{section*.4}
+\contentsline {subsection}{\numberline {3.0.6}Accurate launch simulation}{6}{subsection.3.0.6}
+\contentsline {subsection}{\numberline {3.0.7}Recovery related considerations}{7}{subsection.3.0.7}
+\contentsline {chapter}{\numberline {4}Detailed Hardware Descriptions}{8}{chapter.4}
+\contentsline {subsection}{\numberline {4.0.8}The OHKLA Booster structure}{8}{subsection.4.0.8}
+\contentsline {subsection}{\numberline {4.0.9}The OHKLA Payload structure}{8}{subsection.4.0.9}
+\contentsline {subsection}{\numberline {4.0.10}The OHKLA Hybrid Rocket Engine}{8}{subsection.4.0.10}
+\contentsline {subsection}{\numberline {4.0.11}The OHKLA Avionics System}{8}{subsection.4.0.11}
+\contentsline {chapter}{\numberline {5}Concept Art}{9}{chapter.5}

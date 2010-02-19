@@ -1,0 +1,83 @@
+\contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}What is CLLARE?}{3}{section.1.1}
+\contentsline {section}{\numberline {1.2}Who is organizing CLLARE?}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}How can I get involved in CLLARE?}{4}{section.1.3}
+\contentsline {section}{\numberline {1.4}How can I suggest changes, corrections and improvements to this document?}{4}{section.1.4}
+\contentsline {chapter}{\numberline {2}Project Overview}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Flight Plan Overview}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Core CLLARE Hardware}{6}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}The CLLARE Command Module}{7}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}The CLLARE Orbital Support Module}{7}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}The CLLARE Propulsion Module}{8}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}The CLLARE Lunar Lander}{8}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}The CLLARE Lunar EVA Suit}{8}{subsection.2.2.5}
+\contentsline {section}{\numberline {2.3}Core Hardware Configurations}{8}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Suborbital configuration}{9}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Low apogee orbital configuration}{9}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}High apogee orbital and circumlunar configuration}{10}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Lunar landing configuration}{10}{subsection.2.3.4}
+\contentsline {section}{\numberline {2.4}Launch Options}{11}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Suborbital and low apogee orbital flights}{11}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}High apogee orbital and circumlunar missions}{11}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Lunar landing missions}{12}{subsection.2.4.3}
+\contentsline {section}{\numberline {2.5}A proposed program of flights}{12}{section.2.5}
+\contentsline {chapter}{\numberline {3}Numerical Analysis}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Astrodynamics}{13}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Trans Lunar Injection burn}{13}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Lunar Orbit Insertion burn}{14}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Trans Earth Injection burn}{14}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Lunar descent and ascent}{14}{subsection.3.1.4}
+\contentsline {section}{\numberline {3.2}Mass figures}{15}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Consumables masses}{15}{subsection.3.2.1}
+\contentsline {subsubsection}{Breathing gas}{15}{section*.2}
+\contentsline {subsubsection}{Water}{15}{section*.3}
+\contentsline {subsubsection}{Methanol}{15}{section*.4}
+\contentsline {subsection}{\numberline {3.2.2}Hardware masses}{15}{subsection.3.2.2}
+\contentsline {subsubsection}{Command Module}{15}{section*.5}
+\contentsline {subsubsection}{Orbital Support Module}{16}{section*.6}
+\contentsline {subsubsection}{Propulsion Module}{16}{section*.7}
+\contentsline {subsubsection}{Lunar Lander}{19}{section*.8}
+\contentsline {subsection}{\numberline {3.2.3}Propellant masses}{19}{subsection.3.2.3}
+\contentsline {subsubsection}{Propellant options}{19}{section*.9}
+\contentsline {subsubsection}{Circumlunar flights}{20}{section*.10}
+\contentsline {subsubsection}{Lunar landing flights}{20}{section*.11}
+\contentsline {subsection}{\numberline {3.2.4}Total launch masses}{21}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}Cost figures}{22}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Vehicle costs}{22}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Fuel costs}{22}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Launch costs}{22}{subsection.3.3.3}
+\contentsline {subsubsection}{Suborbital and orbital missions}{22}{section*.12}
+\contentsline {subsubsection}{Circumlunar missions}{22}{section*.13}
+\contentsline {subsubsection}{Lunar landing missions}{22}{section*.14}
+\contentsline {subsection}{\numberline {3.3.4}Total costs}{23}{subsection.3.3.4}
+\contentsline {chapter}{\numberline {4}Detailed Hardware Descriptions}{24}{chapter.4}
+\contentsline {section}{\numberline {4.1}The CLLARE Command Module}{24}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Overview}{24}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Structure and construction}{24}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Reaction Control System}{27}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Power system}{27}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}Environmental Control System}{27}{subsection.4.1.5}
+\contentsline {subsection}{\numberline {4.1.6}Waste Management System}{28}{subsection.4.1.6}
+\contentsline {subsection}{\numberline {4.1.7}Communication System}{28}{subsection.4.1.7}
+\contentsline {subsection}{\numberline {4.1.8}Navigation System}{29}{subsection.4.1.8}
+\contentsline {subsection}{\numberline {4.1.9}Computer System}{29}{subsection.4.1.9}
+\contentsline {subsubsection}{Hardware}{29}{section*.15}
+\contentsline {subsubsection}{Software}{30}{section*.16}
+\contentsline {section}{\numberline {4.2}The CLLARE Orbital Support Module}{30}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Structure}{30}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Retro Rockets}{30}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Reaction Control System}{30}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}The CLLARE Propulsion Module}{30}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Overview}{30}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Propellant tank}{31}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Engines}{32}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}The CLLARE Lunar Lander}{33}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Overview}{33}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Structure}{34}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Reaction Control System}{34}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Power system}{34}{subsection.4.4.4}
+\contentsline {subsection}{\numberline {4.4.5}Communication System}{34}{subsection.4.4.5}
+\contentsline {subsection}{\numberline {4.4.6}Navigation System}{34}{subsection.4.4.6}
+\contentsline {subsection}{\numberline {4.4.7}Engine}{35}{subsection.4.4.7}
+\contentsline {subsection}{\numberline {4.4.8}The CLLARE Lunar EVA Suit}{35}{subsection.4.4.8}
+\contentsline {chapter}{\numberline {5}Concept Art}{36}{chapter.5}

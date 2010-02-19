@@ -1,0 +1,139 @@
+\documentclass{report}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{rotating}
+
+\hypersetup{colorlinks=true}
+\hypersetup{urlcolor=blue}
+
+\begin{document}
+
+\begin{titlepage}
+\centering
+\includegraphics{images/cstart_logo} \\
+\Large{\href{http://www.cstart.org}{Collaborative Space Travel and Research Team}} \\
+\vspace{0.5cm}
+\large{``Space exploration, by anyone, for everyone''} \\
+\vspace{4.0cm}
+\Large{OHKLA:} \\
+\Large{Open Hybrid Karman Line Attempt} \\
+\Large{Project Overview} \\
+\vspace{2.0cm}
+\normalsize{Version 0.1, \\
+\today} \\
+\vspace{4.0cm}
+\includegraphics{images/cc_badge} \\
+This document is licensed under the \\
+\href{http://creativecommons.org/licenses/by-sa/3.0/}{Creative Commons Attribution-Share Alike 3.0 license}
+\end{titlepage}
+
+\tableofcontents
+
+\chapter{Introduction}
+
+\section{What is OHKLA?}
+
+The Open Hybrid Karman Line Attempt (OHKLA) project is a proposed spaceflight project with the goal of constructing a single-stage, hybrid-engine sounding rocket which is capable of travelling to a maximum altitude exceeding 100km, i.e. of passing the ``Karman line'', the internationally recognised boundary of space.
+
+OHKLA is an ``open source'' spaceflight project.  What does this mean?  It means that documents such as this one and others which describe OHKLA in intimate technical detail, including spreadsheets and CAD files, are available for free under the Creative Commons Attribution Sharealike 3.0 license, so that anybody can copy, distribute and modify them.  It means that computer code to handle every aspect of planning and running OHKLA is available for free under the GNU General Public License 3,0, so that anybody can copy, distribute and modify it.  Anybody who has the desire, determination and money can build and launch the OHKLA hardware without any fear of legal issues (at least not from the people who planned OHKLA - some countries may have restrictions on who can launch what into space, when and where).  It means that anybody with the interest and knowledge can help refine the OHKLA project.
+
+\section{Who is organizing OHKLA?}
+
+OHKLA is a project of the Collaborative Space Travel and Research Team (CSTART).  CSTART is a non-government, non-profit space agency run by volunteers.  It provides online services to facilitate the planning and promotion of open source projects related to space travel and space research, like OHKLA.  It also attempts to raise the money required to fund these projects, or at least to fund the construction of proof--of--concept mock ups.  In the future CSTART may organize and fund space travel and research related prizes, with the condition that all entries are released under open source licenses at the end of the competition.
+
+\section{How can I get involved in OHKLA?}
+
+%The definitive guide to getting involved in OHKLA can be found at the ``\href{http://cstart.org/wiki/Getting_involved_in_OHKLA}{Getting involved in OHKLA}'' page of the CSTART Wiki.
+
+\section{How can I suggest changes, corrections and improvements to this document?}
+
+The following people are currently responsible for maintaining this document:
+\begin{itemize}
+\item Luke Maurits (\texttt{lmaurits -at- cstart -dot- org})
+\end{itemize}
+You can email spelling and grammar corrections, suggested restructurings, more detailed and up--to--date descriptions of the project, improved diagrams and concept art to anybody on this list to have the material considered for inclusion in the next version of this document.
+
+If you'd like to become a maintainer of this document, email one of the current maintainers to express your interest.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Project Overview}
+
+In this chapter we provide a high--level overview of the OHKLA project.  We discuss...
+
+\section{Project motivation}
+
+The primary motivation for OHKLA is to obtain a body of knowledge and practical experience with regards to hybrid rocket technology in order to facilitate the use of this technology in future, more ambitious CSTART projects.  Examples of such future projects are designing a larger, controllable hybrid rocket which can carry scientific payloads of significant size/mass on a range of suborbital trajectories, and designing a family of orbital launch vehicles based on the ``OTRAG concept'' of clustering small and simple rockets.
+
+A secondary motivations for OHKLA are to generate some ``cheap'' publicity and reputation for CSTART (cheap compared to, say, the CLLARE project). 
+
+\section{Flight plan overview}
+
+\section{Hardware overview}
+
+In this section we list and briefly describe the major hardware components of the OHKLA project.  Complete technical details are given later in Chapter \ref{chap:detail}
+
+\subsection{The OHKLA Booster structure}
+
+\subsection{The OHKLA Payload structure}
+
+\subsection{The OHKLA Hybrid Rocket Engine}
+
+The OHKLA Hybrid Rocket Engine is a conventional hybrid rocket engine (i.e. a hybrid rocket using a solid fuel grain and a gaseous oxidizer) which is housed inside the booster structure.  It provides all of the propulsion required for an OHKLA flight.
+
+\subsection{The OHKLA Avionics System}
+
+The OHKLA Avionics System is a small, collection of battery--powered electronic equipment which is housed inside the Payload Structure.  The avionics system contains the equipment necessary to record flight data (required to verify that our maximum altitude is beyond the Karman line) and to facilitate recovery of the payload.  A camera (or several) may be included depending upon mass/power constraints.
+
+\chapter{Numerical Analysis} \label{chap:numeric}
+
+In this chapter we present the results of computer simulations and calculations carried out in order to estimate various conditions and requirements for the OHKLA project.
+
+\subsection{Impulsive launch approximation}
+
+In this section we approximate the flight of an OHKLA rocket as involving an impulsive, i.e. instantaneous, change in velocity on the launch pad.  This approximation makes it easy to estimate the required delta-v to pass the Karman line, which in turn facilitates estimating the required propellant masses.
+
+\subsubsection{Aerodynamic model}
+
+\subsubsection{Delta-v requirement estimation}
+
+\subsubsection{Propellant mass approximation}
+
+Based on the minimum delta-v requirement of 1400 m/s found above, we can use the specific impulse of various hybrid rocket propellants to find the minimum propellant mass requirement to achieve this delta v.
+
+Propellant mass calculations are performed using the Tsiolkovsky rocket equation.
+
+META: Table of impulses goes here...
+
+META: Propellant mass estimate goes here...
+
+\subsection{Accurate launch simulation}
+
+In this section we attempt to simulate the flight of an OHKLA rocket as accurately as possible, replacing our impulsive delta-v approximation with a model in which the delta-v is drawn out over the duration of the rocket burn, with acceleration changing due to changes in thrust and in rocket mass.  We use the figures derived from our impulsive launch approximation to inform our investigations here.
+
+META: USOFS output goes here...
+
+\subsection{Recovery related considerations}
+
+META: We really need to find somebody who can simulate parachute-aided falls from high altitude.  This involves knowing how to compute the acceleration due to a parachute given things like parachute shape, size, payload mass and velocity, air density, windspeed, etc., and who knows how to tell what altitude/velocity it is safe to deploy a parachute at, etc.
+
+\chapter{Detailed Hardware Descriptions} \label{chap:detail}
+
+In this chapter we present detailed (but by no means complete) descriptions of the OHKLA hardware.  Complete technical descriptions and diagrams of all hardware items will be compiled into a separate publication at a future time.
+
+\subsection{The OHKLA Booster structure}
+
+\subsection{The OHKLA Payload structure}
+
+\subsection{The OHKLA Hybrid Rocket Engine}
+
+\subsection{The OHKLA Avionics System}
+
+\chapter{Concept Art}
+
+This chapter contains various items of concept art for the OHKLA project.
+
+In many items of concept art, items of the OHKLA core hardware are depicted bearing a flag which features an image of the Earth from space on a blue background.  The reason for this is that CSTART is an official partner of the \href{http://www.oneflaginspace.org}{One Flag in Space} project, whose mission is ``to promote the use of the ``Blue Marble'' as a symbol of world unity in space exploration. It is a symbol that anyone, anywhere in the world can relate to, regardless of nationality, ethnic origin or religious beliefs, yet does not require political collaboration between space-faring nations''.  The CSTART Social Contract stipulates that, in support of the ideals of One Flag in Space, all CSTART spacecraft shall bear the Blue Marble flag, and that no CSTART spacecraft shall bear the flag of any nation of Earth.
+
+\end{document}
